@@ -1,0 +1,88 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Huiyu’s projects",
+    "section": "",
+    "text": "This project holds some code snippets for analyzing Huiyu’s VOC production and carbon preference data. It exists to quickly share information, ideas, and code with Huiyu as she analyzes the data and write the manuscripts."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Huiyu’s projects",
+    "section": "",
+    "text": "This project holds some code snippets for analyzing Huiyu’s VOC production and carbon preference data. It exists to quickly share information, ideas, and code with Huiyu as she analyzes the data and write the manuscripts."
+  },
+  {
+    "objectID": "index.html#project-structure",
+    "href": "index.html#project-structure",
+    "title": "Huiyu’s projects",
+    "section": "2 Project Structure:",
+    "text": "2 Project Structure:\nThe _data_raw directory includes raw data files obtained from instruments and is never modified directly\nThe data directory is where processed data projects should go. Usually, in an analysis workflow you will start with raw data, clean/organize it, perhaps transform it in some way, then save that product in data for later branches of the workflow.\nThe R directory store analysis code/scripts for the project."
+  },
+  {
+    "objectID": "index.html#availability",
+    "href": "index.html#availability",
+    "title": "Huiyu’s projects",
+    "section": "3 Availability",
+    "text": "3 Availability\nData and code in this GitHub repository (https://github.com/slhogle/huiyu_projects) are provided under GNU AGPL3. The rendered project site is available at https://slhogle.github.io/huiyu_projects/, which has been produced using Quarto notebooks. The content on the rendered site is released under the CC BY 4.0. This repository hosts all code and data for this project, including the code necessary to fully recreate the rendered webpage.\nAn archived release of the code is available from Zenodo: https://zenodo.org/records/EVENTUAL_ZENODO_RECORD"
+  },
+  {
+    "objectID": "index.html#dependencies",
+    "href": "index.html#dependencies",
+    "title": "Huiyu’s projects",
+    "section": "4 Dependencies",
+    "text": "4 Dependencies\nNote: to use the full functionality of the package ChemmineR I first needed to install a package called ChemmineOB which in basically an R interface to the cheminformatics API OpenBabel. OpenBabel in the Ubuntu distros did not work so I installed OepnBabel from the development version of GitHub (v3.1.1) following the instructions here:\nwget https://github.com/openbabel/openbabel/archive/refs/tags/openbabel-3-1-1.tar.gz\ntar xvf openbabel-3-1-1.tar.gz\ncd openbabel\nmkdir build\ncd build\ncmake ..\nmake -j2\nsudo make install\nAfter installing, all functions from ChemineOB worked"
+  },
+  {
+    "objectID": "index.html#reproducibility",
+    "href": "index.html#reproducibility",
+    "title": "Huiyu’s projects",
+    "section": "5 Reproducibility",
+    "text": "5 Reproducibility\nThe project uses renv to create a reproducible environment to execute the code in this project. See here for a brief overview on collaboration and reproduction of the entire project. To get up and running from an established repository, you could do:\ninstall.packages(\"renv\")\nrenv::restore()\nTo initiate renv for a new project:\n# set prefered CRAN location. This makes it so you don't need to compile everything\n# from scratch on Linux distros\noptions(repos = c(CRAN = \"https://packagemanager.posit.co/cran/__linux__/jammy/latest\"))\ninstall.packages(\"renv\")\n# initialize\nrenv::init(bioconductor = TRUE)\n# install some new packages\nrenv::install(\"tidyverse\")\n# record those packages in the lockfile\nrenv::snapshot()"
+  },
+  {
+    "objectID": "R/01_molecular_clustering.html",
+    "href": "R/01_molecular_clustering.html",
+    "title": "Clustering VOCs by chemical structure",
+    "section": "",
+    "text": "Show/hide code\n# libraries\nlibrary(here)\nlibrary(tidyverse)\nlibrary(ChemmineR)\nlibrary(ChemmineOB)\n\n\n\n\nShow/hide code\n# read smiles file and create a numeric ID that makes later joining much easier\nsmls &lt;- readr::read_csv(here::here(\"_data_raw\", \"vocs_SMILES.csv\")) %&gt;% \n  arrange(VOC_name) %&gt;% \n  group_by(VOC_name) %&gt;% \n  mutate(VOC_id = paste0(\"VOC_\", str_pad(cur_group_id(), width = 3, side = \"left\", pad = \"0\"))) %&gt;% \n  ungroup()\n\n# save this mapping file for later\nreadr::write_tsv(smls, here::here(\"data\", \"vocs_SMILES_id.tsv\"), col_names=FALSE)\n\n# write a SMI file  in way that read.SMIset expects\n# no header and the SMILES string first\nsmls %&gt;% \n  dplyr::select(SMILES, VOC_id) %&gt;% \n  readr::write_tsv(here::here(\"data\", \"vocs_SMILES.smi\"), col_names=FALSE)\n\n# also format the VOC concentration data and save for later\nvocs &lt;- read_csv(here::here(\"_data_raw\", \"vocs.csv\")) %&gt;% \n  # species PAE.3 has no data so drop it here\n  dplyr::filter(spe.ID != \"PAE3\") %&gt;% \n  pivot_longer(cols = c(-spe.ID, -Sample_File), names_to = \"VOC_name\", values_to = \"VOC_counts\") %&gt;% \n  arrange(spe.ID, VOC_name) %&gt;% \n  group_by(VOC_name) %&gt;% \n  mutate(VOC_id = paste0(\"VOC_\", str_pad(cur_group_id(), width = 3, side = \"left\", pad = \"0\"))) %&gt;% \n  ungroup() %&gt;% \n  # there are duplicates of some compounds for some species. Take the mean of those here\n  summarize(VOC_counts = mean(VOC_counts, na.rm=TRUE), .by = c(spe.ID, VOC_name, VOC_id)) %&gt;% \n  replace_na(list(VOC_counts = 0)) %&gt;% \n  dplyr::select(spe.ID, VOC_id, VOC_counts, VOC_name)\n\n# save VOC counts data\nreadr::write_tsv(vocs, here::here(\"data\", \"vocs.tsv\"))\n\n\n\n\nShow/hide code\nset.seed(45617)\n# read the tab-delimited file containing SMILES strings\nsmiset &lt;- read.SMIset(here::here(\"data\", \"vocs_SMILES.smi\"))\n\n# convert the SMILES dataset to SDF format\nsdfset &lt;- smiles2sdf(smiset)\n\n# make atom pair descriptor database for searching\napset &lt;- sdf2ap(sdfset)\n\n# make fingerprints from descriptor vectors such as atom pairs stored in APset\nfpset &lt;- desc2fp(apset)\n\n# cluster the fingerprints using the Tanimoto coefficient. This operates at cutoff levels of 0.5\n# 0.7 and 0.9. You can then choose which is best\nclusters &lt;- cmp.cluster(fpset, cutoff=c(0.7, 0.8, 0.9), method=\"Tanimoto\", quiet=FALSE)\n\nclusters_fmt &lt;- clusters %&gt;% \n  dplyr::select(VOC_id=ids, CLID_0.7, CLID_0.8, CLID_0.9) %&gt;% \n  mutate(CLID_0.7 = paste0(\"cut70_\", str_pad(CLID_0.7, width = 3, side = \"left\", pad = \"0\")),\n         CLID_0.8 = paste0(\"cut80_\", str_pad(CLID_0.8, width = 3, side = \"left\", pad = \"0\")),\n         CLID_0.9 = paste0(\"cut90_\", str_pad(CLID_0.9, width = 3, side = \"left\", pad = \"0\")))\n\n# save the formatted cluster file for later\nreadr::write_tsv(clusters_fmt, here::here(\"data\", \"VOC_fingerprint_clusters.tsv\"))",
+    "crumbs": [
+      "SynCom VOC production",
+      "Clustering VOCs based on molecular structure"
+    ]
+  },
+  {
+    "objectID": "R/02_VOC_production_clustering.html",
+    "href": "R/02_VOC_production_clustering.html",
+    "title": "Clustering VOC clusters based on production",
+    "section": "",
+    "text": "Show/hide code\n# Libraries\nlibrary(here)\nlibrary(tidyverse)\nlibrary(vegan)\nlibrary(ape)\n\n# read data\nvocs &lt;- readr::read_tsv(here::here(\"data\", \"vocs.tsv\"))\nvocs_smiles &lt;- readr::read_tsv(here::here(\"data\", \"vocs_SMILES_id.tsv\"), col_names=FALSE)\nvocs_clusters &lt;- readr::read_tsv(here::here(\"data\", \"VOC_fingerprint_clusters.tsv\"))\nShow/hide code\n# first we aggregate the spectral counts for each cluster in each species. Here\n# we will just use the total sum\nvocs_agg &lt;- left_join(vocs, vocs_clusters, by = join_by(VOC_id)) %&gt;% \n  summarize(VOC_counts_sm = sum(VOC_counts), .by = c(spe.ID, CLID_0.8)) \n\n# normalize the VOC_counts to a max of 1 for each VOC\n# so that we only just use information about which species produces \n# the most of each VOC, but not the absolute VOC concentrations. I don't really\n# know how to interpret the VOC_counts anyway\nvocs_agg_rk &lt;- vocs_agg %&gt;% \n  group_by(CLID_0.8) %&gt;% \n  mutate(VOC_rank = VOC_counts_sm/max(VOC_counts_sm)) %&gt;% \n  ungroup()\n\n# log1p transform aggregate counts\n# so that we only just use information about which species produces \n# the most of each VOC, but not the absolute VOC concentrations. I don't really\n# know how to interpret the VOC_counts anyway\nvocs_agg_log1p &lt;- vocs_agg %&gt;% \n  mutate(VOC_counts_sm = log1p(VOC_counts_sm))",
+    "crumbs": [
+      "SynCom VOC production",
+      "Clustering VOCs based on species production"
+    ]
+  },
+  {
+    "objectID": "R/02_VOC_production_clustering.html#pcoa",
+    "href": "R/02_VOC_production_clustering.html#pcoa",
+    "title": "Clustering VOC clusters based on production",
+    "section": "2.1 PcOA",
+    "text": "2.1 PcOA\n\n\nShow/hide code\nsp_tr &lt;- decostand(vocs_agg_wide_red, \"log\", logbase=10)\n\n\nWarning: non-integer data: divided by smallest positive value\n\n\nShow/hide code\ndst &lt;- vegdist(sp_tr, \"jaccard\")\n# pcoa from vegan::wcmdscale\npcoa_res &lt;- wcmdscale(dst, eig = TRUE)\nsppscores(pcoa_res) &lt;- sp_tr\n# pcoa from ape\npcoa_res01 &lt;- ape::pcoa(dst)\n\n\n\n\nShow/hide code\nround(pcoa_res01$values[1,2], 2)*100\n\n\n[1] 19\n\n\n\n\nShow/hide code\nordiplot(pcoa_res, type=\"n\",\n         xlab=paste0(\"Dim 1 (\", round(pcoa_res01$values[1,2], 2)*100, \"% variance)\"),\n         ylab=paste0(\"Dim 2 (\", round(pcoa_res01$values[2,2], 2)*100, \"% variance)\")) %&gt;% \n  points(\"sites\", pch=16, col=\"red\") %&gt;% \n  text(\"species\",  arrows = T, length=0.05, col=\"blue\")",
+    "crumbs": [
+      "SynCom VOC production",
+      "Clustering VOCs based on species production"
+    ]
+  },
+  {
+    "objectID": "R/02_VOC_production_clustering.html#nmds",
+    "href": "R/02_VOC_production_clustering.html#nmds",
+    "title": "Clustering VOC clusters based on production",
+    "section": "2.2 NMDS",
+    "text": "2.2 NMDS\n\n\nShow/hide code\nset.seed(2367)\nNMDS &lt;- metaMDS(sp_tr, \n                autotransform = FALSE,\n                distance = \"jaccard\",\n                trymax = 1000)\n\n\nRun 0 stress 0.184292 \nRun 1 stress 0.1914926 \nRun 2 stress 0.1843081 \n... Procrustes: rmse 0.006736622  max resid 0.03010879 \nRun 3 stress 0.1843714 \n... Procrustes: rmse 0.006415088  max resid 0.02944672 \nRun 4 stress 0.1922548 \nRun 5 stress 0.1856686 \nRun 6 stress 0.1938858 \nRun 7 stress 0.1843341 \n... Procrustes: rmse 0.006528068  max resid 0.03576155 \nRun 8 stress 0.2005779 \nRun 9 stress 0.1842962 \n... Procrustes: rmse 0.001969615  max resid 0.01261246 \nRun 10 stress 0.1842921 \n... Procrustes: rmse 0.0001650984  max resid 0.0007228111 \n... Similar to previous best\nRun 11 stress 0.1919205 \nRun 12 stress 0.1878997 \nRun 13 stress 0.1843076 \n... Procrustes: rmse 0.005878899  max resid 0.02778826 \nRun 14 stress 0.1865399 \nRun 15 stress 0.1856318 \nRun 16 stress 0.1842975 \n... Procrustes: rmse 0.003025204  max resid 0.02303688 \nRun 17 stress 0.1842971 \n... Procrustes: rmse 0.002951644  max resid 0.02418419 \nRun 18 stress 0.1842765 \n... New best solution\n... Procrustes: rmse 0.003621416  max resid 0.02332617 \nRun 19 stress 0.1847694 \n... Procrustes: rmse 0.007838733  max resid 0.03166501 \nRun 20 stress 0.1856687 \nRun 21 stress 0.1914425 \nRun 22 stress 0.197775 \nRun 23 stress 0.1842714 \n... New best solution\n... Procrustes: rmse 0.003008181  max resid 0.0236224 \nRun 24 stress 0.1903488 \nRun 25 stress 0.1856689 \nRun 26 stress 0.1930441 \nRun 27 stress 0.185669 \nRun 28 stress 0.184292 \n... Procrustes: rmse 0.001973626  max resid 0.01897636 \nRun 29 stress 0.1905416 \nRun 30 stress 0.1945809 \nRun 31 stress 0.1862369 \nRun 32 stress 0.185632 \nRun 33 stress 0.1843088 \n... Procrustes: rmse 0.006132186  max resid 0.02654181 \nRun 34 stress 0.1946876 \nRun 35 stress 0.2064047 \nRun 36 stress 0.1842996 \n... Procrustes: rmse 0.003645252  max resid 0.02416906 \nRun 37 stress 0.2006955 \nRun 38 stress 0.1842785 \n... Procrustes: rmse 0.00310779  max resid 0.02429087 \nRun 39 stress 0.1905165 \nRun 40 stress 0.1856442 \nRun 41 stress 0.1878973 \nRun 42 stress 0.1914424 \nRun 43 stress 0.1842764 \n... Procrustes: rmse 0.003005545  max resid 0.02374262 \nRun 44 stress 0.1842992 \n... Procrustes: rmse 0.003664866  max resid 0.02380409 \nRun 45 stress 0.1938239 \nRun 46 stress 0.184297 \n... Procrustes: rmse 0.00351851  max resid 0.02345121 \nRun 47 stress 0.1976144 \nRun 48 stress 0.1980406 \nRun 49 stress 0.1900979 \nRun 50 stress 0.1952979 \nRun 51 stress 0.1843107 \n... Procrustes: rmse 0.007196025  max resid 0.03000907 \nRun 52 stress 0.1963076 \nRun 53 stress 0.1842785 \n... Procrustes: rmse 0.003113372  max resid 0.02429609 \nRun 54 stress 0.1922547 \nRun 55 stress 0.1843332 \n... Procrustes: rmse 0.007012305  max resid 0.03702818 \nRun 56 stress 0.1952756 \nRun 57 stress 0.2053578 \nRun 58 stress 0.1950264 \nRun 59 stress 0.1843105 \n... Procrustes: rmse 0.007119559  max resid 0.02979832 \nRun 60 stress 0.1914927 \nRun 61 stress 0.1843013 \n... Procrustes: rmse 0.003605079  max resid 0.02357488 \nRun 62 stress 0.2028115 \nRun 63 stress 0.1900447 \nRun 64 stress 0.20028 \nRun 65 stress 0.1843074 \n... Procrustes: rmse 0.007033394  max resid 0.02973016 \nRun 66 stress 0.2013728 \nRun 67 stress 0.1993592 \nRun 68 stress 0.1842996 \n... Procrustes: rmse 0.003642229  max resid 0.02406966 \nRun 69 stress 0.1904623 \nRun 70 stress 0.1874448 \nRun 71 stress 0.1997628 \nRun 72 stress 0.1959849 \nRun 73 stress 0.2024811 \nRun 74 stress 0.1899597 \nRun 75 stress 0.1842996 \n... Procrustes: rmse 0.003646446  max resid 0.02412551 \nRun 76 stress 0.1943948 \nRun 77 stress 0.1842763 \n... Procrustes: rmse 0.002988983  max resid 0.02408042 \nRun 78 stress 0.1903248 \nRun 79 stress 0.1870909 \nRun 80 stress 0.1964735 \nRun 81 stress 0.1842974 \n... Procrustes: rmse 0.003444478  max resid 0.02348803 \nRun 82 stress 0.190152 \nRun 83 stress 0.1893025 \nRun 84 stress 0.1842969 \n... Procrustes: rmse 0.003510827  max resid 0.02358302 \nRun 85 stress 0.186511 \nRun 86 stress 0.1856689 \nRun 87 stress 0.1904621 \nRun 88 stress 0.1842763 \n... Procrustes: rmse 0.003001402  max resid 0.02450002 \nRun 89 stress 0.1944502 \nRun 90 stress 0.1937481 \nRun 91 stress 0.1943485 \nRun 92 stress 0.1845555 \n... Procrustes: rmse 0.01287191  max resid 0.04488601 \nRun 93 stress 0.1865113 \nRun 94 stress 0.1944137 \nRun 95 stress 0.198406 \nRun 96 stress 0.1918124 \nRun 97 stress 0.1993955 \nRun 98 stress 0.1911053 \nRun 99 stress 0.1848587 \nRun 100 stress 0.1882494 \nRun 101 stress 0.193091 \nRun 102 stress 0.1848459 \nRun 103 stress 0.1928723 \nRun 104 stress 0.1843079 \n... Procrustes: rmse 0.007193764  max resid 0.03013575 \nRun 105 stress 0.1901886 \nRun 106 stress 0.1949169 \nRun 107 stress 0.1997309 \nRun 108 stress 0.1848359 \nRun 109 stress 0.1976951 \nRun 110 stress 0.1968117 \nRun 111 stress 0.1952571 \nRun 112 stress 0.1864062 \nRun 113 stress 0.1865409 \nRun 114 stress 0.1983062 \nRun 115 stress 0.2010714 \nRun 116 stress 0.1865101 \nRun 117 stress 0.2030181 \nRun 118 stress 0.1843112 \n... Procrustes: rmse 0.007304838  max resid 0.03030397 \nRun 119 stress 0.1843328 \n... Procrustes: rmse 0.007095712  max resid 0.03873814 \nRun 120 stress 0.1865399 \nRun 121 stress 0.1875992 \nRun 122 stress 0.1989535 \nRun 123 stress 0.1843077 \n... Procrustes: rmse 0.006379032  max resid 0.02757326 \nRun 124 stress 0.1921902 \nRun 125 stress 0.1856686 \nRun 126 stress 0.1856686 \nRun 127 stress 0.1929571 \nRun 128 stress 0.1931608 \nRun 129 stress 0.1848454 \nRun 130 stress 0.1843331 \n... Procrustes: rmse 0.007200189  max resid 0.03966943 \nRun 131 stress 0.1843114 \n... Procrustes: rmse 0.007352623  max resid 0.03043807 \nRun 132 stress 0.1881916 \nRun 133 stress 0.1843072 \n... Procrustes: rmse 0.006758512  max resid 0.02876397 \nRun 134 stress 0.1842718 \n... Procrustes: rmse 0.0003397921  max resid 0.002335918 \n... Similar to previous best\n*** Best solution repeated 1 times\n\n\n\n\nShow/hide code\nordiplot(NMDS, type=\"n\") %&gt;% \n  points(\"sites\", pch=16, col=\"red\") %&gt;% \n  text(\"species\", arrows = T, length=0.05, col=\"blue\")",
+    "crumbs": [
+      "SynCom VOC production",
+      "Clustering VOCs based on species production"
+    ]
+  }
+]

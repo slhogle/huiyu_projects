@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Shane Hogle">
+<meta name="dcterms.date" content="2025-10-16">
+
+<title>Clustering VOC clusters based on production – Huiyu’s projects</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1f23bf93a17969024013c136d185e5ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../R/01_molecular_clustering.html">SynCom VOC production</a></li><li class="breadcrumb-item"><a href="../R/02_VOC_production_clustering.html">Clustering VOCs based on species production</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Huiyu’s projects</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">SynCom VOC production</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../R/01_molecular_clustering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clustering VOCs based on molecular structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../R/02_VOC_production_clustering.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Clustering VOCs based on species production</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sparsity-of-dataset" id="toc-sparsity-of-dataset" class="nav-link active" data-scroll-target="#sparsity-of-dataset"><span class="header-section-number">1</span> Sparsity of dataset</a></li>
+  <li><a href="#dimensionality-reduction-based-on-species-voc-production" id="toc-dimensionality-reduction-based-on-species-voc-production" class="nav-link" data-scroll-target="#dimensionality-reduction-based-on-species-voc-production"><span class="header-section-number">2</span> Dimensionality reduction based on species VOC production</a>
+  <ul class="collapse">
+  <li><a href="#pcoa" id="toc-pcoa" class="nav-link" data-scroll-target="#pcoa"><span class="header-section-number">2.1</span> PcOA</a></li>
+  <li><a href="#nmds" id="toc-nmds" class="nav-link" data-scroll-target="#nmds"><span class="header-section-number">2.2</span> NMDS</a></li>
+  </ul></li>
+  <li><a href="#tsne" id="toc-tsne" class="nav-link" data-scroll-target="#tsne"><span class="header-section-number">3</span> tSNE</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../R/01_molecular_clustering.html">SynCom VOC production</a></li><li class="breadcrumb-item"><a href="../R/02_VOC_production_clustering.html">Clustering VOCs based on species production</a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Clustering VOC clusters based on production</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Shane Hogle </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 16, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Try and get deeper insights into VOC production across SynCom species
+  </div>
+</div>
+
+
+</header>
+
+
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">library</span>(ape)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co"># read data</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>vocs <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"vocs.tsv"</span>))</span>
+<span id="cb1-9"><a href="#cb1-9"></a>vocs_smiles <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"vocs_SMILES_id.tsv"</span>), <span class="at">col_names=</span><span class="cn">FALSE</span>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a>vocs_clusters <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"VOC_fingerprint_clusters.tsv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># first we aggregate the spectral counts for each cluster in each species. Here</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co"># we will just use the total sum</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>vocs_agg <span class="ot">&lt;-</span> <span class="fu">left_join</span>(vocs, vocs_clusters, <span class="at">by =</span> <span class="fu">join_by</span>(VOC_id)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">summarize</span>(<span class="at">VOC_counts_sm =</span> <span class="fu">sum</span>(VOC_counts), <span class="at">.by =</span> <span class="fu">c</span>(spe.ID, CLID_0<span class="fl">.8</span>)) </span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co"># normalize the VOC_counts to a max of 1 for each VOC</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># so that we only just use information about which species produces </span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co"># the most of each VOC, but not the absolute VOC concentrations. I don't really</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># know how to interpret the VOC_counts anyway</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>vocs_agg_rk <span class="ot">&lt;-</span> vocs_agg <span class="sc">%&gt;%</span> </span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="fu">group_by</span>(CLID_0<span class="fl">.8</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-12"><a href="#cb2-12"></a>  <span class="fu">mutate</span>(<span class="at">VOC_rank =</span> VOC_counts_sm<span class="sc">/</span><span class="fu">max</span>(VOC_counts_sm)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-13"><a href="#cb2-13"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb2-14"><a href="#cb2-14"></a></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="co"># log1p transform aggregate counts</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="co"># so that we only just use information about which species produces </span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="co"># the most of each VOC, but not the absolute VOC concentrations. I don't really</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a><span class="co"># know how to interpret the VOC_counts anyway</span></span>
+<span id="cb2-19"><a href="#cb2-19"></a>vocs_agg_log1p <span class="ot">&lt;-</span> vocs_agg <span class="sc">%&gt;%</span> </span>
+<span id="cb2-20"><a href="#cb2-20"></a>  <span class="fu">mutate</span>(<span class="at">VOC_counts_sm =</span> <span class="fu">log1p</span>(VOC_counts_sm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="sparsity-of-dataset" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Sparsity of dataset</h1>
+<p>This data has lots of zeros…</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>vocs_missing <span class="ot">&lt;-</span> vocs_agg_rk <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">group_by</span>(CLID_0<span class="fl">.8</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">count</span>(<span class="at">nonzero =</span> VOC_rank <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> nonzero, <span class="at">values_from =</span> n) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="fu">rename</span>(<span class="at">n_species_detected =</span> <span class="st">`</span><span class="at">TRUE</span><span class="st">`</span>, <span class="at">n_species_missing =</span> <span class="st">`</span><span class="at">FALSE</span><span class="st">`</span>) </span>
+<span id="cb3-7"><a href="#cb3-7"></a></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co"># there are 87 different VOC clusters which are only detected in a single species </span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>vocs_missing <span class="sc">%&gt;%</span> </span>
+<span id="cb3-10"><a href="#cb3-10"></a>  <span class="fu">count</span>(<span class="at">VOC_detected_in_1_sp_only =</span> n_species_detected <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["VOC_detected_in_1_sp_only"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["n"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"FALSE","2":"64"},{"1":"TRUE","2":"87"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># on the other hand, there are 16 different VOC clusters that are detected in at</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co"># least 10 different species (so in ~10% of the data set) For example, molecules</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co"># in cut80_002 were produced by 53 different species</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>vocs_missing <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_species_detected))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["CLID_0.8"],"name":[1],"type":["chr"],"align":["left"]},{"label":["n_species_missing"],"name":[2],"type":["int"],"align":["right"]},{"label":["n_species_detected"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"cut80_002","2":"60","3":"53"},{"1":"cut80_251","2":"63","3":"50"},{"1":"cut80_080","2":"64","3":"49"},{"1":"cut80_008","2":"74","3":"39"},{"1":"cut80_028","2":"75","3":"38"},{"1":"cut80_001","2":"78","3":"35"},{"1":"cut80_060","2":"91","3":"22"},{"1":"cut80_030","2":"93","3":"20"},{"1":"cut80_014","2":"94","3":"19"},{"1":"cut80_138","2":"95","3":"18"},{"1":"cut80_221","2":"96","3":"17"},{"1":"cut80_197","2":"98","3":"15"},{"1":"cut80_024","2":"99","3":"14"},{"1":"cut80_228","2":"100","3":"13"},{"1":"cut80_259","2":"102","3":"11"},{"1":"cut80_015","2":"103","3":"10"},{"1":"cut80_034","2":"104","3":"9"},{"1":"cut80_244","2":"104","3":"9"},{"1":"cut80_263","2":"105","3":"8"},{"1":"cut80_056","2":"106","3":"7"},{"1":"cut80_164","2":"106","3":"7"},{"1":"cut80_166","2":"106","3":"7"},{"1":"cut80_025","2":"107","3":"6"},{"1":"cut80_189","2":"107","3":"6"},{"1":"cut80_194","2":"107","3":"6"},{"1":"cut80_006","2":"108","3":"5"},{"1":"cut80_017","2":"108","3":"5"},{"1":"cut80_052","2":"108","3":"5"},{"1":"cut80_204","2":"108","3":"5"},{"1":"cut80_223","2":"108","3":"5"},{"1":"cut80_069","2":"109","3":"4"},{"1":"cut80_108","2":"109","3":"4"},{"1":"cut80_181","2":"109","3":"4"},{"1":"cut80_231","2":"109","3":"4"},{"1":"cut80_026","2":"110","3":"3"},{"1":"cut80_033","2":"110","3":"3"},{"1":"cut80_035","2":"110","3":"3"},{"1":"cut80_115","2":"110","3":"3"},{"1":"cut80_120","2":"110","3":"3"},{"1":"cut80_134","2":"110","3":"3"},{"1":"cut80_158","2":"110","3":"3"},{"1":"cut80_174","2":"110","3":"3"},{"1":"cut80_226","2":"110","3":"3"},{"1":"cut80_236","2":"110","3":"3"},{"1":"cut80_003","2":"111","3":"2"},{"1":"cut80_012","2":"111","3":"2"},{"1":"cut80_013","2":"111","3":"2"},{"1":"cut80_040","2":"111","3":"2"},{"1":"cut80_043","2":"111","3":"2"},{"1":"cut80_046","2":"111","3":"2"},{"1":"cut80_055","2":"111","3":"2"},{"1":"cut80_058","2":"111","3":"2"},{"1":"cut80_062","2":"111","3":"2"},{"1":"cut80_084","2":"111","3":"2"},{"1":"cut80_086","2":"111","3":"2"},{"1":"cut80_103","2":"111","3":"2"},{"1":"cut80_139","2":"111","3":"2"},{"1":"cut80_155","2":"111","3":"2"},{"1":"cut80_173","2":"111","3":"2"},{"1":"cut80_175","2":"111","3":"2"},{"1":"cut80_179","2":"111","3":"2"},{"1":"cut80_214","2":"111","3":"2"},{"1":"cut80_235","2":"111","3":"2"},{"1":"cut80_242","2":"111","3":"2"},{"1":"cut80_004","2":"112","3":"1"},{"1":"cut80_005","2":"112","3":"1"},{"1":"cut80_007","2":"112","3":"1"},{"1":"cut80_009","2":"112","3":"1"},{"1":"cut80_011","2":"112","3":"1"},{"1":"cut80_016","2":"112","3":"1"},{"1":"cut80_019","2":"112","3":"1"},{"1":"cut80_027","2":"112","3":"1"},{"1":"cut80_031","2":"112","3":"1"},{"1":"cut80_032","2":"112","3":"1"},{"1":"cut80_036","2":"112","3":"1"},{"1":"cut80_039","2":"112","3":"1"},{"1":"cut80_042","2":"112","3":"1"},{"1":"cut80_044","2":"112","3":"1"},{"1":"cut80_045","2":"112","3":"1"},{"1":"cut80_047","2":"112","3":"1"},{"1":"cut80_048","2":"112","3":"1"},{"1":"cut80_049","2":"112","3":"1"},{"1":"cut80_050","2":"112","3":"1"},{"1":"cut80_051","2":"112","3":"1"},{"1":"cut80_054","2":"112","3":"1"},{"1":"cut80_064","2":"112","3":"1"},{"1":"cut80_065","2":"112","3":"1"},{"1":"cut80_067","2":"112","3":"1"},{"1":"cut80_068","2":"112","3":"1"},{"1":"cut80_070","2":"112","3":"1"},{"1":"cut80_071","2":"112","3":"1"},{"1":"cut80_072","2":"112","3":"1"},{"1":"cut80_073","2":"112","3":"1"},{"1":"cut80_076","2":"112","3":"1"},{"1":"cut80_077","2":"112","3":"1"},{"1":"cut80_079","2":"112","3":"1"},{"1":"cut80_082","2":"112","3":"1"},{"1":"cut80_087","2":"112","3":"1"},{"1":"cut80_088","2":"112","3":"1"},{"1":"cut80_090","2":"112","3":"1"},{"1":"cut80_094","2":"112","3":"1"},{"1":"cut80_096","2":"112","3":"1"},{"1":"cut80_097","2":"112","3":"1"},{"1":"cut80_098","2":"112","3":"1"},{"1":"cut80_100","2":"112","3":"1"},{"1":"cut80_101","2":"112","3":"1"},{"1":"cut80_105","2":"112","3":"1"},{"1":"cut80_107","2":"112","3":"1"},{"1":"cut80_109","2":"112","3":"1"},{"1":"cut80_110","2":"112","3":"1"},{"1":"cut80_112","2":"112","3":"1"},{"1":"cut80_117","2":"112","3":"1"},{"1":"cut80_118","2":"112","3":"1"},{"1":"cut80_122","2":"112","3":"1"},{"1":"cut80_129","2":"112","3":"1"},{"1":"cut80_130","2":"112","3":"1"},{"1":"cut80_131","2":"112","3":"1"},{"1":"cut80_136","2":"112","3":"1"},{"1":"cut80_141","2":"112","3":"1"},{"1":"cut80_153","2":"112","3":"1"},{"1":"cut80_154","2":"112","3":"1"},{"1":"cut80_157","2":"112","3":"1"},{"1":"cut80_160","2":"112","3":"1"},{"1":"cut80_172","2":"112","3":"1"},{"1":"cut80_177","2":"112","3":"1"},{"1":"cut80_178","2":"112","3":"1"},{"1":"cut80_190","2":"112","3":"1"},{"1":"cut80_201","2":"112","3":"1"},{"1":"cut80_205","2":"112","3":"1"},{"1":"cut80_208","2":"112","3":"1"},{"1":"cut80_209","2":"112","3":"1"},{"1":"cut80_212","2":"112","3":"1"},{"1":"cut80_215","2":"112","3":"1"},{"1":"cut80_217","2":"112","3":"1"},{"1":"cut80_218","2":"112","3":"1"},{"1":"cut80_219","2":"112","3":"1"},{"1":"cut80_225","2":"112","3":"1"},{"1":"cut80_230","2":"112","3":"1"},{"1":"cut80_232","2":"112","3":"1"},{"1":"cut80_237","2":"112","3":"1"},{"1":"cut80_238","2":"112","3":"1"},{"1":"cut80_241","2":"112","3":"1"},{"1":"cut80_245","2":"112","3":"1"},{"1":"cut80_246","2":"112","3":"1"},{"1":"cut80_248","2":"112","3":"1"},{"1":"cut80_250","2":"112","3":"1"},{"1":"cut80_252","2":"112","3":"1"},{"1":"cut80_253","2":"112","3":"1"},{"1":"cut80_260","2":"112","3":"1"},{"1":"cut80_266","2":"112","3":"1"},{"1":"cut80_272","2":"112","3":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="dimensionality-reduction-based-on-species-voc-production" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Dimensionality reduction based on species VOC production</h1>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># format to wide form for running ordination</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>vocs_agg_wide <span class="ot">&lt;-</span> vocs_missing <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">filter</span>(n_species_detected <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="co"># remove VOCs only detected in 1 species</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>  <span class="fu">anti_join</span>(vocs_agg, ., <span class="at">by =</span> <span class="fu">join_by</span>(CLID_0<span class="fl">.8</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-6"><a href="#cb5-6"></a>  <span class="co">#dplyr::select(-VOC_counts_sm) %&gt;% </span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>  <span class="fu">pivot_wider</span>(<span class="at">id_cols =</span> <span class="fu">c</span>(spe.ID), <span class="at">names_from =</span> <span class="st">"CLID_0.8"</span>, <span class="at">values_from =</span> <span class="st">"VOC_counts_sm"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-8"><a href="#cb5-8"></a>  <span class="fu">column_to_rownames</span>(<span class="at">var =</span> <span class="st">"spe.ID"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fu">data.frame</span>()</span>
+<span id="cb5-10"><a href="#cb5-10"></a> </span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="co"># calculate the frequency of zeros for each VOC column</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="co"># high values mean species have many zeros</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a>fz <span class="ot">&lt;-</span> <span class="fu">colSums</span>(vocs_agg_wide <span class="sc">==</span> <span class="dv">0</span>)<span class="sc">/</span><span class="fu">nrow</span>(vocs_agg_wide)</span>
+<span id="cb5-14"><a href="#cb5-14"></a></span>
+<span id="cb5-15"><a href="#cb5-15"></a>vocs_agg_wide_red <span class="ot">&lt;-</span> vocs_agg_wide[<span class="fu">names</span>(fz[fz <span class="sc">&lt;</span> <span class="fl">0.85</span>])] <span class="sc">%&gt;%</span> </span>
+<span id="cb5-16"><a href="#cb5-16"></a>  <span class="fu">filter</span>(<span class="fu">rowSums</span>(.) <span class="sc">&gt;</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># 57/64 of the VOC clusters have 80% or more zeros in the matrix. This high</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="co"># number of zeros will be challenging to deal with... We can consider excluding</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="co"># VOC cluster that have ~ 90% or more zeros or we can attempt to do some</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co"># ordination using the full dataset. However, classical euclidean based</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="co"># approaches will have very poor performance due to the large number of zeros.</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="co"># Much better to try a distance based approach</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="fu">enframe</span>(<span class="fu">colSums</span>(vocs_agg_wide <span class="sc">==</span> <span class="dv">0</span>)<span class="sc">/</span><span class="fu">nrow</span>(vocs_agg_wide)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-8"><a href="#cb6-8"></a>  <span class="fu">arrange</span>(value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"cut80_002","2":"0.5309735"},{"1":"cut80_251","2":"0.5575221"},{"1":"cut80_080","2":"0.5663717"},{"1":"cut80_008","2":"0.6548673"},{"1":"cut80_028","2":"0.6637168"},{"1":"cut80_001","2":"0.6902655"},{"1":"cut80_060","2":"0.8053097"},{"1":"cut80_030","2":"0.8230088"},{"1":"cut80_014","2":"0.8318584"},{"1":"cut80_138","2":"0.8407080"},{"1":"cut80_221","2":"0.8495575"},{"1":"cut80_197","2":"0.8672566"},{"1":"cut80_024","2":"0.8761062"},{"1":"cut80_228","2":"0.8849558"},{"1":"cut80_259","2":"0.9026549"},{"1":"cut80_015","2":"0.9115044"},{"1":"cut80_034","2":"0.9203540"},{"1":"cut80_244","2":"0.9203540"},{"1":"cut80_263","2":"0.9292035"},{"1":"cut80_056","2":"0.9380531"},{"1":"cut80_164","2":"0.9380531"},{"1":"cut80_166","2":"0.9380531"},{"1":"cut80_025","2":"0.9469027"},{"1":"cut80_189","2":"0.9469027"},{"1":"cut80_194","2":"0.9469027"},{"1":"cut80_006","2":"0.9557522"},{"1":"cut80_017","2":"0.9557522"},{"1":"cut80_052","2":"0.9557522"},{"1":"cut80_204","2":"0.9557522"},{"1":"cut80_223","2":"0.9557522"},{"1":"cut80_069","2":"0.9646018"},{"1":"cut80_181","2":"0.9646018"},{"1":"cut80_108","2":"0.9646018"},{"1":"cut80_231","2":"0.9646018"},{"1":"cut80_026","2":"0.9734513"},{"1":"cut80_033","2":"0.9734513"},{"1":"cut80_035","2":"0.9734513"},{"1":"cut80_115","2":"0.9734513"},{"1":"cut80_120","2":"0.9734513"},{"1":"cut80_134","2":"0.9734513"},{"1":"cut80_158","2":"0.9734513"},{"1":"cut80_174","2":"0.9734513"},{"1":"cut80_226","2":"0.9734513"},{"1":"cut80_236","2":"0.9734513"},{"1":"cut80_003","2":"0.9823009"},{"1":"cut80_012","2":"0.9823009"},{"1":"cut80_013","2":"0.9823009"},{"1":"cut80_040","2":"0.9823009"},{"1":"cut80_043","2":"0.9823009"},{"1":"cut80_046","2":"0.9823009"},{"1":"cut80_055","2":"0.9823009"},{"1":"cut80_058","2":"0.9823009"},{"1":"cut80_062","2":"0.9823009"},{"1":"cut80_084","2":"0.9823009"},{"1":"cut80_086","2":"0.9823009"},{"1":"cut80_103","2":"0.9823009"},{"1":"cut80_139","2":"0.9823009"},{"1":"cut80_155","2":"0.9823009"},{"1":"cut80_173","2":"0.9823009"},{"1":"cut80_175","2":"0.9823009"},{"1":"cut80_179","2":"0.9823009"},{"1":"cut80_214","2":"0.9823009"},{"1":"cut80_235","2":"0.9823009"},{"1":"cut80_242","2":"0.9823009"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Only 17% of VOC clusters have fewer than 85% nonzero observations across 113</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co"># species</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">length</span>(fz[fz <span class="sc">&lt;</span> <span class="fl">0.85</span>])<span class="sc">/</span><span class="fu">length</span>(fz)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.171875</code></pre>
+</div>
+</div>
+<section id="pcoa" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="pcoa"><span class="header-section-number">2.1</span> PcOA</h2>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>sp_tr <span class="ot">&lt;-</span> <span class="fu">decostand</span>(vocs_agg_wide_red, <span class="st">"log"</span>, <span class="at">logbase=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: non-integer data: divided by smallest positive value</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>dst <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(sp_tr, <span class="st">"jaccard"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="co"># pcoa from vegan::wcmdscale</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a>pcoa_res <span class="ot">&lt;-</span> <span class="fu">wcmdscale</span>(dst, <span class="at">eig =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="fu">sppscores</span>(pcoa_res) <span class="ot">&lt;-</span> sp_tr</span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="co"># pcoa from ape</span></span>
+<span id="cb11-6"><a href="#cb11-6"></a>pcoa_res01 <span class="ot">&lt;-</span> ape<span class="sc">::</span><span class="fu">pcoa</span>(dst)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">round</span>(pcoa_res01<span class="sc">$</span>values[<span class="dv">1</span>,<span class="dv">2</span>], <span class="dv">2</span>)<span class="sc">*</span><span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 19</code></pre>
+</div>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">ordiplot</span>(pcoa_res, <span class="at">type=</span><span class="st">"n"</span>,</span>
+<span id="cb14-2"><a href="#cb14-2"></a>         <span class="at">xlab=</span><span class="fu">paste0</span>(<span class="st">"Dim 1 ("</span>, <span class="fu">round</span>(pcoa_res01<span class="sc">$</span>values[<span class="dv">1</span>,<span class="dv">2</span>], <span class="dv">2</span>)<span class="sc">*</span><span class="dv">100</span>, <span class="st">"% variance)"</span>),</span>
+<span id="cb14-3"><a href="#cb14-3"></a>         <span class="at">ylab=</span><span class="fu">paste0</span>(<span class="st">"Dim 2 ("</span>, <span class="fu">round</span>(pcoa_res01<span class="sc">$</span>values[<span class="dv">2</span>,<span class="dv">2</span>], <span class="dv">2</span>)<span class="sc">*</span><span class="dv">100</span>, <span class="st">"% variance)"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="fu">points</span>(<span class="st">"sites"</span>, <span class="at">pch=</span><span class="dv">16</span>, <span class="at">col=</span><span class="st">"red"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-5"><a href="#cb14-5"></a>  <span class="fu">text</span>(<span class="st">"species"</span>,  <span class="at">arrows =</span> T, <span class="at">length=</span><span class="fl">0.05</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_VOC_production_clustering_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="nmds" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="nmds"><span class="header-section-number">2.2</span> NMDS</h2>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">set.seed</span>(<span class="dv">2367</span>)</span>
+<span id="cb15-2"><a href="#cb15-2"></a>NMDS <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(sp_tr, </span>
+<span id="cb15-3"><a href="#cb15-3"></a>                <span class="at">autotransform =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb15-4"><a href="#cb15-4"></a>                <span class="at">distance =</span> <span class="st">"jaccard"</span>,</span>
+<span id="cb15-5"><a href="#cb15-5"></a>                <span class="at">trymax =</span> <span class="dv">1000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Run 0 stress 0.184292 
+Run 1 stress 0.1914926 
+Run 2 stress 0.1843081 
+... Procrustes: rmse 0.006736622  max resid 0.03010879 
+Run 3 stress 0.1843714 
+... Procrustes: rmse 0.006415088  max resid 0.02944672 
+Run 4 stress 0.1922548 
+Run 5 stress 0.1856686 
+Run 6 stress 0.1938858 
+Run 7 stress 0.1843341 
+... Procrustes: rmse 0.006528068  max resid 0.03576155 
+Run 8 stress 0.2005779 
+Run 9 stress 0.1842962 
+... Procrustes: rmse 0.001969615  max resid 0.01261246 
+Run 10 stress 0.1842921 
+... Procrustes: rmse 0.0001650984  max resid 0.0007228111 
+... Similar to previous best
+Run 11 stress 0.1919205 
+Run 12 stress 0.1878997 
+Run 13 stress 0.1843076 
+... Procrustes: rmse 0.005878899  max resid 0.02778826 
+Run 14 stress 0.1865399 
+Run 15 stress 0.1856318 
+Run 16 stress 0.1842975 
+... Procrustes: rmse 0.003025204  max resid 0.02303688 
+Run 17 stress 0.1842971 
+... Procrustes: rmse 0.002951644  max resid 0.02418419 
+Run 18 stress 0.1842765 
+... New best solution
+... Procrustes: rmse 0.003621416  max resid 0.02332617 
+Run 19 stress 0.1847694 
+... Procrustes: rmse 0.007838733  max resid 0.03166501 
+Run 20 stress 0.1856687 
+Run 21 stress 0.1914425 
+Run 22 stress 0.197775 
+Run 23 stress 0.1842714 
+... New best solution
+... Procrustes: rmse 0.003008181  max resid 0.0236224 
+Run 24 stress 0.1903488 
+Run 25 stress 0.1856689 
+Run 26 stress 0.1930441 
+Run 27 stress 0.185669 
+Run 28 stress 0.184292 
+... Procrustes: rmse 0.001973626  max resid 0.01897636 
+Run 29 stress 0.1905416 
+Run 30 stress 0.1945809 
+Run 31 stress 0.1862369 
+Run 32 stress 0.185632 
+Run 33 stress 0.1843088 
+... Procrustes: rmse 0.006132186  max resid 0.02654181 
+Run 34 stress 0.1946876 
+Run 35 stress 0.2064047 
+Run 36 stress 0.1842996 
+... Procrustes: rmse 0.003645252  max resid 0.02416906 
+Run 37 stress 0.2006955 
+Run 38 stress 0.1842785 
+... Procrustes: rmse 0.00310779  max resid 0.02429087 
+Run 39 stress 0.1905165 
+Run 40 stress 0.1856442 
+Run 41 stress 0.1878973 
+Run 42 stress 0.1914424 
+Run 43 stress 0.1842764 
+... Procrustes: rmse 0.003005545  max resid 0.02374262 
+Run 44 stress 0.1842992 
+... Procrustes: rmse 0.003664866  max resid 0.02380409 
+Run 45 stress 0.1938239 
+Run 46 stress 0.184297 
+... Procrustes: rmse 0.00351851  max resid 0.02345121 
+Run 47 stress 0.1976144 
+Run 48 stress 0.1980406 
+Run 49 stress 0.1900979 
+Run 50 stress 0.1952979 
+Run 51 stress 0.1843107 
+... Procrustes: rmse 0.007196025  max resid 0.03000907 
+Run 52 stress 0.1963076 
+Run 53 stress 0.1842785 
+... Procrustes: rmse 0.003113372  max resid 0.02429609 
+Run 54 stress 0.1922547 
+Run 55 stress 0.1843332 
+... Procrustes: rmse 0.007012305  max resid 0.03702818 
+Run 56 stress 0.1952756 
+Run 57 stress 0.2053578 
+Run 58 stress 0.1950264 
+Run 59 stress 0.1843105 
+... Procrustes: rmse 0.007119559  max resid 0.02979832 
+Run 60 stress 0.1914927 
+Run 61 stress 0.1843013 
+... Procrustes: rmse 0.003605079  max resid 0.02357488 
+Run 62 stress 0.2028115 
+Run 63 stress 0.1900447 
+Run 64 stress 0.20028 
+Run 65 stress 0.1843074 
+... Procrustes: rmse 0.007033394  max resid 0.02973016 
+Run 66 stress 0.2013728 
+Run 67 stress 0.1993592 
+Run 68 stress 0.1842996 
+... Procrustes: rmse 0.003642229  max resid 0.02406966 
+Run 69 stress 0.1904623 
+Run 70 stress 0.1874448 
+Run 71 stress 0.1997628 
+Run 72 stress 0.1959849 
+Run 73 stress 0.2024811 
+Run 74 stress 0.1899597 
+Run 75 stress 0.1842996 
+... Procrustes: rmse 0.003646446  max resid 0.02412551 
+Run 76 stress 0.1943948 
+Run 77 stress 0.1842763 
+... Procrustes: rmse 0.002988983  max resid 0.02408042 
+Run 78 stress 0.1903248 
+Run 79 stress 0.1870909 
+Run 80 stress 0.1964735 
+Run 81 stress 0.1842974 
+... Procrustes: rmse 0.003444478  max resid 0.02348803 
+Run 82 stress 0.190152 
+Run 83 stress 0.1893025 
+Run 84 stress 0.1842969 
+... Procrustes: rmse 0.003510827  max resid 0.02358302 
+Run 85 stress 0.186511 
+Run 86 stress 0.1856689 
+Run 87 stress 0.1904621 
+Run 88 stress 0.1842763 
+... Procrustes: rmse 0.003001402  max resid 0.02450002 
+Run 89 stress 0.1944502 
+Run 90 stress 0.1937481 
+Run 91 stress 0.1943485 
+Run 92 stress 0.1845555 
+... Procrustes: rmse 0.01287191  max resid 0.04488601 
+Run 93 stress 0.1865113 
+Run 94 stress 0.1944137 
+Run 95 stress 0.198406 
+Run 96 stress 0.1918124 
+Run 97 stress 0.1993955 
+Run 98 stress 0.1911053 
+Run 99 stress 0.1848587 
+Run 100 stress 0.1882494 
+Run 101 stress 0.193091 
+Run 102 stress 0.1848459 
+Run 103 stress 0.1928723 
+Run 104 stress 0.1843079 
+... Procrustes: rmse 0.007193764  max resid 0.03013575 
+Run 105 stress 0.1901886 
+Run 106 stress 0.1949169 
+Run 107 stress 0.1997309 
+Run 108 stress 0.1848359 
+Run 109 stress 0.1976951 
+Run 110 stress 0.1968117 
+Run 111 stress 0.1952571 
+Run 112 stress 0.1864062 
+Run 113 stress 0.1865409 
+Run 114 stress 0.1983062 
+Run 115 stress 0.2010714 
+Run 116 stress 0.1865101 
+Run 117 stress 0.2030181 
+Run 118 stress 0.1843112 
+... Procrustes: rmse 0.007304838  max resid 0.03030397 
+Run 119 stress 0.1843328 
+... Procrustes: rmse 0.007095712  max resid 0.03873814 
+Run 120 stress 0.1865399 
+Run 121 stress 0.1875992 
+Run 122 stress 0.1989535 
+Run 123 stress 0.1843077 
+... Procrustes: rmse 0.006379032  max resid 0.02757326 
+Run 124 stress 0.1921902 
+Run 125 stress 0.1856686 
+Run 126 stress 0.1856686 
+Run 127 stress 0.1929571 
+Run 128 stress 0.1931608 
+Run 129 stress 0.1848454 
+Run 130 stress 0.1843331 
+... Procrustes: rmse 0.007200189  max resid 0.03966943 
+Run 131 stress 0.1843114 
+... Procrustes: rmse 0.007352623  max resid 0.03043807 
+Run 132 stress 0.1881916 
+Run 133 stress 0.1843072 
+... Procrustes: rmse 0.006758512  max resid 0.02876397 
+Run 134 stress 0.1842718 
+... Procrustes: rmse 0.0003397921  max resid 0.002335918 
+... Similar to previous best
+*** Best solution repeated 1 times</code></pre>
+</div>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">ordiplot</span>(NMDS, <span class="at">type=</span><span class="st">"n"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">points</span>(<span class="st">"sites"</span>, <span class="at">pch=</span><span class="dv">16</span>, <span class="at">col=</span><span class="st">"red"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-3"><a href="#cb17-3"></a>  <span class="fu">text</span>(<span class="st">"species"</span>, <span class="at">arrows =</span> T, <span class="at">length=</span><span class="fl">0.05</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_VOC_production_clustering_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="tsne" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> tSNE</h1>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">library</span>(Rtsne)</span>
+<span id="cb18-2"><a href="#cb18-2"></a>sp_tr_mat <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(<span class="fu">decostand</span>(vocs_agg_wide, <span class="st">"log"</span>, <span class="at">logbase=</span><span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: non-integer data: divided by smallest positive value</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Show/hide code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>mymat_tsne <span class="ot">&lt;-</span> Rtsne<span class="sc">::</span><span class="fu">Rtsne</span>(dst, </span>
+<span id="cb20-2"><a href="#cb20-2"></a>                           <span class="at">is_distance =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb20-3"><a href="#cb20-3"></a>                           <span class="at">perplexity =</span> <span class="dv">10</span>, </span>
+<span id="cb20-4"><a href="#cb20-4"></a>                           <span class="at">dims =</span> <span class="dv">2</span>,</span>
+<span id="cb20-5"><a href="#cb20-5"></a>                           <span class="at">pca_center =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb20-6"><a href="#cb20-6"></a>                           <span class="at">normalize =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb20-7"><a href="#cb20-7"></a></span>
+<span id="cb20-8"><a href="#cb20-8"></a>mydf_tsne <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(mymat_tsne<span class="sc">$</span>Y) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-9"><a href="#cb20-9"></a>  <span class="fu">cbind</span>(<span class="at">spe.ID =</span> <span class="fu">rownames</span>(sp_tr)) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-10"><a href="#cb20-10"></a>  <span class="fu">rename</span>(<span class="at">x =</span> X1, <span class="at">y =</span> X2)</span>
+<span id="cb20-11"><a href="#cb20-11"></a></span>
+<span id="cb20-12"><a href="#cb20-12"></a><span class="fu">ggplot</span>(mydf_tsne) <span class="sc">+</span></span>
+<span id="cb20-13"><a href="#cb20-13"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_VOC_production_clustering_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb21" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">---</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a><span class="an">title:</span><span class="co"> "Clustering VOC clusters based on production"</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="an">author:</span><span class="co"> "Shane Hogle"</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="an">date:</span><span class="co"> today</span></span>
+<span id="cb21-5"><a href="#cb21-5"></a><span class="an">link-citations:</span><span class="co"> true</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a><span class="an">abstract:</span><span class="co"> "Try and get deeper insights into VOC production across SynCom species"</span></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="co">---</span></span>
+<span id="cb21-8"><a href="#cb21-8"></a></span>
+<span id="cb21-11"><a href="#cb21-11"></a><span class="in">```{r}</span></span>
+<span id="cb21-12"><a href="#cb21-12"></a><span class="co">#| output: false</span></span>
+<span id="cb21-13"><a href="#cb21-13"></a><span class="co">#| warning: false</span></span>
+<span id="cb21-14"><a href="#cb21-14"></a><span class="co">#| error: false</span></span>
+<span id="cb21-15"><a href="#cb21-15"></a><span class="co"># Libraries</span></span>
+<span id="cb21-16"><a href="#cb21-16"></a><span class="fu">library</span>(here)</span>
+<span id="cb21-17"><a href="#cb21-17"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb21-18"><a href="#cb21-18"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb21-19"><a href="#cb21-19"></a><span class="fu">library</span>(ape)</span>
+<span id="cb21-20"><a href="#cb21-20"></a></span>
+<span id="cb21-21"><a href="#cb21-21"></a><span class="co"># read data</span></span>
+<span id="cb21-22"><a href="#cb21-22"></a>vocs <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"vocs.tsv"</span>))</span>
+<span id="cb21-23"><a href="#cb21-23"></a>vocs_smiles <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"vocs_SMILES_id.tsv"</span>), <span class="at">col_names=</span><span class="cn">FALSE</span>)</span>
+<span id="cb21-24"><a href="#cb21-24"></a>vocs_clusters <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"VOC_fingerprint_clusters.tsv"</span>))</span>
+<span id="cb21-25"><a href="#cb21-25"></a><span class="in">```</span></span>
+<span id="cb21-26"><a href="#cb21-26"></a></span>
+<span id="cb21-29"><a href="#cb21-29"></a><span class="in">```{r}</span></span>
+<span id="cb21-30"><a href="#cb21-30"></a><span class="co"># first we aggregate the spectral counts for each cluster in each species. Here</span></span>
+<span id="cb21-31"><a href="#cb21-31"></a><span class="co"># we will just use the total sum</span></span>
+<span id="cb21-32"><a href="#cb21-32"></a>vocs_agg <span class="ot">&lt;-</span> <span class="fu">left_join</span>(vocs, vocs_clusters, <span class="at">by =</span> <span class="fu">join_by</span>(VOC_id)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-33"><a href="#cb21-33"></a>  <span class="fu">summarize</span>(<span class="at">VOC_counts_sm =</span> <span class="fu">sum</span>(VOC_counts), <span class="at">.by =</span> <span class="fu">c</span>(spe.ID, CLID_0<span class="fl">.8</span>)) </span>
+<span id="cb21-34"><a href="#cb21-34"></a></span>
+<span id="cb21-35"><a href="#cb21-35"></a><span class="co"># normalize the VOC_counts to a max of 1 for each VOC</span></span>
+<span id="cb21-36"><a href="#cb21-36"></a><span class="co"># so that we only just use information about which species produces </span></span>
+<span id="cb21-37"><a href="#cb21-37"></a><span class="co"># the most of each VOC, but not the absolute VOC concentrations. I don't really</span></span>
+<span id="cb21-38"><a href="#cb21-38"></a><span class="co"># know how to interpret the VOC_counts anyway</span></span>
+<span id="cb21-39"><a href="#cb21-39"></a>vocs_agg_rk <span class="ot">&lt;-</span> vocs_agg <span class="sc">%&gt;%</span> </span>
+<span id="cb21-40"><a href="#cb21-40"></a>  <span class="fu">group_by</span>(CLID_0<span class="fl">.8</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-41"><a href="#cb21-41"></a>  <span class="fu">mutate</span>(<span class="at">VOC_rank =</span> VOC_counts_sm<span class="sc">/</span><span class="fu">max</span>(VOC_counts_sm)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-42"><a href="#cb21-42"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb21-43"><a href="#cb21-43"></a></span>
+<span id="cb21-44"><a href="#cb21-44"></a><span class="co"># log1p transform aggregate counts</span></span>
+<span id="cb21-45"><a href="#cb21-45"></a><span class="co"># so that we only just use information about which species produces </span></span>
+<span id="cb21-46"><a href="#cb21-46"></a><span class="co"># the most of each VOC, but not the absolute VOC concentrations. I don't really</span></span>
+<span id="cb21-47"><a href="#cb21-47"></a><span class="co"># know how to interpret the VOC_counts anyway</span></span>
+<span id="cb21-48"><a href="#cb21-48"></a>vocs_agg_log1p <span class="ot">&lt;-</span> vocs_agg <span class="sc">%&gt;%</span> </span>
+<span id="cb21-49"><a href="#cb21-49"></a>  <span class="fu">mutate</span>(<span class="at">VOC_counts_sm =</span> <span class="fu">log1p</span>(VOC_counts_sm))</span>
+<span id="cb21-50"><a href="#cb21-50"></a><span class="in">```</span></span>
+<span id="cb21-51"><a href="#cb21-51"></a></span>
+<span id="cb21-52"><a href="#cb21-52"></a><span class="fu"># Sparsity of dataset</span></span>
+<span id="cb21-53"><a href="#cb21-53"></a></span>
+<span id="cb21-54"><a href="#cb21-54"></a>This data has lots of zeros...</span>
+<span id="cb21-55"><a href="#cb21-55"></a></span>
+<span id="cb21-58"><a href="#cb21-58"></a><span class="in">```{r}</span></span>
+<span id="cb21-59"><a href="#cb21-59"></a>vocs_missing <span class="ot">&lt;-</span> vocs_agg_rk <span class="sc">%&gt;%</span> </span>
+<span id="cb21-60"><a href="#cb21-60"></a>  <span class="fu">group_by</span>(CLID_0<span class="fl">.8</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-61"><a href="#cb21-61"></a>  <span class="fu">count</span>(<span class="at">nonzero =</span> VOC_rank <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-62"><a href="#cb21-62"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb21-63"><a href="#cb21-63"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> nonzero, <span class="at">values_from =</span> n) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-64"><a href="#cb21-64"></a>  <span class="fu">rename</span>(<span class="at">n_species_detected =</span> <span class="st">`</span><span class="at">TRUE</span><span class="st">`</span>, <span class="at">n_species_missing =</span> <span class="st">`</span><span class="at">FALSE</span><span class="st">`</span>) </span>
+<span id="cb21-65"><a href="#cb21-65"></a></span>
+<span id="cb21-66"><a href="#cb21-66"></a><span class="co"># there are 87 different VOC clusters which are only detected in a single species </span></span>
+<span id="cb21-67"><a href="#cb21-67"></a>vocs_missing <span class="sc">%&gt;%</span> </span>
+<span id="cb21-68"><a href="#cb21-68"></a>  <span class="fu">count</span>(<span class="at">VOC_detected_in_1_sp_only =</span> n_species_detected <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb21-69"><a href="#cb21-69"></a><span class="in">```</span></span>
+<span id="cb21-70"><a href="#cb21-70"></a></span>
+<span id="cb21-73"><a href="#cb21-73"></a><span class="in">```{r}</span></span>
+<span id="cb21-74"><a href="#cb21-74"></a><span class="co"># on the other hand, there are 16 different VOC clusters that are detected in at</span></span>
+<span id="cb21-75"><a href="#cb21-75"></a><span class="co"># least 10 different species (so in ~10% of the data set) For example, molecules</span></span>
+<span id="cb21-76"><a href="#cb21-76"></a><span class="co"># in cut80_002 were produced by 53 different species</span></span>
+<span id="cb21-77"><a href="#cb21-77"></a>vocs_missing <span class="sc">%&gt;%</span> </span>
+<span id="cb21-78"><a href="#cb21-78"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_species_detected))</span>
+<span id="cb21-79"><a href="#cb21-79"></a><span class="in">```</span></span>
+<span id="cb21-80"><a href="#cb21-80"></a></span>
+<span id="cb21-81"><a href="#cb21-81"></a><span class="fu"># Dimensionality reduction based on species VOC production</span></span>
+<span id="cb21-82"><a href="#cb21-82"></a></span>
+<span id="cb21-85"><a href="#cb21-85"></a><span class="in">```{r}</span></span>
+<span id="cb21-86"><a href="#cb21-86"></a><span class="co"># format to wide form for running ordination</span></span>
+<span id="cb21-87"><a href="#cb21-87"></a>vocs_agg_wide <span class="ot">&lt;-</span> vocs_missing <span class="sc">%&gt;%</span> </span>
+<span id="cb21-88"><a href="#cb21-88"></a>  <span class="fu">filter</span>(n_species_detected <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-89"><a href="#cb21-89"></a>  <span class="co"># remove VOCs only detected in 1 species</span></span>
+<span id="cb21-90"><a href="#cb21-90"></a>  <span class="fu">anti_join</span>(vocs_agg, ., <span class="at">by =</span> <span class="fu">join_by</span>(CLID_0<span class="fl">.8</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-91"><a href="#cb21-91"></a>  <span class="co">#dplyr::select(-VOC_counts_sm) %&gt;% </span></span>
+<span id="cb21-92"><a href="#cb21-92"></a>  <span class="fu">pivot_wider</span>(<span class="at">id_cols =</span> <span class="fu">c</span>(spe.ID), <span class="at">names_from =</span> <span class="st">"CLID_0.8"</span>, <span class="at">values_from =</span> <span class="st">"VOC_counts_sm"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-93"><a href="#cb21-93"></a>  <span class="fu">column_to_rownames</span>(<span class="at">var =</span> <span class="st">"spe.ID"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-94"><a href="#cb21-94"></a>  <span class="fu">data.frame</span>()</span>
+<span id="cb21-95"><a href="#cb21-95"></a> </span>
+<span id="cb21-96"><a href="#cb21-96"></a><span class="co"># calculate the frequency of zeros for each VOC column</span></span>
+<span id="cb21-97"><a href="#cb21-97"></a><span class="co"># high values mean species have many zeros</span></span>
+<span id="cb21-98"><a href="#cb21-98"></a>fz <span class="ot">&lt;-</span> <span class="fu">colSums</span>(vocs_agg_wide <span class="sc">==</span> <span class="dv">0</span>)<span class="sc">/</span><span class="fu">nrow</span>(vocs_agg_wide)</span>
+<span id="cb21-99"><a href="#cb21-99"></a></span>
+<span id="cb21-100"><a href="#cb21-100"></a>vocs_agg_wide_red <span class="ot">&lt;-</span> vocs_agg_wide[<span class="fu">names</span>(fz[fz <span class="sc">&lt;</span> <span class="fl">0.85</span>])] <span class="sc">%&gt;%</span> </span>
+<span id="cb21-101"><a href="#cb21-101"></a>  <span class="fu">filter</span>(<span class="fu">rowSums</span>(.) <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb21-102"><a href="#cb21-102"></a><span class="in">```</span></span>
+<span id="cb21-103"><a href="#cb21-103"></a></span>
+<span id="cb21-106"><a href="#cb21-106"></a><span class="in">```{r}</span></span>
+<span id="cb21-107"><a href="#cb21-107"></a><span class="co"># 57/64 of the VOC clusters have 80% or more zeros in the matrix. This high</span></span>
+<span id="cb21-108"><a href="#cb21-108"></a><span class="co"># number of zeros will be challenging to deal with... We can consider excluding</span></span>
+<span id="cb21-109"><a href="#cb21-109"></a><span class="co"># VOC cluster that have ~ 90% or more zeros or we can attempt to do some</span></span>
+<span id="cb21-110"><a href="#cb21-110"></a><span class="co"># ordination using the full dataset. However, classical euclidean based</span></span>
+<span id="cb21-111"><a href="#cb21-111"></a><span class="co"># approaches will have very poor performance due to the large number of zeros.</span></span>
+<span id="cb21-112"><a href="#cb21-112"></a><span class="co"># Much better to try a distance based approach</span></span>
+<span id="cb21-113"><a href="#cb21-113"></a><span class="fu">enframe</span>(<span class="fu">colSums</span>(vocs_agg_wide <span class="sc">==</span> <span class="dv">0</span>)<span class="sc">/</span><span class="fu">nrow</span>(vocs_agg_wide)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-114"><a href="#cb21-114"></a>  <span class="fu">arrange</span>(value)</span>
+<span id="cb21-115"><a href="#cb21-115"></a><span class="in">```</span></span>
+<span id="cb21-116"><a href="#cb21-116"></a></span>
+<span id="cb21-119"><a href="#cb21-119"></a><span class="in">```{r}</span></span>
+<span id="cb21-120"><a href="#cb21-120"></a><span class="co"># Only 17% of VOC clusters have fewer than 85% nonzero observations across 113</span></span>
+<span id="cb21-121"><a href="#cb21-121"></a><span class="co"># species</span></span>
+<span id="cb21-122"><a href="#cb21-122"></a><span class="fu">length</span>(fz[fz <span class="sc">&lt;</span> <span class="fl">0.85</span>])<span class="sc">/</span><span class="fu">length</span>(fz)</span>
+<span id="cb21-123"><a href="#cb21-123"></a><span class="in">```</span></span>
+<span id="cb21-124"><a href="#cb21-124"></a></span>
+<span id="cb21-125"><a href="#cb21-125"></a><span class="fu">## PcOA</span></span>
+<span id="cb21-126"><a href="#cb21-126"></a></span>
+<span id="cb21-129"><a href="#cb21-129"></a><span class="in">```{r}</span></span>
+<span id="cb21-130"><a href="#cb21-130"></a>sp_tr <span class="ot">&lt;-</span> <span class="fu">decostand</span>(vocs_agg_wide_red, <span class="st">"log"</span>, <span class="at">logbase=</span><span class="dv">10</span>)</span>
+<span id="cb21-131"><a href="#cb21-131"></a>dst <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(sp_tr, <span class="st">"jaccard"</span>)</span>
+<span id="cb21-132"><a href="#cb21-132"></a><span class="co"># pcoa from vegan::wcmdscale</span></span>
+<span id="cb21-133"><a href="#cb21-133"></a>pcoa_res <span class="ot">&lt;-</span> <span class="fu">wcmdscale</span>(dst, <span class="at">eig =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb21-134"><a href="#cb21-134"></a><span class="fu">sppscores</span>(pcoa_res) <span class="ot">&lt;-</span> sp_tr</span>
+<span id="cb21-135"><a href="#cb21-135"></a><span class="co"># pcoa from ape</span></span>
+<span id="cb21-136"><a href="#cb21-136"></a>pcoa_res01 <span class="ot">&lt;-</span> ape<span class="sc">::</span><span class="fu">pcoa</span>(dst)</span>
+<span id="cb21-137"><a href="#cb21-137"></a><span class="in">```</span></span>
+<span id="cb21-138"><a href="#cb21-138"></a></span>
+<span id="cb21-141"><a href="#cb21-141"></a><span class="in">```{r}</span></span>
+<span id="cb21-142"><a href="#cb21-142"></a><span class="fu">round</span>(pcoa_res01<span class="sc">$</span>values[<span class="dv">1</span>,<span class="dv">2</span>], <span class="dv">2</span>)<span class="sc">*</span><span class="dv">100</span></span>
+<span id="cb21-143"><a href="#cb21-143"></a><span class="in">```</span></span>
+<span id="cb21-144"><a href="#cb21-144"></a></span>
+<span id="cb21-147"><a href="#cb21-147"></a><span class="in">```{r}</span></span>
+<span id="cb21-148"><a href="#cb21-148"></a><span class="co">#| fig.width: 7</span></span>
+<span id="cb21-149"><a href="#cb21-149"></a><span class="co">#| fig.height: 7</span></span>
+<span id="cb21-150"><a href="#cb21-150"></a><span class="co">#| warning: false</span></span>
+<span id="cb21-151"><a href="#cb21-151"></a><span class="fu">ordiplot</span>(pcoa_res, <span class="at">type=</span><span class="st">"n"</span>,</span>
+<span id="cb21-152"><a href="#cb21-152"></a>         <span class="at">xlab=</span><span class="fu">paste0</span>(<span class="st">"Dim 1 ("</span>, <span class="fu">round</span>(pcoa_res01<span class="sc">$</span>values[<span class="dv">1</span>,<span class="dv">2</span>], <span class="dv">2</span>)<span class="sc">*</span><span class="dv">100</span>, <span class="st">"% variance)"</span>),</span>
+<span id="cb21-153"><a href="#cb21-153"></a>         <span class="at">ylab=</span><span class="fu">paste0</span>(<span class="st">"Dim 2 ("</span>, <span class="fu">round</span>(pcoa_res01<span class="sc">$</span>values[<span class="dv">2</span>,<span class="dv">2</span>], <span class="dv">2</span>)<span class="sc">*</span><span class="dv">100</span>, <span class="st">"% variance)"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-154"><a href="#cb21-154"></a>  <span class="fu">points</span>(<span class="st">"sites"</span>, <span class="at">pch=</span><span class="dv">16</span>, <span class="at">col=</span><span class="st">"red"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-155"><a href="#cb21-155"></a>  <span class="fu">text</span>(<span class="st">"species"</span>,  <span class="at">arrows =</span> T, <span class="at">length=</span><span class="fl">0.05</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span>
+<span id="cb21-156"><a href="#cb21-156"></a><span class="in">```</span></span>
+<span id="cb21-157"><a href="#cb21-157"></a></span>
+<span id="cb21-158"><a href="#cb21-158"></a><span class="fu">## NMDS</span></span>
+<span id="cb21-159"><a href="#cb21-159"></a></span>
+<span id="cb21-162"><a href="#cb21-162"></a><span class="in">```{r}</span></span>
+<span id="cb21-163"><a href="#cb21-163"></a><span class="fu">set.seed</span>(<span class="dv">2367</span>)</span>
+<span id="cb21-164"><a href="#cb21-164"></a>NMDS <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(sp_tr, </span>
+<span id="cb21-165"><a href="#cb21-165"></a>                <span class="at">autotransform =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb21-166"><a href="#cb21-166"></a>                <span class="at">distance =</span> <span class="st">"jaccard"</span>,</span>
+<span id="cb21-167"><a href="#cb21-167"></a>                <span class="at">trymax =</span> <span class="dv">1000</span>)</span>
+<span id="cb21-168"><a href="#cb21-168"></a><span class="in">```</span></span>
+<span id="cb21-169"><a href="#cb21-169"></a></span>
+<span id="cb21-172"><a href="#cb21-172"></a><span class="in">```{r}</span></span>
+<span id="cb21-173"><a href="#cb21-173"></a><span class="co">#| fig.width: 7</span></span>
+<span id="cb21-174"><a href="#cb21-174"></a><span class="co">#| fig.height: 7</span></span>
+<span id="cb21-175"><a href="#cb21-175"></a><span class="co">#| warning: false</span></span>
+<span id="cb21-176"><a href="#cb21-176"></a><span class="fu">ordiplot</span>(NMDS, <span class="at">type=</span><span class="st">"n"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-177"><a href="#cb21-177"></a>  <span class="fu">points</span>(<span class="st">"sites"</span>, <span class="at">pch=</span><span class="dv">16</span>, <span class="at">col=</span><span class="st">"red"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-178"><a href="#cb21-178"></a>  <span class="fu">text</span>(<span class="st">"species"</span>, <span class="at">arrows =</span> T, <span class="at">length=</span><span class="fl">0.05</span>, <span class="at">col=</span><span class="st">"blue"</span>)</span>
+<span id="cb21-179"><a href="#cb21-179"></a><span class="in">```</span></span>
+<span id="cb21-180"><a href="#cb21-180"></a></span>
+<span id="cb21-181"><a href="#cb21-181"></a><span class="fu"># tSNE</span></span>
+<span id="cb21-182"><a href="#cb21-182"></a></span>
+<span id="cb21-185"><a href="#cb21-185"></a><span class="in">```{r}</span></span>
+<span id="cb21-186"><a href="#cb21-186"></a><span class="fu">library</span>(Rtsne)</span>
+<span id="cb21-187"><a href="#cb21-187"></a>sp_tr_mat <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(<span class="fu">decostand</span>(vocs_agg_wide, <span class="st">"log"</span>, <span class="at">logbase=</span><span class="dv">10</span>))</span>
+<span id="cb21-188"><a href="#cb21-188"></a></span>
+<span id="cb21-189"><a href="#cb21-189"></a>mymat_tsne <span class="ot">&lt;-</span> Rtsne<span class="sc">::</span><span class="fu">Rtsne</span>(dst, </span>
+<span id="cb21-190"><a href="#cb21-190"></a>                           <span class="at">is_distance =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb21-191"><a href="#cb21-191"></a>                           <span class="at">perplexity =</span> <span class="dv">10</span>, </span>
+<span id="cb21-192"><a href="#cb21-192"></a>                           <span class="at">dims =</span> <span class="dv">2</span>,</span>
+<span id="cb21-193"><a href="#cb21-193"></a>                           <span class="at">pca_center =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb21-194"><a href="#cb21-194"></a>                           <span class="at">normalize =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb21-195"><a href="#cb21-195"></a></span>
+<span id="cb21-196"><a href="#cb21-196"></a>mydf_tsne <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(mymat_tsne<span class="sc">$</span>Y) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-197"><a href="#cb21-197"></a>  <span class="fu">cbind</span>(<span class="at">spe.ID =</span> <span class="fu">rownames</span>(sp_tr)) <span class="sc">%&gt;%</span> </span>
+<span id="cb21-198"><a href="#cb21-198"></a>  <span class="fu">rename</span>(<span class="at">x =</span> X1, <span class="at">y =</span> X2)</span>
+<span id="cb21-199"><a href="#cb21-199"></a></span>
+<span id="cb21-200"><a href="#cb21-200"></a><span class="fu">ggplot</span>(mydf_tsne) <span class="sc">+</span></span>
+<span id="cb21-201"><a href="#cb21-201"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y))</span>
+<span id="cb21-202"><a href="#cb21-202"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
