@@ -1,0 +1,88 @@
+---
+title: "Clustering VOCs by chemical structure"
+author: "Shane Hogle"
+date: today
+link-citations: true
+abstract: "Uses the ChemmineR library to read SMILES definitions for different VOCS, format them, then cluster them based on molecular similarity"
+---
+
+```{r}
+#| output: false
+#| warning: false
+#| error: false
+# libraries
+library(here)
+library(tidyverse)
+library(ChemmineR)
+library(ChemmineOB)
+```
+
+```{r}
+#| output: false
+#| warning: false
+#| error: false
+# read smiles file and create a numeric ID that makes later joining much easier
+smls <- readr::read_csv(here::here("_data_raw", "vocs_SMILES.csv")) %>% 
+  arrange(VOC_name) %>% 
+  group_by(VOC_name) %>% 
+  mutate(VOC_id = paste0("VOC_", str_pad(cur_group_id(), width = 3, side = "left", pad = "0"))) %>% 
+  ungroup()
+
+# save this mapping file for later
+readr::write_tsv(smls, here::here("data", "vocs_SMILES_id.tsv"), col_names=FALSE)
+
+# write a SMI file  in way that read.SMIset expects
+# no header and the SMILES string first
+smls %>% 
+  dplyr::select(SMILES, VOC_id) %>% 
+  readr::write_tsv(here::here("data", "vocs_SMILES.smi"), col_names=FALSE)
+
+# also format the VOC concentration data and save for later
+vocs <- read_csv(here::here("_data_raw", "vocs.csv")) %>% 
+  # species PAE.3 has no data so drop it here
+  dplyr::filter(spe.ID != "PAE3") %>% 
+  pivot_longer(cols = c(-spe.ID, -Sample_File), names_to = "VOC_name", values_to = "VOC_counts") %>% 
+  arrange(spe.ID, VOC_name) %>% 
+  group_by(VOC_name) %>% 
+  mutate(VOC_id = paste0("VOC_", str_pad(cur_group_id(), width = 3, side = "left", pad = "0"))) %>% 
+  ungroup() %>% 
+  # there are duplicates of some compounds for some species. Take the mean of those here
+  summarize(VOC_counts = mean(VOC_counts, na.rm=TRUE), .by = c(spe.ID, VOC_name, VOC_id)) %>% 
+  replace_na(list(VOC_counts = 0)) %>% 
+  dplyr::select(spe.ID, VOC_id, VOC_counts, VOC_name)
+
+# save VOC counts data
+readr::write_tsv(vocs, here::here("data", "vocs.tsv"))
+```
+
+```{r}
+#| output: false
+#| warning: false
+#| error: false
+set.seed(45617)
+# read the tab-delimited file containing SMILES strings
+smiset <- read.SMIset(here::here("data", "vocs_SMILES.smi"))
+
+# convert the SMILES dataset to SDF format
+sdfset <- smiles2sdf(smiset)
+
+# make atom pair descriptor database for searching
+apset <- sdf2ap(sdfset)
+
+# make fingerprints from descriptor vectors such as atom pairs stored in APset
+fpset <- desc2fp(apset)
+
+# cluster the fingerprints using the Tanimoto coefficient. This operates at cutoff levels of 0.5
+# 0.7 and 0.9. You can then choose which is best
+clusters <- cmp.cluster(fpset, cutoff=c(0.7, 0.8, 0.9), method="Tanimoto", quiet=FALSE)
+
+clusters_fmt <- clusters %>% 
+  dplyr::select(VOC_id=ids, CLID_0.7, CLID_0.8, CLID_0.9) %>% 
+  mutate(CLID_0.7 = paste0("cut70_", str_pad(CLID_0.7, width = 3, side = "left", pad = "0")),
+         CLID_0.8 = paste0("cut80_", str_pad(CLID_0.8, width = 3, side = "left", pad = "0")),
+         CLID_0.9 = paste0("cut90_", str_pad(CLID_0.9, width = 3, side = "left", pad = "0")))
+
+# save the formatted cluster file for later
+readr::write_tsv(clusters_fmt, here::here("data", "VOC_fingerprint_clusters.tsv"))
+```
+

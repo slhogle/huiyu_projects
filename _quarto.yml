@@ -1,0 +1,50 @@
+project:
+  type: website
+  resources:
+    - "css/"
+    - "js/"
+    - "*.html"
+  output-dir: docs
+
+website:
+  title: "Huiyu's projects"
+  sidebar:
+    style: "docked"
+    background: light
+    search: true
+    contents:
+    
+      - section: "SynCom VOC production"
+        contents:
+          - text: "Clustering VOCs based on molecular structure"
+            file: R/01_molecular_clustering.qmd
+          - text: "Clustering VOCs based on species production"
+            file: R/02_VOC_production_clustering.qmd
+            
+format:
+  html:
+    theme:
+      - cosmo
+    # include table of contents
+    toc: true
+    # when printing dataframes use rmarkdown::paged_table())
+    df-print: paged
+    # set default dimensions for figures
+    fig-width: 8
+    fig-height: 6
+    # tidy format R code upon render
+    tidy: false
+    # include line numbers in code blocks
+    code-line-numbers: true
+    # The code-link option enables hyper-linking of functions within code blocks to their online documentation:
+    #code-link: true
+    number-sections: true
+    code-fold: show
+    code-summary: "Show/hide code"
+    code-tools: true
+  
+# auto: re-render only when source changes   
+execute:
+  freeze: false 
+  
+editor: source

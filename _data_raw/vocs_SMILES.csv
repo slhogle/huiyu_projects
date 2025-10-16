@@ -1,0 +1,273 @@
+VOC_name,SMILES
+.alpha.-Amino-.gamma.-butyrolactone,C1COC(=O)C1N.Br
+"1,1'-Bicyclohexyl, 4-methyl-4'-pentyl-",CCCCCC1CCC(CC1)C2CCC(CC2)C
+"1,1-Diethoxycyclohexane",CCOC1(CCCCC1)OCC
+"1,2,3-Benzotriazin-4(3H)-one, 3-[(3-fluorophenyl)methyl]-",C1=CC=C2C(=C1)C(=O)N(N=N2)CC3=CC(=CC=C3)F
+"1,2,4,5-Tetrazine, 3,6-bis(1,1-dimethylethyl)-",CC(C)(C)C1=NN=C(N=N1)C(C)(C)C
+"1,2,5-Trimethylpyrrole",CC1=CC=C(N1C)C
+"1,2-Cyclopentanedicarboxylic acid, 4-ethylidene-, dimethyl ester",CC=C1CC(C(C1)C(=O)OC)C(=O)OC
+"1,2-Dimethoxy-ethene",CO/C=C/OC
+"1,2-Ethanediamine, N'-ethyl-N,N-dimethyl-",CCN(CCN(C)C)C1=CC=CC(=C1)C
+"1,2-Ethanediol, monoformate",C(COC=O)O
+"1,2-Propanediol, 3-methoxy-",COCC(CO)O
+"1,3,2-Oxathiaborole, 2-ethyl-",B1(OCCS1)CC
+"1,3-Cyclohexanediamine",C1CC(CC(C1)N)N
+"1,3-Diazine",C1=CN=CN=C1
+"1,3-Dioxane, 2-methyl-",CC1OCCCO1
+"1,3-Dioxol-2-one",C1=COC(=O)O1
+"1,3-Dioxolane, 2-hexyl-",CCCCCCC1OCCO1
+"1,3-Propanediamine",C(CN)CN
+"1,4 Benzodioxan-6-amine",C1COC2=C(O1)C=CC(=C2)N
+"1,4-Oxathiin, 2,3-dihydro-6-methyl-",CC1=CSCCO1
+1-(2-Methylallyl)azetidine,CC(=C)CN1CCC1
+1-(2-Propen-1-yloxy)dodecane,C(CCCCCCCCCCOCC=C)C
+"1-(3-Hydroxy-3-methylbutyl)-3,6-diazahomoadamantan-9-one",CC(C)(CCC12CN3CCN(C1)CC(C3)C2=O)O
+"1-Butanol, 2-methyl-, (S)-",CC[C@H](C)CO
+"1-Heptanol, 6-methyl-",CC(C)CCCCCO
+1-Methyl-2-phenylcyclopropane,CC1CC1C2=CC=CC=C2
+1-Nitro-2-propanone,CC(=O)C[N+](=O)[O-]
+"1-Propanol, 2-chloro-2-methyl-",CC(C)(CO)Cl
+"1-Propene, 2-methyl-3-(1-methylethoxy)-",CC(C)OCC(=C)C
+"1-Propene, 3,3-dichloro-",C=CC(Cl)Cl
+"1H-Indazol-5-amine, 3-methyl-",CC1=C2C=C(C=CC2=NN1)N
+"1H-Indene, octahydro-2,2,4,4,7,7-hexamethyl-, trans-",CC1(CCC(C2C1CC(C2)(C)C)(C)C)C
+"1H-Indole, 5-fluoro-",C1=CC2=C(C=CN2)C=C1F
+"1H-Pyrazole, 4,5-dihydro-4,5-dimethyl-",CC1C=NNC1C
+1H-Tetrazol-5-amine,C1(=NNN=N1)N
+"2(5H)-Furanone, 5-(2-hydroxyethylidene)-",C\1=CC(=O)O/C1=C/CO
+"2,2'-(2,2'-Oxybis(ethane-2,1-diyl)bis(oxy))bis(ethane-2,1-diyl) bis(3-methylbutanoate)",CC(C)CC(=O)OCCOCCOCCOCCOC(=O)CC(C)C
+"2,2'-Oxybis(ethane-2,1-diyl) bis(2-methylbutanoate)",CCC(C)C(=O)OCCOCCOCCOCCOC(=O)C(C)CC
+"2,2-Diethoxyacetophenone",CCOC(C(=O)C1=CC=CC=C1)OCC
+"2,3-Butanediol, [R-(R*,R*)]-",C[C@H]([C@@H](C)O)O
+"2,3-Dimethyldodecane",CCCCCCCCCC(C)C(C)C
+"2,4,6-Trimethyl-1,5-diazabicyclo[3.1.0]hexane",CC1CC(N2N1C2C)C
+"2,5-Dimethylpyrimidine",CC1=CN=C(N=C1)C
+"2,6-Bis(2-methylpropyl)pyrazine",CC(C)CC1=CN=CC(=N1)CC(C)C
+"2,6-Dimethyl-6-nitro-2-hepten-4-one",CC(=CC(=O)CC(C)(C)[N+](=O)[O-])C
+"2,6-Octadiene, 3,7-dimethyl-1-(2-propenyloxy)-",CC(=CCC/C(=C/COCC=C)/C)C
+"2,9-Diazabicyclo[4.4.0]decane, cis-",C1C[C@@H]2CCNC[C@@H]2NC1
+2-(1-Cyclopentenyl)furan,C1CC=C(C1)C2=CC=CO2
+2-(1H-Pyrazol-3-yl)acetaldehyde,C1=C(NN=C1)CC=O
+"2-(5-Furan-2-yl-[1,3,4]oxadiazol-2-ylsulfanyl)-N,N-dimethyl-acetamide",CN(C)C(=O)CSC1=NN=C(O1)C2=CC=CO2
+2-(Trimethylacetyl)thiophene,CC(C)(C)C(=O)C1=CC=CS1
+2-Amino-4-methyl-oxazole,CC1=COC(=N1)N
+"2-Butanamine, 3,3-dimethyl-",CC(C(C)(C)C)N
+2-Butene ozonide,CC1OC(OO1)C
+"2-Butenoic acid, 2-methyl-, 1-methylethyl ester, (Z)-",C/C=C(/C)\C(=O)OC(C)C
+"2-Butenoic acid, 3-methyl-, 2-methylpropyl ester",CC(C)COC(=O)C=C(C)C
+2-Chloro 5-chloromethylthiophene,C1=C(SC(=C1)Cl)CCl
+2-Chlorobenzimidazole,C1=CC=C2C(=C1)NC(=N2)Cl
+"2-Decene, 7-methyl-, (Z)-",CCCC(C)CCC/C=C\C
+"2-Ethyl-1-hexanol, methyl ether",CCCCC(CC)COC
+"2-Ethyl-1-hexanol, trifluoroacetate",CCCCC(CC)COC(=O)C(F)(F)F
+"2-Heptanol, 5-ethyl-",CCC(CC)CCC(C)O
+"2-Hexanone, 3-methyl-4-methylene-",CCC(=C)C(C)C(=O)C
+2-Hexenoic acid,CCCC=CC(=O)O
+"2-Hexenoic acid, 3-hexenyl ester, (E,Z)-",CCC/C=C/C(=O)OCC/C=C\CC
+"2-Hydroxy-2,5-dimethyl-hept-6-en-3-one",CC(CC(=O)C(C)(C)O)C=C
+2-Isopropenyl-3-methylpyrazine,CC1=NC=CN=C1C(=C)C
+2-Isopropoxyethylamine,CC(C)OCCN
+2-Isopropyl-5-oxohexanal,CC(C)C(CCC(=O)C)C=O
+2-Isopropylpyrazine,CC(C)C1=NC=CN=C1
+"2-Methoxy-3-methyl-butyric acid, methyl ester",CC(C)C(C(=O)OC)OC
+"2-Naphthalenecarboxaldehyde, 3-hydroxy-5-methyl-8-(1-methylethyl)-",CC1=C2C=C(C(=CC2=C(C=C1)C(C)C)C=O)O
+"2-Octanol, 3-methyl-",CCCCCC(C)C(C)O
+"2-Pentene, 5-butoxy-, (E)-",CCCCOCC/C=C/C
+"2-Propanol, 1-isopropoxy-2-methyl-",CC(C)OCC(C)(C)O
+"2-Propanone, 1,1-dipropoxy-",CCCOC(C(=O)C)OCCC
+"2-Propenoic acid, 2-methyl-, propyl ester",CCCOC(=O)C(=C)C
+"2-Propenoic acid, 3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,10-heptadecafluorodecyl ester",C=CC(=O)OCCC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F
+"2-Propenoic acid, ethenyl ester",C=CC(=O)OC=C
+2-Propyl-1-pentanol,CCCC(CCC)CO
+"2-Propyl-1-pentanol, methyl ether",CCCC(CCC)COC
+"2-Propyn-1-amine, N,N-di-2-propynyl-",C#CCN(CC#C)CC#C
+"2-Propyn-1-ol, acetate",CC(=O)OCC#C
+"2-Pyrazoline, 1-butyl-5-methyl-",CCCCN1C(CC=N1)C
+"2-Pyrazoline, 4-ethyl-1-methyl-",CCC1CN(N=C1)C
+"3,4-Dichloro-1,2,5-thiadiazole",C1(=NSN=C1Cl)Cl
+"3,4-Hexanedione, 2,2,5-trimethyl-",CC(C)C(=O)C(=O)C(C)(C)C
+"3,5-Dimethyl-4-octanone",CCCC(C)C(=O)C(C)CC
+"3,5-Dimethyldodecane",CCCCCCCC(C)CC(C)CC
+"3,5-Heptanedione, 2,4,6-trimethyl",CC(C)C(=O)C(C)C(=O)C(C)C
+"3-Butoxy-2,4-dimethyl-1-pentene",CCCCOC(C(C)C)C(=C)C
+"3-Decene, 2,2-dimethyl-, (E)-",CCCCCC/C=C/C(C)(C)C
+"3-Ethyl-2,6,10-trimethylundecane",CCC(CCC(C)CCCC(C)C)C(C)C
+3-Formyl-1-isopropyl-2(1H)-pyridone,CC(C)N1C=CC=C(C1=O)C=O
+"3-Heptanone, 2,4-dimethyl-",CCCC(C)C(=O)C(C)C
+"3-Hepten-2-one, 5-methyl-",CCC(C)/C=C/C(=O)C
+"3-Hexen-2-one, 3,4-dimethyl-, (E)-",CC/C(=C(\C)/C(=O)C)/C
+"3-Isopropoxybenzoic acid, methyl ester",CC(C)OC1=CC=CC(=C1)C(=O)OC
+"3-Pentanol, 2,2-dimethyl-",CCC(C(C)(C)C)O
+3-Pyridinesulfonic acid,C1=CC(=CN=C1)S(=O)(=O)O
+"4,5,6,7-Tetrahydro-3-methylbenzofuran",CC1=COC2=C1CCCC2
+4-Cyclohexyl-1-butanol,C1CCC(CC1)CCCCO
+"4-Cyclopentene-1,3-dione, 4-methoxy-5-methyl-",CC1=C(C(=O)CC1=O)OC
+"4-Hexen-2-one, 3,4-dimethyl-",CC=C(C)C(C)C(=O)C
+4-Methoxy-3-buten-2-one,CC(=O)/C=C\OC
+"4-Penten-2-one, 3-methyl-",CC(C=C)C(=O)C
+4-Pentenoic acid ethyl ester,CCOC(=O)CCC=C
+4-Phenylbut-3-ene-1-yne,C#C/C=C/C1=CC=CC=C1
+4-Propyl-2-hydroxycyclopent-2-en-1-one,CCCC1CC(=O)C(=C1)O
+"4-Pyrimidinamine, 2,6-difluoro-",C1=C(N=C(N=C1F)F)N
+"5,5-Dibutylnonane",CCCCC(CCCC)(CCCC)CCCC
+"5-Isopropyl-2,8-dimethyl-9-oxatricyclo[4.4.0.0(2,8)]decan-7-one",CC(C)C1CCC2(C3C1C(=O)C2(OC3)C)C
+5-Methyl-4-hexene-1-yl acetate,CC(=CCCCOC(=O)C)C
+"5-Methylhexane-2,4-dione, enol",CC(C)/C(=C/C(=O)C)/O
+"5-Nonanone, 2-methyl-",CCCCC(=O)CCC(C)C
+6-Dodecanol,CCCCCCC(CCCCC)O
+"9-Borabicyclo[3.3.1]nonan-9-amine, N-(2,2-dimethylpropylidene)-",B1(C2CCCC1CCC2)/N=C/C(C)(C)C
+"Acetaldehyde, bis(1-methylethyl)hydrazone",C/C=N/N(C(C)C)C(C)C
+"Acetamide, 2-fluoro-",C(C(=O)N)F
+"Acetic acid, 1-methylcyclopentyl ester",CC(=O)OC1(CCCC1)C
+"Acetic acid, 2-fluoroethyl ester",CC(=O)OCCF
+"Acetic acid, chloro-, 2-phenylethyl ester",C1=CC=C(C=C1)CCOC(=O)CCl
+"Acetic acid, chlorodifluoro-",C(=O)(C(F)(F)Cl)O
+"Acetic acid, methoxy-",COCC(=O)O
+"Acetic acid, oxo-, methyl ester",COC(=O)C=O
+Acetoin,CC(C(=O)C)O
+"Acetonitrile,2-(methylimino)",CN=CC#N
+"Acetyl chloride, chloro-",C(C(=O)Cl)Cl
+Acetyl valeryl,CCCCC(=O)C(=O)C
+"Adipic acid, 2,5-dimethylphenyl hexyl ester",CCCCCCOC(=O)CCCCC(=O)OC1=C(C=CC(=C1)C)C
+"Alanine, N-methyl-N-isobutoxycarbonyl-, isobutyl ester",CC(C)COC(=O)C(C)N(C)C(=O)OCC(C)C
+Allyl n-octyl ether,CCCCCCCCOCC=C
+Ammonium acetate,CC(=O)[O-].[NH4+]
+"Aziridine, 1-propyl-",CCCN1CC1
+"Aziridine, 2-ethyl-",CCC1CN1
+"Benzene, 1,3-bis(1,1-dimethylethyl)-2-methoxy-5-methyl-",CC1=CC(=C(C(=C1)C(C)(C)C)OC)C(C)(C)C
+"Benzene, 1-isocyano-2-methyl-",CC1=CC=CC=C1[N+]#C
+"Benzene, 1-isocyano-3-methyl-",CC1=CC(=CC=C1)[N+]#C
+"Benzene, 1-isocyano-4-methyl-",CC1=CC=C(C=C1)[N+]#C
+"Benzocyclodecene, tetradecahydro-",C1CCCCC2CCCCC2CCC1
+"Benzoic acid, 4-(acetyloxy)-, methyl ester",CC(=O)OC1=CC=C(C=C1)C(=O)OC
+"Benzonitrile, 4-fluoro-",C1=CC(=CC=C1C#N)F
+Benzyl chloromethyl sulfide,C1=CC=C(C=C1)CSCCl
+"Borane, propadienediylidenetetrakis[difluoro-",B(C(=C=C(B(F)F)B(F)F)B(F)F)(F)F
+"Boron, trihydro(pyridine)-, (T-4)-",[B].C1=CC=NC=C1
+"Butanal, 3,3-dimethyl-2-oxo-, hemihydrate",CC(C)(C)C(=O)C=O
+"Butanal, oxime",CCCC=NO
+Butanamide,CCCC(=O)N
+"Butane, 1-(1-methylpropoxy)-",CCCCOC(C)CC
+"Butane, 1-chloro-2-methyl-, (S)-",CCC(C)CCl
+"Butane, 2-azido-2,3,3-trimethyl-",CC(C)(C)C(C)(C)N=[N+]=[N-]
+"Butanedinitrile, 2,3-diamino-2,3-dimethyl-",CC(C#N)(C(C)(C#N)N)N
+"Butanoic acid, .alpha.-[(2-methoxy-1,2-dioxoethyl)hydrazono]-",CC/C(=N/NC(=O)C(=O)OC)/C(=O)O
+"Butanoic acid, 3-oxo-, 2-propenyl ester",CC(=O)CC(=O)OCC=C
+"Butanoic acid, anhydride",CCCC(=O)OC(=O)CCC
+Butyl isopropylphosphonofluoridate,CCCCOP(=O)(C(C)C)F
+"Carbonic acid 3,5-dichloro-2,6-dimethyl-4-pyridyl ethyl ester",CCOC(=O)OC1=C(C(=NC(=C1Cl)C)C)Cl
+"Carbonic acid, ethyl-, methyl ester",CCOC(=O)OC
+Chloro-methyl-methoxy-amine,CN(OC)Cl
+Chloromethyl chloroacetate,C(C(=O)OCCl)Cl
+Chloromethylmethyl sulfide,CSCCl
+"Cyanic acid, butyl ester",CCCCOC#N
+"Cyclobutane, 1,1,2,3,3-pentamethyl-",CC1C(CC1(C)C)(C)C
+"Cyclobutane, 1,2-bis(1-methylethenyl)-, trans-",CC(=C)[C@@H]1CC[C@H]1C(=C)C
+Cyclobutanol,C1CC(C1)O
+"Cyclobutanol, 1-butyl-",CCCCC1(CCC1)O
+"Cyclobutanone, oxime",C1CC(=NO)C1
+"Cyclodecene, 3-bromo-",C1CCC/C=C\C(CCC1)Br
+Cyclododecanemethanol,C1CCCCCC(CCCCC1)CO
+"Cyclododecanol, 1-ethenyl-",C=CC1(CCCCCCCCCCC1)O
+"Cycloheptanol, trifluoroacetate",C1CCCC(CC1)OC(=O)C(F)(F)F
+"Cyclohexane, 1-ethyl-1,3-dimethyl-, cis-",CC[C@@]1(CCC[C@@H](C1)C)C
+Cyclohexanemethanol,C1CCC(CC1)CO
+"Cyclohexanemethanol, .alpha.-methyl-.alpha.-(1-methyl-2-propenyl)-, (R*,S*)-(.+-.)-",CC(C=C)C(C)(C1CCCCC1)O
+"Cyclopentene, 1-ethenyl-3-methylene-",C=CC1=CC(=C)CC1
+"Cyclopropane, 1-heptyl-2-methyl-",CCCCCCCC1CC1C
+"Cyclopropane, cyclopropylidene-",C1CC1=C2CC2
+"Decane, 2,3,6-trimethyl-",CCCCC(C)CCC(C)C(C)C
+"Decane, 2,3,8-trimethyl-",CCC(C)CCCCC(C)C(C)C
+"Decane, 2,8,8-trimethyl-",CCC(C)(C)CCCCCC(C)C
+"Decane, 3,6-dimethyl-",CCCCC(C)CCC(C)CC
+"Decane, 6-ethyl-2-methyl-",CCCCC(CC)CCCC(C)C
+"Decanoic acid, 2,8-dimethyl-, methyl ester",CCC(C)CCCCCC(C)C(=O)OC
+Diethylhydroxylamine,CCN(CC)O
+Diundecylneopentylamine,CCCCCCCCCCCN(CCCCCCCCCCC)CC(C)(C)C
+"Dodecane, 2,5-dimethyl-",CCCCCCCC(C)CCC(C)C
+"Dodecane, 2,7,10-trimethyl-",CCC(C)CCC(C)CCCCC(C)C
+"Ether, tert-butyl isopropylidenecyclopropyl",CC(=C1CC1OC(C)(C)C)C
+Ethyl 1-methylcyclopropanecarboxylate,CCOC(=O)C1(CC1)C
+Ethyl 4-ethoxyphenylacetate,CCOC1=CC=C(C=C1)CC(=O)OCC
+Ethyl Acetate,CCOC(=O)C
+Ethylenediamine,C(CN)N
+"Ethylenimine, N-chloro-",C1CN1Cl
+"Formamide, N-formyl-N-methyl-",CN(C=O)C=O
+"Furan-2-carbonyl chloride, tetrahydro-",C1CC(OC1)C(=O)Cl
+"Heptane, 3-(chloromethyl)-",CCCCC(CC)CCl
+"Heptane, 4-ethyl-2,2,6,6-tetramethyl-",CCC(CC(C)(C)C)CC(C)(C)C
+"Heptanoic acid, 1-methylethyl ester",CCCCCCC(=O)OC(C)C
+"Hex-2-yn-4-one, 2-methyl-",CC#CC(=O)C(C)C
+"Hexane, 1-ethoxy-",CCCCCCOCC
+"Hexanoic acid, 1,1-dimethylethyl ester",CCCCCC(=O)OC(C)(C)C
+"Hydrazine, (2-methylpropyl)-",CC(C)CNN
+"Hydrazine, 1,1-diethyl-",CCN(CC)N
+"Hydrazine, 1,1-diethyl-2-(1-methylethyl)-",CCN(CC)NC(C)C
+Malonyl dichloride,C(C(=O)Cl)C(=O)Cl
+"Methanamine, N,N-difluoro-",CN(F)F
+"Methanamine, N-butylidene-",CCCC=NC
+"Methane, fluorotrinitro-",C([N+](=O)[O-])([N+](=O)[O-])([N+](=O)[O-])F
+Methoxyacetaldehyde diethyl acetal,CCOC(COC)OCC
+"Methyl 2,4-dimethyltridecanoate",CCCCCCCCCC(C)CC(C)C(=O)OC
+"Methyl 2,8-dimethyltridecanoate",CCCCCC(C)CCCCCC(C)C(=O)OC
+Methyl 2-acetamidoacrylate,CC(=O)NC(=C)C(=O)OC
+Methyl 2-butynoate,CC#CC(=O)OC
+"Methyl 7,9-tridecadienyl ether",CCC/C=C/C=C/CCCCCCOC
+Methyl-4-deoxy-2-O-methyl.beta.l-threo-hex-4-enopyranosid uronate,COC1C(C=C(OC1OC)C(=O)O)O
+"Methylamine, N-cyclopentylidene-",CN=C1CCCC1
+"N',N'-Dimethyl-N-[2,2,3,3-tetracyano-4-(2-furyl)cyclopentyl]acetohydrazide",CC(=O)N(C1CC(C(C1(C#N)C#N)(C#N)C#N)C2=CC=CO2)N(C)C
+N-(4-Methylphenyl)-4-methylbenzenesulfenamide,CC1=CC=C(C=C1)NSC2=CC=C(C=C2)C
+"N-(9-Ethyl-9H-carbazol-3-yl)-2,2,3,3,3-pentafluoropropanamide",CCN1C2=C(C=C(C=C2)NC(=O)C(C(F)(F)F)(F)F)C3=CC=CC=C31
+"Nonane, 2-methyl-5-propyl-",CCCCC(CCC)CCC(C)C
+"Nonane, 3-methyl-5-propyl-",CCCCC(CCC)CC(C)CC
+"Nonane, 5-methyl-5-propyl-",CCCCC(C)(CCC)CCCC
+"Octane, 2,3,6,7-tetramethyl-",CC(C)C(C)CCC(C)C(C)C
+"Octane, 5-ethyl-2-methyl-",CCCC(CC)CCC(C)C
+"Octanoic acid, 2,6-dimethyl-, methyl ester",CCC(C)CCCC(C)C(=O)OC
+"Oxazolidine, 2,2,5-trimethyl-3-propyl-",CCCN1CC(OC1(C)C)C
+"Oxetane, 3,3-dimethyl-",CC1(COC1)C
+"Oxetane, 3-(1-methylethyl)-",CC(C)C1COC1
+"Oxirane, (bromomethyl)-",C1C(O1)CBr
+"Oxirane, (ethoxymethyl)-",CCOCC1CO1
+"Oxirane, 2-(1,1-dimethylethyl)-3-methyl-",CC1C(O1)C(C)(C)C
+"Oxirane, 2-methyl-3-(1-methylethyl)-",CC1C(O1)C(C)C
+"Pentadecanoic acid, 2,6,10,14-tetramethyl-, methyl ester",CC(C)CCCC(C)CCCC(C)CCCC(C)C(=O)OC
+"Pentane, 2,4-dimethyl-2-nitro-",CC(C)CC(C)(C)[N+](=O)[O-]
+"Pentanedioic acid, 2-methyl-, dimethyl ester",CC(CCC(=O)OC)C(=O)OC
+"Pentanedioic acid, 3-methyl-, dimethyl ester",CC(CC(=O)OC)CC(=O)OC
+"Pentanoic acid, 2-methylbutyl ester",CCCCC(=O)OCC(C)CC
+"Pivalic acid, 2-methylpropyl ester",CC(C)COC(=O)C(C)(C)C
+"Pivaloylacetone, enol form",CC(=O)/C=C(/C(C)(C)C)\O
+"Plumbane, dimethylbis(trifluoromethyl)-",C[Pb](C)(C(F)(F)F)C(F)(F)F
+Prop-2-yn-1-yl 2-methylbutanoate,CCC(C)C(=O)OCC#C
+"Propanal, 2-propenylhydrazone",CCC=NNCC=C
+"Propane, 1-chloro-2,2-dimethyl-",CC(C)(C)CCl
+"Propanoic acid, 2,2-dimethyl-, propyl ester",CCCOC(=O)C(C)(C)C
+"Propanoic acid, 2-hydroxy-2-methyl-",CC(C)(C(=O)O)O
+"Propanoic acid, 2-methyl-, 1-methylethyl ester",CC(C)C(=O)OC(C)C
+"Propanoic acid, 2-methyl-, propyl ester",CCCOC(=O)C(C)C
+"Propanoic acid, anhydride",CCC(=O)OC(=O)CC
+Propiolactone,C1COC1=O
+"Pyridin-2,6-diol, diacetate",CC(=O)OC1=NC(=CC=C1)OC(=O)C
+"Pyrimidine, 2-methyl-",CC1=NC=CC=N1
+"Pyrimidine, 4,6-dimethyl-",CC1=CC(=NC=N1)C
+"Tartaric acid, methyl ester",COC(=O)C(C(C(=O)OC)O)O
+"Tetradecane, 4-ethyl-",CCCCCCCCCCC(CC)CCC
+Tetramethylhydrazine,CN(C)N(C)C
+"Thiazole, 2-methyl-4-(1-methylethyl)-",CC1=NC(=CS1)C(C)C
+"Thietane, 1-oxide",C1CS(=O)C1
+"Thietane, 3-methyl-",CC1CSC1
+"Thiophene, 2,5-dibutyl-",CCCCC1=CC=C(S1)CCCC
+Triallylhydrazine,C=CCNN(CC=C)CC=C
+"Tridecane, 2,5-dimethyl-",CCCCCCCCC(C)CCC(C)C
+Triisobutylaluminum,CC(C)C[Al](CC(C)C)CC(C)C
+"Undecane, 3,8-dimethyl-",CCCC(C)CCCCC(C)CC
+"Undecane, 4,7-dimethyl-",CCCCC(C)CCC(C)CCC
+"Undecanoic acid, 2-methyl-, methyl ester",CCCCCCCCCC(C)C(=O)OC
+"Z-1,6-Tridecadiene",CCCCCC/C=C\CCCC=C
+Z-9-Pentadecenol,CCCCC/C=C\CCCCCCCCO
+"l-Proline, N-propoxycarbonyl-, decyl ester",CCCCCCCCCCOC(=O)C1CCCN1C(=O)OCCC
+m-Aminophenylacetylene,C#CC1=CC(=CC=C1)N
+n-Butyl nitrite,CCCCON=O
+t-Butyl isobutyl ketone,CC(C)CC(=O)C(C)(C)C
+"trans,trans-3,5-Heptadien-2-one",C/C=C/C=C/C(=O)C
