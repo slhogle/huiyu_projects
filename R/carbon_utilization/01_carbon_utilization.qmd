@@ -17,7 +17,7 @@ library(here)
 source(here::here("R", "carbon_utilization", "01_carbon_utilization.R"))
 ```
 
-R script with all required code is available at <https://github.com/slhogle/huiyu_projects/R/carbon_utilization/01_carbon_utlization.R>
+R script with all required code is available at <https://github.com/slhogle/huiyu_projects/blob/main/R/carbon_utilization/01_carbon_utilization.R>
 
 # Plots
 

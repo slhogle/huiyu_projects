@@ -17,4 +17,4 @@ library(here)
 source(here::here("R", "01_data_formatting.R"))
 ```
 
-R script with all required code is available at <https://github.com/slhogle/huiyu_projects/R/02_ne_trait_exploration.R>
+R script with all required code is available at <https://github.com/slhogle/huiyu_projects/blob/main/R/01_data_formatting.R>
