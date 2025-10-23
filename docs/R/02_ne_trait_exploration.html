@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Shane L Hogle">
+<meta name="author" content="Shane Hogle">
 <meta name="dcterms.date" content="2025-10-23">
 
-<title>Huiyu’s projects</title>
+<title>Nematode trait data exploration – Huiyu’s projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,22 +59,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1f23bf93a17969024013c136d185e5ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1f23bf93a17969024013c136d185e5ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,9 +102,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -117,9 +146,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Huiyu's projects
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../R/02_ne_trait_exploration.html">Step 2: Nematode traits</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -134,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Huiyu’s projects</a> 
+      <a href="../">Huiyu’s projects</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -146,19 +173,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./R/01_data_formatting.html" class="sidebar-item-text sidebar-link">
+  <a href="../R/01_data_formatting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 1: Data wrangling</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./R/02_ne_trait_exploration.html" class="sidebar-item-text sidebar-link">
+  <a href="../R/02_ne_trait_exploration.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 2: Nematode traits</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./R/carbon_utilization/01_carbon_utilization.html" class="sidebar-item-text sidebar-link">
+  <a href="../R/carbon_utilization/01_carbon_utilization.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 3: Bacterial carbon use traits</span></a>
   </div>
 </li>
@@ -172,11 +199,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure"><span class="header-section-number">2</span> Project Structure:</a></li>
-  <li><a href="#availability" id="toc-availability" class="nav-link" data-scroll-target="#availability"><span class="header-section-number">3</span> Availability</a></li>
-  <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies"><span class="header-section-number">4</span> Dependencies</a></li>
-  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility"><span class="header-section-number">5</span> Reproducibility</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link active" data-scroll-target="#code"><span class="header-section-number">1</span> Code</a></li>
+  <li><a href="#plots" id="toc-plots" class="nav-link" data-scroll-target="#plots"><span class="header-section-number">2</span> Plots</a></li>
   </ul>
 </nav>
     </div>
@@ -185,29 +209,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Huiyu’s projects</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Nematode trait data exploration</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Shane L Hogle <a href="https://orcid.org/0000-0003-2595-3863" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.utu.fi/en">
-            University of Turku
-            </a>
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Shane Hogle </p>
+          </div>
+  </div>
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
@@ -218,64 +233,155 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Try and get some general insights into the distribution of different nematode traits
+  </div>
+</div>
 
 
 </header>
 
 
-<section id="introduction" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
-<p>This project holds some code snippets for analyzing Huiyu’s carbon preference and VOC production and data. It exists to quickly share information, ideas, and code with Huiyu as she analyzes the data and write the manuscripts.</p>
-</section>
-<section id="project-structure" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="project-structure"><span class="header-section-number">2</span> Project Structure:</h2>
-<p>The <code>_data_raw</code> directory includes raw data files obtained from instruments and is never modified directly</p>
-<p>The <code>data</code> directory is where processed data projects should go. Usually, in an analysis workflow you will start with raw data, clean/organize it, perhaps transform it in some way, then save that product in <code>data</code> for later branches of the workflow.</p>
-<p>The <code>R</code> directory store analysis code/scripts for the project.</p>
-</section>
-<section id="availability" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="availability"><span class="header-section-number">3</span> Availability</h2>
-<p>Data and code in this GitHub repository (<a href="https://github.com/slhogle/huiyu_projects" class="uri">https://github.com/slhogle/huiyu_projects</a>) are provided under <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL3</a>. The rendered project site is available at <a href="https://slhogle.github.io/huiyu_projects/" class="uri">https://slhogle.github.io/huiyu_projects/</a>, which has been produced using <a href="https://quarto.org/">Quarto notebooks</a>. The content on the rendered site is released under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0.</a> This repository hosts all code and data for this project, including the code necessary to fully recreate the rendered webpage.</p>
-<p>An archived release of the code is available from Zenodo: <a href="https://zenodo.org/records/EVENTUAL_ZENODO_RECORD" class="uri">https://zenodo.org/records/EVENTUAL_ZENODO_RECORD</a></p>
-</section>
-<section id="dependencies" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="dependencies"><span class="header-section-number">4</span> Dependencies</h2>
-<p>Note: to use the full functionality of the package <a href="https://www.bioconductor.org/packages/release/bioc/html/ChemmineR.html"><code>ChemmineR</code></a> I first needed to install a package called <a href="https://www.bioconductor.org/packages/release/bioc/html/ChemmineOB.html"><code>ChemmineOB</code></a> which in basically an R interface to the cheminformatics API <a href="https://openbabel.org/">OpenBabel</a>. OpenBabel in the Ubuntu distros did not work so I installed OepnBabel from the <a href="https://github.com/openbabel/openbabel/releases">development version of GitHub (v3.1.1)</a> following the instructions here:</p>
-<pre><code>wget https://github.com/openbabel/openbabel/archive/refs/tags/openbabel-3-1-1.tar.gz
-tar xvf openbabel-3-1-1.tar.gz
-cd openbabel
-mkdir build
-cd build
-cmake ..
-make -j2
-sudo make install</code></pre>
-<p>After installing, all functions from <code>ChemineOB</code> worked</p>
-</section>
-<section id="reproducibility" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="reproducibility"><span class="header-section-number">5</span> Reproducibility</h2>
-<p>The project uses <a href="https://rstudio.github.io/renv/index.html"><code>renv</code></a> to create a reproducible environment to execute the code in this project. <a href="https://rstudio.github.io/renv/articles/renv.html#collaboration">See here</a> for a brief overview on collaboration and reproduction of the entire project. To get up and running from an established repository, you could do:</p>
-<div class="cell">
+<section id="code" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Code</h1>
+<div class="cell" data-warnings="false">
 <details open="" class="code-fold">
 <summary>Show/hide code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"R"</span>, <span class="st">"02_ne_trait_exploration.R"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>To initiate <code>renv</code> for a new project:</p>
+<p>R script with all required code is available at <a href="https://github.com/slhogle/huiyu_projects/R/02_ne_trait_exploration.R" class="uri">https://github.com/slhogle/huiyu_projects/R/02_ne_trait_exploration.R</a></p>
+</section>
+<section id="plots" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Plots</h1>
+<div id="fig-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell">
-<details open="" class="code-fold">
-<summary>Show/hide code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># set prefered CRAN location. This makes it so you don't need to compile everything</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># from scratch on Linux distros</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://packagemanager.posit.co/cran/__linux__/jammy/latest"</span>))</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># initialize</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a>renv<span class="sc">::</span><span class="fu">init</span>(<span class="at">bioconductor =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co"># install some new packages</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a>renv<span class="sc">::</span><span class="fu">install</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co"># record those packages in the lockfile</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a>renv<span class="sc">::</span><span class="fu">snapshot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: X axis: Distribution of nematode volumes (<span class="math inline">\(\mathrm{μm^3}\)</span>) after consuming each of the 122 SynCom bacterial species. The x-axis is plotted on a log10 scale. Y axis: the number of observation at each of 20 different volume bins.
+</figcaption>
+</figure>
+</div>
+<div id="fig-02" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: X axis: Distribution of nematode dry weights (μg) after consuming each of the 122 SynCom bacterial species. Y axis: the number of observation at each of 20 different weight bins.
+</figcaption>
+</figure>
+</div>
+<div id="fig-03" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: X axis: Distribution of nematode dry weights (μg) after consuming each of the 122 SynCom bacterial species. Y axis: the number of observation at each of 20 different weight bins.
+</figcaption>
+</figure>
+</div>
+<div id="fig-04" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: X axis: Distribution of nematode feeding preferences of the 122 SynCom species relative to the control bacterial species OP50: <span class="math inline">\(\log_2 \frac{N_{SpX}}{N_{OP50}}\)</span> where <span class="math inline">\(N\)</span> is the count of worms on each species in the foraging assay. Y axis: the number of observations at each of 20 different preference bins.
+</figcaption>
+</figure>
+</div>
+<div id="fig-05" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: X axis: Distribution of nematode clearance of the 122 SynCom species relative to the control bacterial species OP50 in liquid, where clearance is measured in OD600 units. Y axis: the number of observations at each of 20 different preference bins.
+</figcaption>
+</figure>
+</div>
+<div id="fig-06" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: X axis: Distribution of nematode adult sizes (log2 scale) when feeding on the 122 SynCom species relative to nematode sizes when feeding on the control bacterial species OP50: <span class="math inline">\(\log_2 \frac{V_{SpX}}{V_{OP50}}\)</span> where <span class="math inline">\(V\)</span> is the volume of adult worms (<span class="math inline">\(\mathrm{μm^3}\)</span>) when feeding on each bacterial species in the foraging assay. Y axis: the number of observations at each of 20 different preference bins.
+</figcaption>
+</figure>
+</div>
+<div id="fig-07" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="02_ne_trait_exploration_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: X axis: Nematode feeding preferences (log2 scale)of the 122 SynCom species relative to the control bacterial species OP50: <span class="math inline">\(\log_2 \frac{N_{SpX}}{N_{OP50}}\)</span>. Y axis: nematode adult sizes (log2 scale) when feeding on the 122 SynCom species relative to nematode sizes when feeding on the control bacterial species OP50: <span class="math inline">\(\log_2 \frac{V_{SpX}}{V_{OP50}}\)</span>. Line-ranges of individual points represent 95% confidence intervals estimated for the n=8 assay replicates.
+</figcaption>
+</figure>
 </div>
 
 
@@ -283,7 +389,7 @@ sudo make install</code></pre>
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -752,101 +858,106 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="an">title:</span><span class="co"> "Huiyu's projects"</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="an">date:</span><span class="co"> today</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="an">author:</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">  - name: Shane L Hogle</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">    orcid: 0000-0003-2595-3863</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co">    affiliation:</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="co">      - name: University of Turku</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co">        city: Turku</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="co">        state: Finland</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="co">        url: https://www.utu.fi/en</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co">#abstract: &gt;</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="co">#  The abstract text can go here</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="co">#  and also here ...</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="co"># keywords:</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="co">#   - Microbiology</span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="co">#   - Ecology</span></span>
-<span id="cb4-18"><a href="#cb4-18"></a><span class="co">#   - Evolution</span></span>
-<span id="cb4-19"><a href="#cb4-19"></a><span class="an">license:</span><span class="co"> "CC BY"</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a><span class="an">copyright:</span></span>
-<span id="cb4-21"><a href="#cb4-21"></a><span class="co">  holder: Shane L Hogle</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a><span class="co">  year: 2025</span></span>
-<span id="cb4-23"><a href="#cb4-23"></a><span class="co"># citation:</span></span>
-<span id="cb4-24"><a href="#cb4-24"></a><span class="co">#   container-title: BioRxiv</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a><span class="co">#   volume:</span></span>
-<span id="cb4-26"><a href="#cb4-26"></a><span class="co">#   issue:</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a><span class="co">#   doi:</span></span>
-<span id="cb4-28"><a href="#cb4-28"></a><span class="co">#funding: "The author received no specific funding for this work."</span></span>
-<span id="cb4-29"><a href="#cb4-29"></a><span class="co">#bibliography: references.bib</span></span>
-<span id="cb4-30"><a href="#cb4-30"></a><span class="co">---</span></span>
-<span id="cb4-31"><a href="#cb4-31"></a></span>
-<span id="cb4-32"><a href="#cb4-32"></a><span class="fu">## Introduction</span></span>
-<span id="cb4-33"><a href="#cb4-33"></a></span>
-<span id="cb4-34"><a href="#cb4-34"></a>This project holds some code snippets for analyzing Huiyu's carbon preference and VOC production and data. It exists to quickly share information, ideas, and code with Huiyu as she analyzes the data and write the manuscripts.</span>
-<span id="cb4-35"><a href="#cb4-35"></a></span>
-<span id="cb4-36"><a href="#cb4-36"></a><span class="fu">## Project Structure:</span></span>
-<span id="cb4-37"><a href="#cb4-37"></a>The <span class="in">`_data_raw`</span> directory includes raw data files obtained from instruments and is never modified directly</span>
-<span id="cb4-38"><a href="#cb4-38"></a></span>
-<span id="cb4-39"><a href="#cb4-39"></a>The <span class="in">`data`</span> directory is where processed data projects should go. Usually, in an analysis workflow you will start with raw data,</span>
-<span id="cb4-40"><a href="#cb4-40"></a>clean/organize it, perhaps transform it in some way, then save that product in <span class="in">`data`</span> for later branches of the workflow.</span>
-<span id="cb4-41"><a href="#cb4-41"></a></span>
-<span id="cb4-42"><a href="#cb4-42"></a>The <span class="in">`R`</span> directory store analysis code/scripts for the project.</span>
-<span id="cb4-43"><a href="#cb4-43"></a></span>
-<span id="cb4-44"><a href="#cb4-44"></a><span class="fu">## Availability</span></span>
-<span id="cb4-45"><a href="#cb4-45"></a></span>
-<span id="cb4-46"><a href="#cb4-46"></a>Data and code in this GitHub repository (<span class="ot">&lt;https://github.com/slhogle/huiyu_projects&gt;</span>) are provided under <span class="co">[</span><span class="ot">GNU AGPL3</span><span class="co">](https://www.gnu.org/licenses/agpl-3.0.html)</span>.</span>
-<span id="cb4-47"><a href="#cb4-47"></a>The rendered project site is available at <span class="ot">&lt;https://slhogle.github.io/huiyu_projects/&gt;</span>, which has been produced using <span class="co">[</span><span class="ot">Quarto notebooks</span><span class="co">](https://quarto.org/)</span>.</span>
-<span id="cb4-48"><a href="#cb4-48"></a>The content on the rendered site is released under the <span class="co">[</span><span class="ot">CC BY 4.0.</span><span class="co">](https://creativecommons.org/licenses/by/4.0/)</span></span>
-<span id="cb4-49"><a href="#cb4-49"></a>This repository hosts all code and data for this project, including the code necessary to fully recreate the rendered webpage.</span>
-<span id="cb4-50"><a href="#cb4-50"></a></span>
-<span id="cb4-51"><a href="#cb4-51"></a>An archived release of the code is available from Zenodo: <span class="ot">&lt;https://zenodo.org/records/EVENTUAL_ZENODO_RECORD&gt;</span></span>
-<span id="cb4-52"><a href="#cb4-52"></a></span>
-<span id="cb4-53"><a href="#cb4-53"></a><span class="fu">## Dependencies</span></span>
-<span id="cb4-54"><a href="#cb4-54"></a></span>
-<span id="cb4-55"><a href="#cb4-55"></a>Note: to use the full functionality of the package <span class="co">[</span><span class="ot">`ChemmineR`</span><span class="co">](https://www.bioconductor.org/packages/release/bioc/html/ChemmineR.html)</span> I first needed to install a package called <span class="co">[</span><span class="ot">`ChemmineOB`</span><span class="co">](https://www.bioconductor.org/packages/release/bioc/html/ChemmineOB.html)</span> which in basically an R interface to the cheminformatics API <span class="co">[</span><span class="ot">OpenBabel</span><span class="co">](https://openbabel.org/)</span>. OpenBabel in the Ubuntu distros did not work so I installed OepnBabel from the <span class="co">[</span><span class="ot">development version of GitHub (v3.1.1)</span><span class="co">](https://github.com/openbabel/openbabel/releases)</span> following the instructions here:</span>
-<span id="cb4-56"><a href="#cb4-56"></a></span>
-<span id="cb4-57"><a href="#cb4-57"></a><span class="in">```</span></span>
-<span id="cb4-58"><a href="#cb4-58"></a><span class="in">wget https://github.com/openbabel/openbabel/archive/refs/tags/openbabel-3-1-1.tar.gz</span></span>
-<span id="cb4-59"><a href="#cb4-59"></a><span class="in">tar xvf openbabel-3-1-1.tar.gz</span></span>
-<span id="cb4-60"><a href="#cb4-60"></a><span class="in">cd openbabel</span></span>
-<span id="cb4-61"><a href="#cb4-61"></a><span class="in">mkdir build</span></span>
-<span id="cb4-62"><a href="#cb4-62"></a><span class="in">cd build</span></span>
-<span id="cb4-63"><a href="#cb4-63"></a><span class="in">cmake ..</span></span>
-<span id="cb4-64"><a href="#cb4-64"></a><span class="in">make -j2</span></span>
-<span id="cb4-65"><a href="#cb4-65"></a><span class="in">sudo make install</span></span>
-<span id="cb4-66"><a href="#cb4-66"></a><span class="in">```</span></span>
-<span id="cb4-67"><a href="#cb4-67"></a></span>
-<span id="cb4-68"><a href="#cb4-68"></a>After installing, all functions from <span class="in">`ChemineOB`</span> worked</span>
-<span id="cb4-69"><a href="#cb4-69"></a></span>
-<span id="cb4-70"><a href="#cb4-70"></a><span class="fu">## Reproducibility</span></span>
-<span id="cb4-71"><a href="#cb4-71"></a></span>
-<span id="cb4-72"><a href="#cb4-72"></a>The project uses <span class="co">[</span><span class="ot">`renv`</span><span class="co">](https://rstudio.github.io/renv/index.html)</span> to create a reproducible environment to execute the code in this project. <span class="co">[</span><span class="ot">See here</span><span class="co">](https://rstudio.github.io/renv/articles/renv.html#collaboration)</span> for a brief overview on collaboration and reproduction of the entire project.</span>
-<span id="cb4-73"><a href="#cb4-73"></a>To get up and running from an established repository, you could do:</span>
-<span id="cb4-74"><a href="#cb4-74"></a></span>
-<span id="cb4-77"><a href="#cb4-77"></a><span class="in">```{r}</span></span>
-<span id="cb4-78"><a href="#cb4-78"></a><span class="co">#| eval: false</span></span>
-<span id="cb4-79"><a href="#cb4-79"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span>
-<span id="cb4-80"><a href="#cb4-80"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span>
-<span id="cb4-81"><a href="#cb4-81"></a><span class="in">```</span></span>
-<span id="cb4-82"><a href="#cb4-82"></a></span>
-<span id="cb4-83"><a href="#cb4-83"></a>To initiate <span class="in">`renv`</span> for a new project:</span>
-<span id="cb4-84"><a href="#cb4-84"></a></span>
-<span id="cb4-87"><a href="#cb4-87"></a><span class="in">```{r}</span></span>
-<span id="cb4-88"><a href="#cb4-88"></a><span class="co">#| eval: false</span></span>
-<span id="cb4-89"><a href="#cb4-89"></a><span class="co"># set prefered CRAN location. This makes it so you don't need to compile everything</span></span>
-<span id="cb4-90"><a href="#cb4-90"></a><span class="co"># from scratch on Linux distros</span></span>
-<span id="cb4-91"><a href="#cb4-91"></a><span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://packagemanager.posit.co/cran/__linux__/jammy/latest"</span>))</span>
-<span id="cb4-92"><a href="#cb4-92"></a><span class="fu">install.packages</span>(<span class="st">"renv"</span>)</span>
-<span id="cb4-93"><a href="#cb4-93"></a><span class="co"># initialize</span></span>
-<span id="cb4-94"><a href="#cb4-94"></a>renv<span class="sc">::</span><span class="fu">init</span>(<span class="at">bioconductor =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb4-95"><a href="#cb4-95"></a><span class="co"># install some new packages</span></span>
-<span id="cb4-96"><a href="#cb4-96"></a>renv<span class="sc">::</span><span class="fu">install</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb4-97"><a href="#cb4-97"></a><span class="co"># record those packages in the lockfile</span></span>
-<span id="cb4-98"><a href="#cb4-98"></a>renv<span class="sc">::</span><span class="fu">snapshot</span>()</span>
-<span id="cb4-99"><a href="#cb4-99"></a><span class="in">```</span></span>
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="an">title:</span><span class="co"> "Nematode trait data exploration"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="an">author:</span><span class="co"> "Shane Hogle"</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="an">date:</span><span class="co"> today</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="an">link-citations:</span><span class="co"> true</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="an">abstract:</span><span class="co"> "Try and get some general insights into the distribution of different nematode traits"</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co">---</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="fu"># Code</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="in">```{r}</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co">#| eval: true</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="co">#| echo: true</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="co">#| output: false</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="co">#| warnings: false</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a><span class="fu">library</span>(here)</span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"R"</span>, <span class="st">"02_ne_trait_exploration.R"</span>))</span>
+<span id="cb2-20"><a href="#cb2-20"></a><span class="in">```</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a></span>
+<span id="cb2-22"><a href="#cb2-22"></a>R script with all required code is available at <span class="ot">&lt;https://github.com/slhogle/huiyu_projects/R/02_ne_trait_exploration.R&gt;</span></span>
+<span id="cb2-23"><a href="#cb2-23"></a></span>
+<span id="cb2-24"><a href="#cb2-24"></a><span class="fu"># Plots</span></span>
+<span id="cb2-25"><a href="#cb2-25"></a></span>
+<span id="cb2-26"><a href="#cb2-26"></a>::: {#fig-01}</span>
+<span id="cb2-29"><a href="#cb2-29"></a><span class="in">```{r}</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-31"><a href="#cb2-31"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-32"><a href="#cb2-32"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-33"><a href="#cb2-33"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-34"><a href="#cb2-34"></a>p01</span>
+<span id="cb2-35"><a href="#cb2-35"></a><span class="in">```</span></span>
+<span id="cb2-36"><a href="#cb2-36"></a>X axis: Distribution of nematode volumes ($\mathrm{μm^3}$) after consuming each of the 122 SynCom bacterial species. The x-axis is plotted on a log10 scale. Y axis: the number of observation at each of 20 different volume bins.</span>
+<span id="cb2-37"><a href="#cb2-37"></a>:::</span>
+<span id="cb2-38"><a href="#cb2-38"></a></span>
+<span id="cb2-39"><a href="#cb2-39"></a></span>
+<span id="cb2-40"><a href="#cb2-40"></a>::: {#fig-02}</span>
+<span id="cb2-43"><a href="#cb2-43"></a><span class="in">```{r}</span></span>
+<span id="cb2-44"><a href="#cb2-44"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-45"><a href="#cb2-45"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-46"><a href="#cb2-46"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-47"><a href="#cb2-47"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-48"><a href="#cb2-48"></a>p02</span>
+<span id="cb2-49"><a href="#cb2-49"></a><span class="in">```</span></span>
+<span id="cb2-50"><a href="#cb2-50"></a>X axis: Distribution of nematode dry weights (μg) after consuming each of the 122 SynCom bacterial species. Y axis: the number of observation at each of 20 different weight bins.</span>
+<span id="cb2-51"><a href="#cb2-51"></a>:::</span>
+<span id="cb2-52"><a href="#cb2-52"></a></span>
+<span id="cb2-53"><a href="#cb2-53"></a>::: {#fig-03}</span>
+<span id="cb2-56"><a href="#cb2-56"></a><span class="in">```{r}</span></span>
+<span id="cb2-57"><a href="#cb2-57"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-58"><a href="#cb2-58"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-59"><a href="#cb2-59"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-60"><a href="#cb2-60"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-61"><a href="#cb2-61"></a>p03</span>
+<span id="cb2-62"><a href="#cb2-62"></a><span class="in">```</span></span>
+<span id="cb2-63"><a href="#cb2-63"></a>X axis: Distribution of nematode dry weights (μg) after consuming each of the 122 SynCom bacterial species. Y axis: the number of observation at each of 20 different weight bins.</span>
+<span id="cb2-64"><a href="#cb2-64"></a>:::</span>
+<span id="cb2-65"><a href="#cb2-65"></a></span>
+<span id="cb2-66"><a href="#cb2-66"></a>::: {#fig-04}</span>
+<span id="cb2-69"><a href="#cb2-69"></a><span class="in">```{r}</span></span>
+<span id="cb2-70"><a href="#cb2-70"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-71"><a href="#cb2-71"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-72"><a href="#cb2-72"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-73"><a href="#cb2-73"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-74"><a href="#cb2-74"></a>p04</span>
+<span id="cb2-75"><a href="#cb2-75"></a><span class="in">```</span></span>
+<span id="cb2-76"><a href="#cb2-76"></a>X axis: Distribution of nematode feeding preferences of the 122 SynCom species relative to the control bacterial species OP50: $\log_2 \frac{N_{SpX}}{N_{OP50}}$ where $N$ is the count of worms on each species in the foraging assay. Y axis: the number of observations at each of 20 different preference bins.</span>
+<span id="cb2-77"><a href="#cb2-77"></a>:::</span>
+<span id="cb2-78"><a href="#cb2-78"></a></span>
+<span id="cb2-79"><a href="#cb2-79"></a>::: {#fig-05}</span>
+<span id="cb2-82"><a href="#cb2-82"></a><span class="in">```{r}</span></span>
+<span id="cb2-83"><a href="#cb2-83"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-84"><a href="#cb2-84"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-85"><a href="#cb2-85"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-86"><a href="#cb2-86"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-87"><a href="#cb2-87"></a>p05</span>
+<span id="cb2-88"><a href="#cb2-88"></a><span class="in">```</span></span>
+<span id="cb2-89"><a href="#cb2-89"></a>X axis: Distribution of nematode clearance of the 122 SynCom species relative to the control bacterial species OP50 in liquid, where clearance is measured in OD600 units. Y axis: the number of observations at each of 20 different preference bins.</span>
+<span id="cb2-90"><a href="#cb2-90"></a>:::</span>
+<span id="cb2-91"><a href="#cb2-91"></a></span>
+<span id="cb2-92"><a href="#cb2-92"></a>::: {#fig-06}</span>
+<span id="cb2-95"><a href="#cb2-95"></a><span class="in">```{r}</span></span>
+<span id="cb2-96"><a href="#cb2-96"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-97"><a href="#cb2-97"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-98"><a href="#cb2-98"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-99"><a href="#cb2-99"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-100"><a href="#cb2-100"></a>p06</span>
+<span id="cb2-101"><a href="#cb2-101"></a><span class="in">```</span></span>
+<span id="cb2-102"><a href="#cb2-102"></a>X axis: Distribution of nematode adult sizes (log2 scale) when feeding on the 122 SynCom species relative to nematode sizes when feeding on the control bacterial species OP50: $\log_2 \frac{V_{SpX}}{V_{OP50}}$ where $V$ is the volume of adult worms ($\mathrm{μm^3}$) when feeding on each bacterial species in the foraging assay. Y axis: the number of observations at each of 20 different preference bins.</span>
+<span id="cb2-103"><a href="#cb2-103"></a>:::</span>
+<span id="cb2-104"><a href="#cb2-104"></a></span>
+<span id="cb2-105"><a href="#cb2-105"></a>::: {#fig-07}</span>
+<span id="cb2-108"><a href="#cb2-108"></a><span class="in">```{r}</span></span>
+<span id="cb2-109"><a href="#cb2-109"></a><span class="co">#| fig.width: 9</span></span>
+<span id="cb2-110"><a href="#cb2-110"></a><span class="co">#| fig.height: 4</span></span>
+<span id="cb2-111"><a href="#cb2-111"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-112"><a href="#cb2-112"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-113"><a href="#cb2-113"></a>p07</span>
+<span id="cb2-114"><a href="#cb2-114"></a><span class="in">```</span></span>
+<span id="cb2-115"><a href="#cb2-115"></a>X axis: Nematode feeding preferences (log2 scale)of the 122 SynCom species relative to the control bacterial species OP50: $\log_2 \frac{N_{SpX}}{N_{OP50}}$. Y axis: nematode adult sizes (log2 scale) when feeding on the 122 SynCom species relative to nematode sizes when feeding on the control bacterial species OP50: $\log_2 \frac{V_{SpX}}{V_{OP50}}$. Line-ranges of individual points represent 95% confidence intervals estimated for the n=8 assay replicates.</span>
+<span id="cb2-116"><a href="#cb2-116"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

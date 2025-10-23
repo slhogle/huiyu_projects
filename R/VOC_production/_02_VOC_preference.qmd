@@ -1,0 +1,233 @@
+---
+title: "Identifying VOCs correlated with Nematode preference"
+author: "Shane Hogle"
+date: today
+link-citations: true
+abstract: "Try and get deeper insights into VOC production across SynCom species"
+---
+
+```{r}
+#| output: false
+#| warning: false
+#| error: false
+# Libraries
+library(here)
+library(tidyverse)
+library(vegan)
+library(ape)
+
+# read data
+vocs <- readr::read_tsv(here::here("data", "vocs.tsv"))
+vocs_smiles <- readr::read_tsv(here::here("data", "vocs_SMILES_id.tsv"), col_names=FALSE)
+nematode_grazing_traits <- readr::read_tsv(here::here("data", "nematode_grazing_traits.tsv"))
+bacteria_traits <- readr::read_tsv(here::here("data", "bacteria_traits.tsv"))
+```
+
+```{r}
+# binning preferences and carbon utilization
+nematode_grazing_traits %>%
+  mutate(pref_bin = cut(ne.preference,
+         breaks=c(-Inf, 0.45, 0.55, Inf),
+         labels=c("low","middle","high"))) %>%
+          ggplot() +
+          geom_histogram(aes(x = pref_bin), stat="count") +
+          facet_grid(~nematode)
+```
+
+```{r}
+# how many unique VOCs are detected for each species
+vocs %>%
+  filter(VOC_counts > 0) %>%
+  summarize(n_VOCs = n(), .by = "spe.ID") %>%
+  arrange(desc(n_VOCs))
+```
+
+```{r}
+# distribution shows many species with < 5 VOCs
+# few species with many VOCs
+vocs %>%
+  filter(VOC_counts > 0) %>%
+  summarize(n_VOCs = n(), .by = "spe.ID") %>%
+  ggplot() +
+  geom_histogram(aes(x = n_VOCs), bins = 30)
+```
+
+```{r}
+# normalize the VOC_counts to a max of 1 for each VOC
+# so that we only just use information about which species produces
+# the most of each VOC, but not the absolute VOC concentrations. I don't really
+# know how to interpret the VOC_counts anyway
+vocs_rk <- vocs %>%
+  group_by(VOC_id) %>%
+  mutate(VOC_rank = VOC_counts/max(VOC_counts)) %>%
+  ungroup()
+```
+
+# Structure of dataset
+
+This data has lots of zeros...
+
+```{r}
+vocs_missing <- vocs_rk %>%
+  group_by(VOC_id) %>%
+  count(nonzero = VOC_rank > 0) %>%
+  ungroup() %>%
+  pivot_wider(names_from = nonzero, values_from = n) %>%
+  rename(n_species_detected = `TRUE`, n_species_missing = `FALSE`)
+
+# there are 192 different VOC clusters which are only detected in a single species
+vocs_missing %>%
+  count(VOC_detected_in_1_sp_only = n_species_detected == 1)
+```
+
+```{r}
+# on the other hand, there are 16 different VOC clusters that are detected in at least 10 different species (so in ~10% of the data set) and about 30 different VOCs that are produced by at least 5 species. For example, VOC_251 (2-methyl-pyrimidine) was produced by 50 different species
+vocs_missing %>%
+  arrange(desc(n_species_detected)) %>%
+  print(n=40)
+```
+
+# Correlation between specific VOCs and nematodes prey preference
+
+```{r}
+vocs_missing %>%
+  arrange(desc(n_species_detected)) %>%
+  # only look at VOCs produced by at least 5 species
+  filter(n_species_detected >=5) %>%
+  # exclude VOCs not produced by 5 sp
+  semi_join(vocs, ., by = join_by(VOC_id)) %>%
+  filter(VOC_counts > 0) %>%
+  # join to nematode feeding preference data
+  left_join(nematode_grazing_traits, by = join_by(spe.ID), relationship = "many-to-many") %>%
+    ggplot(aes(x = VOC_counts, y = ne.preference, color = nematode)) +
+    geom_point() +
+    #geom_smooth(method ="lm") +
+    facet_wrap( ~ VOC_id, scales = "free_x", ncol = 5) +
+    scale_x_log10()
+```
+
+
+```{r}
+cor_results <- vocs_missing %>%
+  arrange(desc(n_species_detected)) %>%
+  # only look at VOCs produced by at least 5 species
+  filter(n_species_detected >=5) %>%
+  # exclude VOCs not produced by 5 sp
+  semi_join(vocs, ., by = join_by(VOC_id)) %>%
+  filter(VOC_counts > 0) %>%
+  # join to nematode feeding preference data
+  left_join(nematode_grazing_traits, by = join_by(spe.ID), relationship = "many-to-many") %>%
+  nest(.by = c(VOC_id, nematode)) %>%
+  mutate(test = map(data, \(x) cor.test(log(x$VOC_counts, 10), x$ne.grazing, method = "pearson"))) %>%
+  mutate(res = map(test, broom::tidy)) %>%
+  unnest(res)
+
+```
+
+
+
+
+# Dimensionality reduction based on species VOC production
+
+```{r}
+# format to wide form for running ordination
+vocs_agg_wide <- vocs_missing %>%
+  filter(n_species_detected == 1) %>%
+  # remove VOCs only detected in 1 species
+  anti_join(vocs_agg, ., by = join_by(CLID_0.8)) %>%
+  #dplyr::select(-VOC_counts_sm) %>%
+  pivot_wider(id_cols = c(spe.ID), names_from = "CLID_0.8", values_from = "VOC_counts_sm") %>%
+  column_to_rownames(var = "spe.ID") %>%
+  data.frame()
+
+# calculate the frequency of zeros for each VOC column
+# high values mean species have many zeros
+fz <- colSums(vocs_agg_wide == 0)/nrow(vocs_agg_wide)
+
+vocs_agg_wide_red <- vocs_agg_wide[names(fz[fz < 0.85])] %>%
+  filter(rowSums(.) > 0)
+```
+
+```{r}
+# 57/64 of the VOC clusters have 80% or more zeros in the matrix. This high
+# number of zeros will be challenging to deal with... We can consider excluding
+# VOC cluster that have ~ 90% or more zeros or we can attempt to do some
+# ordination using the full dataset. However, classical euclidean based
+# approaches will have very poor performance due to the large number of zeros.
+# Much better to try a distance based approach
+enframe(colSums(vocs_agg_wide == 0)/nrow(vocs_agg_wide)) %>%
+  arrange(value)
+```
+
+```{r}
+# Only 17% of VOC clusters have fewer than 85% nonzero observations across 113
+# species
+length(fz[fz < 0.85])/length(fz)
+```
+
+## PcOA
+
+```{r}
+sp_tr <- decostand(vocs_agg_wide_red, "log", logbase=10)
+dst <- vegdist(sp_tr, "jaccard")
+# pcoa from vegan::wcmdscale
+pcoa_res <- wcmdscale(dst, eig = TRUE)
+sppscores(pcoa_res) <- sp_tr
+# pcoa from ape
+pcoa_res01 <- ape::pcoa(dst)
+```
+
+```{r}
+round(pcoa_res01$values[1,2], 2)*100
+```
+
+```{r}
+#| fig.width: 7
+#| fig.height: 7
+#| warning: false
+ordiplot(pcoa_res, type="n",
+         xlab=paste0("Dim 1 (", round(pcoa_res01$values[1,2], 2)*100, "% variance)"),
+         ylab=paste0("Dim 2 (", round(pcoa_res01$values[2,2], 2)*100, "% variance)")) %>%
+  points("sites", pch=16, col="red") %>%
+  text("species",  arrows = T, length=0.05, col="blue")
+```
+
+## NMDS
+
+```{r}
+set.seed(2367)
+NMDS <- metaMDS(sp_tr,
+                autotransform = FALSE,
+                distance = "jaccard",
+                trymax = 1000)
+```
+
+```{r}
+#| fig.width: 7
+#| fig.height: 7
+#| warning: false
+ordiplot(NMDS, type="n") %>%
+  points("sites", pch=16, col="red") %>%
+  text("species", arrows = T, length=0.05, col="blue")
+```
+
+# tSNE
+
+```{r}
+library(Rtsne)
+sp_tr_mat <- as.matrix(decostand(vocs_agg_wide, "log", logbase=10))
+
+mymat_tsne <- Rtsne::Rtsne(dst,
+                           is_distance = TRUE,
+                           perplexity = 10,
+                           dims = 2,
+                           pca_center = FALSE,
+                           normalize = FALSE)
+
+mydf_tsne <- data.frame(mymat_tsne$Y) %>%
+  cbind(spe.ID = rownames(sp_tr)) %>%
+  rename(x = X1, y = X2)
+
+ggplot(mydf_tsne) +
+  geom_point(aes(x = x, y = y))
+```

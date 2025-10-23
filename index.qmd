@@ -4,47 +4,47 @@ date: today
 author:
   - name: Shane L Hogle
     orcid: 0000-0003-2595-3863
-    affiliation: 
+    affiliation:
       - name: University of Turku
         city: Turku
         state: Finland
         url: https://www.utu.fi/en
-#abstract: > 
-#  The abstract text can go here 
+#abstract: >
+#  The abstract text can go here
 #  and also here ...
 # keywords:
 #   - Microbiology
 #   - Ecology
 #   - Evolution
 license: "CC BY"
-copyright: 
+copyright:
   holder: Shane L Hogle
   year: 2025
-# citation: 
+# citation:
 #   container-title: BioRxiv
-#   volume: 
-#   issue: 
-#   doi: 
+#   volume:
+#   issue:
+#   doi:
 #funding: "The author received no specific funding for this work."
 #bibliography: references.bib
 ---
 
 ## Introduction
 
-This project holds some code snippets for analyzing Huiyu's VOC production and carbon preference data. It exists to quickly share information, ideas, and code with Huiyu as she analyzes the data and write the manuscripts.
+This project holds some code snippets for analyzing Huiyu's carbon preference and VOC production and data. It exists to quickly share information, ideas, and code with Huiyu as she analyzes the data and write the manuscripts.
 
 ## Project Structure:
 The `_data_raw` directory includes raw data files obtained from instruments and is never modified directly
 
-The `data` directory is where processed data projects should go. Usually, in an analysis workflow you will start with raw data, 
-clean/organize it, perhaps transform it in some way, then save that product in `data` for later branches of the workflow. 
+The `data` directory is where processed data projects should go. Usually, in an analysis workflow you will start with raw data,
+clean/organize it, perhaps transform it in some way, then save that product in `data` for later branches of the workflow.
 
 The `R` directory store analysis code/scripts for the project.
 
 ## Availability
 
 Data and code in this GitHub repository (<https://github.com/slhogle/huiyu_projects>) are provided under [GNU AGPL3](https://www.gnu.org/licenses/agpl-3.0.html).
-The rendered project site is available at <https://slhogle.github.io/huiyu_projects/>, which has been produced using [Quarto notebooks](https://quarto.org/). 
+The rendered project site is available at <https://slhogle.github.io/huiyu_projects/>, which has been produced using [Quarto notebooks](https://quarto.org/).
 The content on the rendered site is released under the [CC BY 4.0.](https://creativecommons.org/licenses/by/4.0/)
 This repository hosts all code and data for this project, including the code necessary to fully recreate the rendered webpage.
 
@@ -52,7 +52,7 @@ An archived release of the code is available from Zenodo: <https://zenodo.org/re
 
 ## Dependencies
 
-Note: to use the full functionality of the package [`ChemmineR`](https://www.bioconductor.org/packages/release/bioc/html/ChemmineR.html) I first needed to install a package called [`ChemmineOB`](https://www.bioconductor.org/packages/release/bioc/html/ChemmineOB.html) which in basically an R interface to the cheminformatics API [OpenBabel](https://openbabel.org/). OpenBabel in the Ubuntu distros did not work so I installed OepnBabel from the [development version of GitHub (v3.1.1)](https://github.com/openbabel/openbabel/releases) following the instructions here: 
+Note: to use the full functionality of the package [`ChemmineR`](https://www.bioconductor.org/packages/release/bioc/html/ChemmineR.html) I first needed to install a package called [`ChemmineOB`](https://www.bioconductor.org/packages/release/bioc/html/ChemmineOB.html) which in basically an R interface to the cheminformatics API [OpenBabel](https://openbabel.org/). OpenBabel in the Ubuntu distros did not work so I installed OepnBabel from the [development version of GitHub (v3.1.1)](https://github.com/openbabel/openbabel/releases) following the instructions here:
 
 ```
 wget https://github.com/openbabel/openbabel/archive/refs/tags/openbabel-3-1-1.tar.gz
@@ -69,17 +69,19 @@ After installing, all functions from `ChemineOB` worked
 
 ## Reproducibility
 
-The project uses [`renv`](https://rstudio.github.io/renv/index.html) to create a reproducible environment to execute the code in this project. [See here](https://rstudio.github.io/renv/articles/renv.html#collaboration) for a brief overview on collaboration and reproduction of the entire project. 
+The project uses [`renv`](https://rstudio.github.io/renv/index.html) to create a reproducible environment to execute the code in this project. [See here](https://rstudio.github.io/renv/articles/renv.html#collaboration) for a brief overview on collaboration and reproduction of the entire project.
 To get up and running from an established repository, you could do:
 
-``` r
+```{r}
+#| eval: false
 install.packages("renv")
 renv::restore()
 ```
 
 To initiate `renv` for a new project:
 
-``` r
+```{r}
+#| eval: false
 # set prefered CRAN location. This makes it so you don't need to compile everything
 # from scratch on Linux distros
 options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))

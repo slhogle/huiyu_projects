@@ -13,14 +13,19 @@ website:
     background: light
     search: true
     contents:
-    
-      - section: "SynCom VOC production"
-        contents:
-          - text: "Clustering VOCs based on molecular structure"
-            file: R/01_molecular_clustering.qmd
-          - text: "Clustering VOCs based on species production"
-            file: R/02_VOC_production_clustering.qmd
-            
+      - text: "Step 1: Data wrangling"
+        file: R/01_data_formatting.qmd
+      - text: "Step 2: Nematode traits"
+        file: R/02_ne_trait_exploration.qmd
+      - text: "Step 3: Bacterial carbon use traits"
+        file: R/carbon_utilization/01_carbon_utilization.qmd
+      #- section: "SynCom VOC production"
+      #  contents:
+      #    - text: "Clustering VOCs based on molecular structure"
+      #      file: R/01_molecular_clustering.qmd
+      #    - text: "Clustering VOCs based on species production"
+      #      file: R/02_VOC_production_clustering.qmd
+
 format:
   html:
     theme:
@@ -42,9 +47,9 @@ format:
     code-fold: show
     code-summary: "Show/hide code"
     code-tools: true
-  
-# auto: re-render only when source changes   
+
+# auto: re-render only when source changes
 execute:
-  freeze: false 
-  
+  freeze: false
+
 editor: source

@@ -23,25 +23,33 @@ vocs_clusters <- readr::read_tsv(here::here("data", "VOC_fingerprint_clusters.ts
 ```
 
 ```{r}
+vocs %>%
+  filter(VOC_counts > 0) %>%
+  summarize(n_VOCs = n(), .by = "spe.ID") %>%
+  arrange(desc(n_VOCs)) %>%
+  filter(spe.ID == "ACH1")
+```
+
+```{r}
 # first we aggregate the spectral counts for each cluster in each species. Here
 # we will just use the total sum
-vocs_agg <- left_join(vocs, vocs_clusters, by = join_by(VOC_id)) %>% 
-  summarize(VOC_counts_sm = sum(VOC_counts), .by = c(spe.ID, CLID_0.8)) 
+vocs_agg <- left_join(vocs, vocs_clusters, by = join_by(VOC_id)) %>%
+  summarize(VOC_counts_sm = sum(VOC_counts), .by = c(spe.ID, CLID_0.8))
 
 # normalize the VOC_counts to a max of 1 for each VOC
-# so that we only just use information about which species produces 
+# so that we only just use information about which species produces
 # the most of each VOC, but not the absolute VOC concentrations. I don't really
 # know how to interpret the VOC_counts anyway
-vocs_agg_rk <- vocs_agg %>% 
-  group_by(CLID_0.8) %>% 
-  mutate(VOC_rank = VOC_counts_sm/max(VOC_counts_sm)) %>% 
+vocs_agg_rk <- vocs_agg %>%
+  group_by(CLID_0.8) %>%
+  mutate(VOC_rank = VOC_counts_sm/max(VOC_counts_sm)) %>%
   ungroup()
 
 # log1p transform aggregate counts
-# so that we only just use information about which species produces 
+# so that we only just use information about which species produces
 # the most of each VOC, but not the absolute VOC concentrations. I don't really
 # know how to interpret the VOC_counts anyway
-vocs_agg_log1p <- vocs_agg %>% 
+vocs_agg_log1p <- vocs_agg %>%
   mutate(VOC_counts_sm = log1p(VOC_counts_sm))
 ```
 
@@ -50,15 +58,15 @@ vocs_agg_log1p <- vocs_agg %>%
 This data has lots of zeros...
 
 ```{r}
-vocs_missing <- vocs_agg_rk %>% 
-  group_by(CLID_0.8) %>% 
-  count(nonzero = VOC_rank > 0) %>% 
-  ungroup() %>% 
-  pivot_wider(names_from = nonzero, values_from = n) %>% 
-  rename(n_species_detected = `TRUE`, n_species_missing = `FALSE`) 
+vocs_missing <- vocs_agg_rk %>%
+  group_by(CLID_0.8) %>%
+  count(nonzero = VOC_rank > 0) %>%
+  ungroup() %>%
+  pivot_wider(names_from = nonzero, values_from = n) %>%
+  rename(n_species_detected = `TRUE`, n_species_missing = `FALSE`)
 
-# there are 87 different VOC clusters which are only detected in a single species 
-vocs_missing %>% 
+# there are 87 different VOC clusters which are only detected in a single species
+vocs_missing %>%
   count(VOC_detected_in_1_sp_only = n_species_detected == 1)
 ```
 
@@ -66,7 +74,7 @@ vocs_missing %>%
 # on the other hand, there are 16 different VOC clusters that are detected in at
 # least 10 different species (so in ~10% of the data set) For example, molecules
 # in cut80_002 were produced by 53 different species
-vocs_missing %>% 
+vocs_missing %>%
   arrange(desc(n_species_detected))
 ```
 
@@ -74,20 +82,20 @@ vocs_missing %>%
 
 ```{r}
 # format to wide form for running ordination
-vocs_agg_wide <- vocs_missing %>% 
-  filter(n_species_detected == 1) %>% 
+vocs_agg_wide <- vocs_missing %>%
+  filter(n_species_detected == 1) %>%
   # remove VOCs only detected in 1 species
-  anti_join(vocs_agg, ., by = join_by(CLID_0.8)) %>% 
-  #dplyr::select(-VOC_counts_sm) %>% 
-  pivot_wider(id_cols = c(spe.ID), names_from = "CLID_0.8", values_from = "VOC_counts_sm") %>% 
-  column_to_rownames(var = "spe.ID") %>% 
+  anti_join(vocs_agg, ., by = join_by(CLID_0.8)) %>%
+  #dplyr::select(-VOC_counts_sm) %>%
+  pivot_wider(id_cols = c(spe.ID), names_from = "CLID_0.8", values_from = "VOC_counts_sm") %>%
+  column_to_rownames(var = "spe.ID") %>%
   data.frame()
- 
+
 # calculate the frequency of zeros for each VOC column
 # high values mean species have many zeros
 fz <- colSums(vocs_agg_wide == 0)/nrow(vocs_agg_wide)
 
-vocs_agg_wide_red <- vocs_agg_wide[names(fz[fz < 0.85])] %>% 
+vocs_agg_wide_red <- vocs_agg_wide[names(fz[fz < 0.85])] %>%
   filter(rowSums(.) > 0)
 ```
 
@@ -98,7 +106,7 @@ vocs_agg_wide_red <- vocs_agg_wide[names(fz[fz < 0.85])] %>%
 # ordination using the full dataset. However, classical euclidean based
 # approaches will have very poor performance due to the large number of zeros.
 # Much better to try a distance based approach
-enframe(colSums(vocs_agg_wide == 0)/nrow(vocs_agg_wide)) %>% 
+enframe(colSums(vocs_agg_wide == 0)/nrow(vocs_agg_wide)) %>%
   arrange(value)
 ```
 
@@ -130,8 +138,8 @@ round(pcoa_res01$values[1,2], 2)*100
 #| warning: false
 ordiplot(pcoa_res, type="n",
          xlab=paste0("Dim 1 (", round(pcoa_res01$values[1,2], 2)*100, "% variance)"),
-         ylab=paste0("Dim 2 (", round(pcoa_res01$values[2,2], 2)*100, "% variance)")) %>% 
-  points("sites", pch=16, col="red") %>% 
+         ylab=paste0("Dim 2 (", round(pcoa_res01$values[2,2], 2)*100, "% variance)")) %>%
+  points("sites", pch=16, col="red") %>%
   text("species",  arrows = T, length=0.05, col="blue")
 ```
 
@@ -139,7 +147,7 @@ ordiplot(pcoa_res, type="n",
 
 ```{r}
 set.seed(2367)
-NMDS <- metaMDS(sp_tr, 
+NMDS <- metaMDS(sp_tr,
                 autotransform = FALSE,
                 distance = "jaccard",
                 trymax = 1000)
@@ -149,8 +157,8 @@ NMDS <- metaMDS(sp_tr,
 #| fig.width: 7
 #| fig.height: 7
 #| warning: false
-ordiplot(NMDS, type="n") %>% 
-  points("sites", pch=16, col="red") %>% 
+ordiplot(NMDS, type="n") %>%
+  points("sites", pch=16, col="red") %>%
   text("species", arrows = T, length=0.05, col="blue")
 ```
 
@@ -160,18 +168,17 @@ ordiplot(NMDS, type="n") %>%
 library(Rtsne)
 sp_tr_mat <- as.matrix(decostand(vocs_agg_wide, "log", logbase=10))
 
-mymat_tsne <- Rtsne::Rtsne(dst, 
+mymat_tsne <- Rtsne::Rtsne(dst,
                            is_distance = TRUE,
-                           perplexity = 10, 
+                           perplexity = 10,
                            dims = 2,
                            pca_center = FALSE,
                            normalize = FALSE)
 
-mydf_tsne <- data.frame(mymat_tsne$Y) %>% 
-  cbind(spe.ID = rownames(sp_tr)) %>% 
+mydf_tsne <- data.frame(mymat_tsne$Y) %>%
+  cbind(spe.ID = rownames(sp_tr)) %>%
   rename(x = X1, y = X2)
 
 ggplot(mydf_tsne) +
   geom_point(aes(x = x, y = y))
 ```
-

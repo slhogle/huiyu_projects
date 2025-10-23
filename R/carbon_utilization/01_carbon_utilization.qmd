@@ -1,0 +1,89 @@
+---
+title: "Carbon utilization data exploration"
+author: "Shane Hogle"
+date: today
+link-citations: true
+abstract: "Try and get deeper insights into how the carbon preferences across SynCom species relates to other bacterial traits as well as their preference to different nematode species"
+---
+
+# Code
+
+```{r}
+#| eval: true
+#| echo: true
+#| output: false
+#| warnings: false
+library(here)
+source(here::here("R", "carbon_utilization", "01_carbon_utilization.R"))
+```
+
+R script with all required code is available at <https://github.com/slhogle/huiyu_projects/R/carbon_utilization/01_carbon_utlization.R>
+
+# Plots
+
+::: {#fig-01}
+```{r}
+#| fig.width: 9
+#| fig.height: 7
+#| warning: false
+#| echo: false
+p01
+```
+Plotted ordination from a principal components analysis of SynCom bacteria carbon utilization values (scaled to the maximum OD600 for each species). Point colors represent the bacterial taxonomic phylum.
+:::
+
+
+::: {#fig-02}
+```{r}
+#| fig.width: 9
+#| fig.height: 7
+#| warning: false
+#| echo: false
+p02
+```
+Same as in @fig-01, but highlighting the loadings of individual carbon compoounds (faint vectors) colored by molecular class (Amino acids, Organic acids, Sugars, and others). Thick lines represent average loadings for each molecular class. The standard deviation of the loading vector magnitudes within each molecular class are used as an estiamte (transparent shaded trianges) for the variance of the mean loading vectors projected onto the PCA.
+:::
+
+::: {#fig-03}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p03
+```
+X axis: Distribution of PC1 loadings for individual carbon compounds within each of the four molecular classes Y axis: the number of observation at each of 20 different bins.
+:::
+
+::: {#fig-04}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p05
+```
+X axis: Distribution of Sugar-Amino Acid Preferences (SAAP) across all SynCom species separated by taxonomic phylum. Y axis: the number of observations at each of 20 different SAAP bins. SAAP is calculated as $\mathrm{SAAP} = \frac{\bar{S} - \bar{AA}} {\bar{S} + \bar{AA}}$ where $\bar{x}$ indicates the mean optical density (OD600) averaged over all individual carbon compounds within that molecular class.
+:::
+
+::: {#fig-05}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p06
+```
+Empirical relationship between the Sugar-Amino acid preference (SAAP, X axis) and the nematode feeding preferences (log2 scale, y axis) for the 122 SynCom species relative to the control bacterial species OP50: $\log_2 \frac{N_{SpX}}{N_{OP50}}$. Subplots depict results for different bacterial taxonoic phyla, where point color represent taxonomic order. Point shape represents one of the four nematode species. Line-ranges of individual points represent 95% confidence intervals estimated for the n=8 preference assay replicates.
+:::
+
+::: {#fig-06}
+```{r}
+#| fig.width: 9
+#| fig.height: 9
+#| warning: false
+#| echo: false
+p07
+```
+Empirical relationships between different bacteria traits (y axis, log10 transformed) and the SAAP (x axis). Subplots show different bacterial trais. Point color shows bacterial taxonomic phylum. Line is a simple least squares linear regression fit of the form $Y=\beta_{0}+\beta_{1}X+\epsilon$.
+:::

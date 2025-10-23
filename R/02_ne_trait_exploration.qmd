@@ -1,0 +1,100 @@
+---
+title: "Nematode trait data exploration"
+author: "Shane Hogle"
+date: today
+link-citations: true
+abstract: "Try and get some general insights into the distribution of different nematode traits"
+---
+
+# Code
+
+```{r}
+#| eval: true
+#| echo: true
+#| output: false
+#| warnings: false
+library(here)
+source(here::here("R", "02_ne_trait_exploration.R"))
+```
+
+R script with all required code is available at <https://github.com/slhogle/huiyu_projects/R/02_ne_trait_exploration.R>
+
+# Plots
+
+::: {#fig-01}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p01
+```
+X axis: Distribution of nematode volumes ($\mathrm{μm^3}$) after consuming each of the 122 SynCom bacterial species. The x-axis is plotted on a log10 scale. Y axis: the number of observation at each of 20 different volume bins.
+:::
+
+
+::: {#fig-02}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p02
+```
+X axis: Distribution of nematode dry weights (μg) after consuming each of the 122 SynCom bacterial species. Y axis: the number of observation at each of 20 different weight bins.
+:::
+
+::: {#fig-03}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p03
+```
+X axis: Distribution of nematode dry weights (μg) after consuming each of the 122 SynCom bacterial species. Y axis: the number of observation at each of 20 different weight bins.
+:::
+
+::: {#fig-04}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p04
+```
+X axis: Distribution of nematode feeding preferences of the 122 SynCom species relative to the control bacterial species OP50: $\log_2 \frac{N_{SpX}}{N_{OP50}}$ where $N$ is the count of worms on each species in the foraging assay. Y axis: the number of observations at each of 20 different preference bins.
+:::
+
+::: {#fig-05}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p05
+```
+X axis: Distribution of nematode clearance of the 122 SynCom species relative to the control bacterial species OP50 in liquid, where clearance is measured in OD600 units. Y axis: the number of observations at each of 20 different preference bins.
+:::
+
+::: {#fig-06}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p06
+```
+X axis: Distribution of nematode adult sizes (log2 scale) when feeding on the 122 SynCom species relative to nematode sizes when feeding on the control bacterial species OP50: $\log_2 \frac{V_{SpX}}{V_{OP50}}$ where $V$ is the volume of adult worms ($\mathrm{μm^3}$) when feeding on each bacterial species in the foraging assay. Y axis: the number of observations at each of 20 different preference bins.
+:::
+
+::: {#fig-07}
+```{r}
+#| fig.width: 9
+#| fig.height: 4
+#| warning: false
+#| echo: false
+p07
+```
+X axis: Nematode feeding preferences (log2 scale)of the 122 SynCom species relative to the control bacterial species OP50: $\log_2 \frac{N_{SpX}}{N_{OP50}}$. Y axis: nematode adult sizes (log2 scale) when feeding on the 122 SynCom species relative to nematode sizes when feeding on the control bacterial species OP50: $\log_2 \frac{V_{SpX}}{V_{OP50}}$. Line-ranges of individual points represent 95% confidence intervals estimated for the n=8 assay replicates.
+:::

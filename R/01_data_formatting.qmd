@@ -1,0 +1,20 @@
+---
+title: "Data formatting"
+author: "Shane Hogle"
+date: today
+link-citations: true
+abstract: "Cleaning up and harmonizing all the different raw csv files with bacteria and nematode traits. Standardizes variable names, removes redundancy, etc."
+---
+
+# Code
+
+```{r}
+#| eval: false
+#| echo: true
+#| output: false
+#| warnings: false
+library(here)
+source(here::here("R", "01_data_formatting.R"))
+```
+
+R script with all required code is available at <https://github.com/slhogle/huiyu_projects/R/02_ne_trait_exploration.R>

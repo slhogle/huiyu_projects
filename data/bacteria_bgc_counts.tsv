@@ -1,0 +1,4881 @@
+ba_id	bgc_cluster	gene_count
+ACH1	CDPS	0
+ACH1	LAP	0
+ACH1	NAGGN	0
+ACH1	NAPAA	27
+ACH1	NRPS	0
+ACH1	NRPS like	0
+ACH1	PKS like	0
+ACH1	RRE containing	0
+ACH1	RiPP like	0
+ACH1	T1PKS	39
+ACH1	T3PKS	0
+ACH1	acyl amino acids	0
+ACH1	arylpolyene	42
+ACH1	betalactone	23
+ACH1	butyrolactone	0
+ACH1	cyclic lactone autoinducer	0
+ACH1	ectoine	10
+ACH1	furan	0
+ACH1	hglE KS	0
+ACH1	hserlactone	0
+ACH1	ladderane	0
+ACH1	lanthipeptide class i	0
+ACH1	lanthipeptide class ii	0
+ACH1	lanthipeptide class iii	0
+ACH1	lanthipeptide class iv	0
+ACH1	lanthipeptide class v	0
+ACH1	lassopeptide	0
+ACH1	microviridin	0
+ACH1	other	0
+ACH1	phenazine	0
+ACH1	phosphonate	38
+ACH1	proteusin	0
+ACH1	ranthipeptide	0
+ACH1	redox cofactor	0
+ACH1	resorcinol	37
+ACH1	siderophore	10
+ACH1	terpene	26
+ACH1	thioamitides	0
+ACH1	thiopeptide	0
+ACH1	transAT PKS	0
+ACH2	CDPS	0
+ACH2	LAP	0
+ACH2	NAGGN	0
+ACH2	NAPAA	0
+ACH2	NRPS	0
+ACH2	NRPS like	0
+ACH2	PKS like	0
+ACH2	RRE containing	0
+ACH2	RiPP like	0
+ACH2	T1PKS	0
+ACH2	T3PKS	0
+ACH2	acyl amino acids	0
+ACH2	arylpolyene	45
+ACH2	betalactone	19
+ACH2	butyrolactone	0
+ACH2	cyclic lactone autoinducer	0
+ACH2	ectoine	11
+ACH2	furan	0
+ACH2	hglE KS	0
+ACH2	hserlactone	0
+ACH2	ladderane	0
+ACH2	lanthipeptide class i	0
+ACH2	lanthipeptide class ii	0
+ACH2	lanthipeptide class iii	0
+ACH2	lanthipeptide class iv	0
+ACH2	lanthipeptide class v	0
+ACH2	lassopeptide	0
+ACH2	microviridin	0
+ACH2	other	0
+ACH2	phenazine	0
+ACH2	phosphonate	0
+ACH2	proteusin	0
+ACH2	ranthipeptide	0
+ACH2	redox cofactor	0
+ACH2	resorcinol	39
+ACH2	siderophore	0
+ACH2	terpene	23
+ACH2	thioamitides	0
+ACH2	thiopeptide	0
+ACH2	transAT PKS	0
+ACI1	CDPS	0
+ACI1	LAP	0
+ACI1	NAGGN	0
+ACI1	NAPAA	30
+ACI1	NRPS	71
+ACI1	NRPS like	0
+ACI1	PKS like	0
+ACI1	RRE containing	0
+ACI1	RiPP like	0
+ACI1	T1PKS	0
+ACI1	T3PKS	0
+ACI1	acyl amino acids	0
+ACI1	arylpolyene	101
+ACI1	betalactone	23
+ACI1	butyrolactone	0
+ACI1	cyclic lactone autoinducer	0
+ACI1	ectoine	0
+ACI1	furan	0
+ACI1	hglE KS	0
+ACI1	hserlactone	71
+ACI1	ladderane	0
+ACI1	lanthipeptide class i	0
+ACI1	lanthipeptide class ii	0
+ACI1	lanthipeptide class iii	0
+ACI1	lanthipeptide class iv	0
+ACI1	lanthipeptide class v	0
+ACI1	lassopeptide	0
+ACI1	microviridin	0
+ACI1	other	0
+ACI1	phenazine	0
+ACI1	phosphonate	0
+ACI1	proteusin	0
+ACI1	ranthipeptide	0
+ACI1	redox cofactor	20
+ACI1	resorcinol	0
+ACI1	siderophore	13
+ACI1	terpene	0
+ACI1	thioamitides	0
+ACI1	thiopeptide	0
+ACI1	transAT PKS	0
+ACI10	CDPS	0
+ACI10	LAP	0
+ACI10	NAGGN	0
+ACI10	NAPAA	26
+ACI10	NRPS	34
+ACI10	NRPS like	0
+ACI10	PKS like	0
+ACI10	RRE containing	0
+ACI10	RiPP like	28
+ACI10	T1PKS	0
+ACI10	T3PKS	0
+ACI10	acyl amino acids	0
+ACI10	arylpolyene	83
+ACI10	betalactone	24
+ACI10	butyrolactone	0
+ACI10	cyclic lactone autoinducer	0
+ACI10	ectoine	0
+ACI10	furan	0
+ACI10	hglE KS	0
+ACI10	hserlactone	0
+ACI10	ladderane	0
+ACI10	lanthipeptide class i	0
+ACI10	lanthipeptide class ii	0
+ACI10	lanthipeptide class iii	0
+ACI10	lanthipeptide class iv	0
+ACI10	lanthipeptide class v	0
+ACI10	lassopeptide	0
+ACI10	microviridin	0
+ACI10	other	0
+ACI10	phenazine	0
+ACI10	phosphonate	0
+ACI10	proteusin	0
+ACI10	ranthipeptide	0
+ACI10	redox cofactor	17
+ACI10	resorcinol	0
+ACI10	siderophore	0
+ACI10	terpene	0
+ACI10	thioamitides	0
+ACI10	thiopeptide	0
+ACI10	transAT PKS	0
+ACI11	CDPS	0
+ACI11	LAP	0
+ACI11	NAGGN	0
+ACI11	NAPAA	0
+ACI11	NRPS	0
+ACI11	NRPS like	0
+ACI11	PKS like	0
+ACI11	RRE containing	0
+ACI11	RiPP like	21
+ACI11	T1PKS	0
+ACI11	T3PKS	0
+ACI11	acyl amino acids	0
+ACI11	arylpolyene	89
+ACI11	betalactone	20
+ACI11	butyrolactone	0
+ACI11	cyclic lactone autoinducer	0
+ACI11	ectoine	0
+ACI11	furan	0
+ACI11	hglE KS	0
+ACI11	hserlactone	0
+ACI11	ladderane	0
+ACI11	lanthipeptide class i	0
+ACI11	lanthipeptide class ii	0
+ACI11	lanthipeptide class iii	0
+ACI11	lanthipeptide class iv	0
+ACI11	lanthipeptide class v	0
+ACI11	lassopeptide	0
+ACI11	microviridin	0
+ACI11	other	0
+ACI11	phenazine	0
+ACI11	phosphonate	0
+ACI11	proteusin	0
+ACI11	ranthipeptide	0
+ACI11	redox cofactor	25
+ACI11	resorcinol	0
+ACI11	siderophore	12
+ACI11	terpene	0
+ACI11	thioamitides	0
+ACI11	thiopeptide	0
+ACI11	transAT PKS	0
+ACI2	CDPS	0
+ACI2	LAP	0
+ACI2	NAGGN	0
+ACI2	NAPAA	0
+ACI2	NRPS	0
+ACI2	NRPS like	0
+ACI2	PKS like	0
+ACI2	RRE containing	0
+ACI2	RiPP like	13
+ACI2	T1PKS	0
+ACI2	T3PKS	0
+ACI2	acyl amino acids	0
+ACI2	arylpolyene	85
+ACI2	betalactone	23
+ACI2	butyrolactone	0
+ACI2	cyclic lactone autoinducer	0
+ACI2	ectoine	0
+ACI2	furan	0
+ACI2	hglE KS	0
+ACI2	hserlactone	0
+ACI2	ladderane	0
+ACI2	lanthipeptide class i	0
+ACI2	lanthipeptide class ii	0
+ACI2	lanthipeptide class iii	0
+ACI2	lanthipeptide class iv	0
+ACI2	lanthipeptide class v	0
+ACI2	lassopeptide	0
+ACI2	microviridin	0
+ACI2	other	0
+ACI2	phenazine	0
+ACI2	phosphonate	0
+ACI2	proteusin	0
+ACI2	ranthipeptide	0
+ACI2	redox cofactor	0
+ACI2	resorcinol	0
+ACI2	siderophore	11
+ACI2	terpene	0
+ACI2	thioamitides	0
+ACI2	thiopeptide	0
+ACI2	transAT PKS	0
+ACI3	CDPS	0
+ACI3	LAP	0
+ACI3	NAGGN	0
+ACI3	NAPAA	0
+ACI3	NRPS	0
+ACI3	NRPS like	0
+ACI3	PKS like	0
+ACI3	RRE containing	0
+ACI3	RiPP like	14
+ACI3	T1PKS	0
+ACI3	T3PKS	0
+ACI3	acyl amino acids	0
+ACI3	arylpolyene	35
+ACI3	betalactone	0
+ACI3	butyrolactone	0
+ACI3	cyclic lactone autoinducer	0
+ACI3	ectoine	0
+ACI3	furan	0
+ACI3	hglE KS	0
+ACI3	hserlactone	0
+ACI3	ladderane	0
+ACI3	lanthipeptide class i	0
+ACI3	lanthipeptide class ii	0
+ACI3	lanthipeptide class iii	0
+ACI3	lanthipeptide class iv	0
+ACI3	lanthipeptide class v	0
+ACI3	lassopeptide	0
+ACI3	microviridin	0
+ACI3	other	0
+ACI3	phenazine	0
+ACI3	phosphonate	0
+ACI3	proteusin	0
+ACI3	ranthipeptide	0
+ACI3	redox cofactor	26
+ACI3	resorcinol	0
+ACI3	siderophore	12
+ACI3	terpene	0
+ACI3	thioamitides	0
+ACI3	thiopeptide	0
+ACI3	transAT PKS	0
+ACI4	CDPS	0
+ACI4	LAP	0
+ACI4	NAGGN	0
+ACI4	NAPAA	23
+ACI4	NRPS	78
+ACI4	NRPS like	0
+ACI4	PKS like	0
+ACI4	RRE containing	0
+ACI4	RiPP like	14
+ACI4	T1PKS	0
+ACI4	T3PKS	0
+ACI4	acyl amino acids	0
+ACI4	arylpolyene	81
+ACI4	betalactone	40
+ACI4	butyrolactone	0
+ACI4	cyclic lactone autoinducer	0
+ACI4	ectoine	0
+ACI4	furan	20
+ACI4	hglE KS	0
+ACI4	hserlactone	33
+ACI4	ladderane	0
+ACI4	lanthipeptide class i	0
+ACI4	lanthipeptide class ii	0
+ACI4	lanthipeptide class iii	0
+ACI4	lanthipeptide class iv	0
+ACI4	lanthipeptide class v	0
+ACI4	lassopeptide	24
+ACI4	microviridin	0
+ACI4	other	0
+ACI4	phenazine	0
+ACI4	phosphonate	0
+ACI4	proteusin	0
+ACI4	ranthipeptide	0
+ACI4	redox cofactor	45
+ACI4	resorcinol	0
+ACI4	siderophore	12
+ACI4	terpene	0
+ACI4	thioamitides	0
+ACI4	thiopeptide	0
+ACI4	transAT PKS	0
+ACI5	CDPS	0
+ACI5	LAP	0
+ACI5	NAGGN	0
+ACI5	NAPAA	26
+ACI5	NRPS	0
+ACI5	NRPS like	0
+ACI5	PKS like	0
+ACI5	RRE containing	0
+ACI5	RiPP like	22
+ACI5	T1PKS	0
+ACI5	T3PKS	0
+ACI5	acyl amino acids	0
+ACI5	arylpolyene	80
+ACI5	betalactone	21
+ACI5	butyrolactone	0
+ACI5	cyclic lactone autoinducer	0
+ACI5	ectoine	0
+ACI5	furan	0
+ACI5	hglE KS	0
+ACI5	hserlactone	0
+ACI5	ladderane	0
+ACI5	lanthipeptide class i	0
+ACI5	lanthipeptide class ii	0
+ACI5	lanthipeptide class iii	0
+ACI5	lanthipeptide class iv	0
+ACI5	lanthipeptide class v	34
+ACI5	lassopeptide	0
+ACI5	microviridin	0
+ACI5	other	0
+ACI5	phenazine	0
+ACI5	phosphonate	0
+ACI5	proteusin	0
+ACI5	ranthipeptide	0
+ACI5	redox cofactor	0
+ACI5	resorcinol	0
+ACI5	siderophore	11
+ACI5	terpene	0
+ACI5	thioamitides	0
+ACI5	thiopeptide	0
+ACI5	transAT PKS	0
+ACI6	CDPS	0
+ACI6	LAP	0
+ACI6	NAGGN	0
+ACI6	NAPAA	0
+ACI6	NRPS	0
+ACI6	NRPS like	0
+ACI6	PKS like	0
+ACI6	RRE containing	0
+ACI6	RiPP like	24
+ACI6	T1PKS	0
+ACI6	T3PKS	0
+ACI6	acyl amino acids	0
+ACI6	arylpolyene	52
+ACI6	betalactone	23
+ACI6	butyrolactone	0
+ACI6	cyclic lactone autoinducer	0
+ACI6	ectoine	0
+ACI6	furan	0
+ACI6	hglE KS	0
+ACI6	hserlactone	0
+ACI6	ladderane	0
+ACI6	lanthipeptide class i	0
+ACI6	lanthipeptide class ii	0
+ACI6	lanthipeptide class iii	0
+ACI6	lanthipeptide class iv	0
+ACI6	lanthipeptide class v	0
+ACI6	lassopeptide	0
+ACI6	microviridin	0
+ACI6	other	0
+ACI6	phenazine	0
+ACI6	phosphonate	0
+ACI6	proteusin	0
+ACI6	ranthipeptide	0
+ACI6	redox cofactor	0
+ACI6	resorcinol	0
+ACI6	siderophore	10
+ACI6	terpene	0
+ACI6	thioamitides	0
+ACI6	thiopeptide	0
+ACI6	transAT PKS	0
+ACI7	CDPS	0
+ACI7	LAP	0
+ACI7	NAGGN	0
+ACI7	NAPAA	0
+ACI7	NRPS	0
+ACI7	NRPS like	0
+ACI7	PKS like	0
+ACI7	RRE containing	0
+ACI7	RiPP like	0
+ACI7	T1PKS	0
+ACI7	T3PKS	0
+ACI7	acyl amino acids	0
+ACI7	arylpolyene	82
+ACI7	betalactone	52
+ACI7	butyrolactone	0
+ACI7	cyclic lactone autoinducer	0
+ACI7	ectoine	0
+ACI7	furan	0
+ACI7	hglE KS	0
+ACI7	hserlactone	0
+ACI7	ladderane	0
+ACI7	lanthipeptide class i	0
+ACI7	lanthipeptide class ii	0
+ACI7	lanthipeptide class iii	0
+ACI7	lanthipeptide class iv	0
+ACI7	lanthipeptide class v	0
+ACI7	lassopeptide	0
+ACI7	microviridin	0
+ACI7	other	0
+ACI7	phenazine	0
+ACI7	phosphonate	0
+ACI7	proteusin	0
+ACI7	ranthipeptide	0
+ACI7	redox cofactor	0
+ACI7	resorcinol	0
+ACI7	siderophore	0
+ACI7	terpene	0
+ACI7	thioamitides	0
+ACI7	thiopeptide	0
+ACI7	transAT PKS	0
+ACI8	CDPS	0
+ACI8	LAP	0
+ACI8	NAGGN	0
+ACI8	NAPAA	21
+ACI8	NRPS	79
+ACI8	NRPS like	0
+ACI8	PKS like	0
+ACI8	RRE containing	0
+ACI8	RiPP like	0
+ACI8	T1PKS	0
+ACI8	T3PKS	0
+ACI8	acyl amino acids	0
+ACI8	arylpolyene	82
+ACI8	betalactone	23
+ACI8	butyrolactone	0
+ACI8	cyclic lactone autoinducer	0
+ACI8	ectoine	0
+ACI8	furan	0
+ACI8	hglE KS	0
+ACI8	hserlactone	35
+ACI8	ladderane	0
+ACI8	lanthipeptide class i	0
+ACI8	lanthipeptide class ii	0
+ACI8	lanthipeptide class iii	0
+ACI8	lanthipeptide class iv	0
+ACI8	lanthipeptide class v	0
+ACI8	lassopeptide	0
+ACI8	microviridin	0
+ACI8	other	0
+ACI8	phenazine	0
+ACI8	phosphonate	0
+ACI8	proteusin	0
+ACI8	ranthipeptide	0
+ACI8	redox cofactor	44
+ACI8	resorcinol	0
+ACI8	siderophore	12
+ACI8	terpene	0
+ACI8	thioamitides	0
+ACI8	thiopeptide	0
+ACI8	transAT PKS	0
+ACI9	CDPS	0
+ACI9	LAP	0
+ACI9	NAGGN	0
+ACI9	NAPAA	0
+ACI9	NRPS	35
+ACI9	NRPS like	0
+ACI9	PKS like	0
+ACI9	RRE containing	0
+ACI9	RiPP like	14
+ACI9	T1PKS	0
+ACI9	T3PKS	0
+ACI9	acyl amino acids	0
+ACI9	arylpolyene	79
+ACI9	betalactone	24
+ACI9	butyrolactone	0
+ACI9	cyclic lactone autoinducer	0
+ACI9	ectoine	0
+ACI9	furan	0
+ACI9	hglE KS	0
+ACI9	hserlactone	35
+ACI9	ladderane	0
+ACI9	lanthipeptide class i	0
+ACI9	lanthipeptide class ii	0
+ACI9	lanthipeptide class iii	0
+ACI9	lanthipeptide class iv	0
+ACI9	lanthipeptide class v	0
+ACI9	lassopeptide	0
+ACI9	microviridin	0
+ACI9	other	0
+ACI9	phenazine	0
+ACI9	phosphonate	0
+ACI9	proteusin	0
+ACI9	ranthipeptide	0
+ACI9	redox cofactor	21
+ACI9	resorcinol	0
+ACI9	siderophore	10
+ACI9	terpene	0
+ACI9	thioamitides	0
+ACI9	thiopeptide	0
+ACI9	transAT PKS	0
+ADV1	CDPS	0
+ADV1	LAP	0
+ADV1	NAGGN	0
+ADV1	NAPAA	32
+ADV1	NRPS	36
+ADV1	NRPS like	0
+ADV1	PKS like	0
+ADV1	RRE containing	0
+ADV1	RiPP like	11
+ADV1	T1PKS	0
+ADV1	T3PKS	0
+ADV1	acyl amino acids	0
+ADV1	arylpolyene	40
+ADV1	betalactone	50
+ADV1	butyrolactone	0
+ADV1	cyclic lactone autoinducer	0
+ADV1	ectoine	10
+ADV1	furan	0
+ADV1	hglE KS	0
+ADV1	hserlactone	0
+ADV1	ladderane	0
+ADV1	lanthipeptide class i	0
+ADV1	lanthipeptide class ii	0
+ADV1	lanthipeptide class iii	0
+ADV1	lanthipeptide class iv	0
+ADV1	lanthipeptide class v	0
+ADV1	lassopeptide	0
+ADV1	microviridin	0
+ADV1	other	0
+ADV1	phenazine	0
+ADV1	phosphonate	0
+ADV1	proteusin	0
+ADV1	ranthipeptide	0
+ADV1	redox cofactor	0
+ADV1	resorcinol	0
+ADV1	siderophore	22
+ADV1	terpene	17
+ADV1	thioamitides	0
+ADV1	thiopeptide	0
+ADV1	transAT PKS	0
+ART1	CDPS	0
+ART1	LAP	0
+ART1	NAGGN	0
+ART1	NAPAA	29
+ART1	NRPS	0
+ART1	NRPS like	0
+ART1	PKS like	0
+ART1	RRE containing	0
+ART1	RiPP like	0
+ART1	T1PKS	0
+ART1	T3PKS	39
+ART1	acyl amino acids	0
+ART1	arylpolyene	0
+ART1	betalactone	22
+ART1	butyrolactone	0
+ART1	cyclic lactone autoinducer	0
+ART1	ectoine	11
+ART1	furan	0
+ART1	hglE KS	0
+ART1	hserlactone	0
+ART1	ladderane	0
+ART1	lanthipeptide class i	0
+ART1	lanthipeptide class ii	0
+ART1	lanthipeptide class iii	0
+ART1	lanthipeptide class iv	0
+ART1	lanthipeptide class v	0
+ART1	lassopeptide	0
+ART1	microviridin	0
+ART1	other	0
+ART1	phenazine	0
+ART1	phosphonate	0
+ART1	proteusin	0
+ART1	ranthipeptide	0
+ART1	redox cofactor	0
+ART1	resorcinol	0
+ART1	siderophore	11
+ART1	terpene	19
+ART1	thioamitides	0
+ART1	thiopeptide	0
+ART1	transAT PKS	0
+ART2	CDPS	0
+ART2	LAP	0
+ART2	NAGGN	0
+ART2	NAPAA	0
+ART2	NRPS	0
+ART2	NRPS like	0
+ART2	PKS like	0
+ART2	RRE containing	0
+ART2	RiPP like	15
+ART2	T1PKS	0
+ART2	T3PKS	41
+ART2	acyl amino acids	0
+ART2	arylpolyene	0
+ART2	betalactone	25
+ART2	butyrolactone	7
+ART2	cyclic lactone autoinducer	0
+ART2	ectoine	0
+ART2	furan	26
+ART2	hglE KS	0
+ART2	hserlactone	0
+ART2	ladderane	0
+ART2	lanthipeptide class i	0
+ART2	lanthipeptide class ii	0
+ART2	lanthipeptide class iii	0
+ART2	lanthipeptide class iv	0
+ART2	lanthipeptide class v	0
+ART2	lassopeptide	0
+ART2	microviridin	0
+ART2	other	0
+ART2	phenazine	0
+ART2	phosphonate	0
+ART2	proteusin	0
+ART2	ranthipeptide	0
+ART2	redox cofactor	0
+ART2	resorcinol	0
+ART2	siderophore	26
+ART2	terpene	0
+ART2	thioamitides	0
+ART2	thiopeptide	0
+ART2	transAT PKS	0
+ART3	CDPS	0
+ART3	LAP	0
+ART3	NAGGN	0
+ART3	NAPAA	0
+ART3	NRPS	0
+ART3	NRPS like	38
+ART3	PKS like	0
+ART3	RRE containing	0
+ART3	RiPP like	0
+ART3	T1PKS	0
+ART3	T3PKS	42
+ART3	acyl amino acids	0
+ART3	arylpolyene	0
+ART3	betalactone	21
+ART3	butyrolactone	0
+ART3	cyclic lactone autoinducer	0
+ART3	ectoine	0
+ART3	furan	0
+ART3	hglE KS	0
+ART3	hserlactone	0
+ART3	ladderane	0
+ART3	lanthipeptide class i	0
+ART3	lanthipeptide class ii	0
+ART3	lanthipeptide class iii	0
+ART3	lanthipeptide class iv	0
+ART3	lanthipeptide class v	0
+ART3	lassopeptide	0
+ART3	microviridin	0
+ART3	other	0
+ART3	phenazine	0
+ART3	phosphonate	0
+ART3	proteusin	0
+ART3	ranthipeptide	0
+ART3	redox cofactor	0
+ART3	resorcinol	0
+ART3	siderophore	10
+ART3	terpene	0
+ART3	thioamitides	0
+ART3	thiopeptide	0
+ART3	transAT PKS	0
+ART4	CDPS	0
+ART4	LAP	0
+ART4	NAGGN	0
+ART4	NAPAA	26
+ART4	NRPS	34
+ART4	NRPS like	0
+ART4	PKS like	0
+ART4	RRE containing	0
+ART4	RiPP like	28
+ART4	T1PKS	0
+ART4	T3PKS	0
+ART4	acyl amino acids	0
+ART4	arylpolyene	83
+ART4	betalactone	24
+ART4	butyrolactone	0
+ART4	cyclic lactone autoinducer	0
+ART4	ectoine	0
+ART4	furan	0
+ART4	hglE KS	0
+ART4	hserlactone	0
+ART4	ladderane	0
+ART4	lanthipeptide class i	0
+ART4	lanthipeptide class ii	0
+ART4	lanthipeptide class iii	0
+ART4	lanthipeptide class iv	0
+ART4	lanthipeptide class v	0
+ART4	lassopeptide	0
+ART4	microviridin	0
+ART4	other	0
+ART4	phenazine	0
+ART4	phosphonate	0
+ART4	proteusin	0
+ART4	ranthipeptide	0
+ART4	redox cofactor	17
+ART4	resorcinol	0
+ART4	siderophore	0
+ART4	terpene	0
+ART4	thioamitides	0
+ART4	thiopeptide	0
+ART4	transAT PKS	0
+ART5	CDPS	0
+ART5	LAP	0
+ART5	NAGGN	0
+ART5	NAPAA	0
+ART5	NRPS	0
+ART5	NRPS like	39
+ART5	PKS like	0
+ART5	RRE containing	18
+ART5	RiPP like	0
+ART5	T1PKS	0
+ART5	T3PKS	41
+ART5	acyl amino acids	0
+ART5	arylpolyene	0
+ART5	betalactone	20
+ART5	butyrolactone	0
+ART5	cyclic lactone autoinducer	0
+ART5	ectoine	0
+ART5	furan	0
+ART5	hglE KS	0
+ART5	hserlactone	0
+ART5	ladderane	0
+ART5	lanthipeptide class i	0
+ART5	lanthipeptide class ii	0
+ART5	lanthipeptide class iii	0
+ART5	lanthipeptide class iv	0
+ART5	lanthipeptide class v	0
+ART5	lassopeptide	0
+ART5	microviridin	0
+ART5	other	0
+ART5	phenazine	0
+ART5	phosphonate	0
+ART5	proteusin	0
+ART5	ranthipeptide	0
+ART5	redox cofactor	0
+ART5	resorcinol	0
+ART5	siderophore	0
+ART5	terpene	0
+ART5	thioamitides	0
+ART5	thiopeptide	0
+ART5	transAT PKS	0
+ART6	CDPS	0
+ART6	LAP	0
+ART6	NAGGN	0
+ART6	NAPAA	0
+ART6	NRPS	0
+ART6	NRPS like	0
+ART6	PKS like	0
+ART6	RRE containing	0
+ART6	RiPP like	0
+ART6	T1PKS	0
+ART6	T3PKS	42
+ART6	acyl amino acids	0
+ART6	arylpolyene	0
+ART6	betalactone	42
+ART6	butyrolactone	0
+ART6	cyclic lactone autoinducer	0
+ART6	ectoine	0
+ART6	furan	0
+ART6	hglE KS	0
+ART6	hserlactone	0
+ART6	ladderane	0
+ART6	lanthipeptide class i	0
+ART6	lanthipeptide class ii	0
+ART6	lanthipeptide class iii	0
+ART6	lanthipeptide class iv	0
+ART6	lanthipeptide class v	0
+ART6	lassopeptide	0
+ART6	microviridin	0
+ART6	other	0
+ART6	phenazine	0
+ART6	phosphonate	0
+ART6	proteusin	0
+ART6	ranthipeptide	0
+ART6	redox cofactor	0
+ART6	resorcinol	0
+ART6	siderophore	10
+ART6	terpene	19
+ART6	thioamitides	0
+ART6	thiopeptide	0
+ART6	transAT PKS	0
+ART7	CDPS	0
+ART7	LAP	0
+ART7	NAGGN	0
+ART7	NAPAA	30
+ART7	NRPS	38
+ART7	NRPS like	0
+ART7	PKS like	0
+ART7	RRE containing	0
+ART7	RiPP like	0
+ART7	T1PKS	0
+ART7	T3PKS	43
+ART7	acyl amino acids	0
+ART7	arylpolyene	0
+ART7	betalactone	21
+ART7	butyrolactone	0
+ART7	cyclic lactone autoinducer	0
+ART7	ectoine	0
+ART7	furan	0
+ART7	hglE KS	0
+ART7	hserlactone	0
+ART7	ladderane	0
+ART7	lanthipeptide class i	0
+ART7	lanthipeptide class ii	0
+ART7	lanthipeptide class iii	0
+ART7	lanthipeptide class iv	0
+ART7	lanthipeptide class v	0
+ART7	lassopeptide	0
+ART7	microviridin	0
+ART7	other	0
+ART7	phenazine	0
+ART7	phosphonate	0
+ART7	proteusin	0
+ART7	ranthipeptide	0
+ART7	redox cofactor	0
+ART7	resorcinol	0
+ART7	siderophore	10
+ART7	terpene	0
+ART7	thioamitides	0
+ART7	thiopeptide	0
+ART7	transAT PKS	0
+ART8	CDPS	0
+ART8	LAP	0
+ART8	NAGGN	0
+ART8	NAPAA	29
+ART8	NRPS	0
+ART8	NRPS like	0
+ART8	PKS like	0
+ART8	RRE containing	0
+ART8	RiPP like	0
+ART8	T1PKS	0
+ART8	T3PKS	38
+ART8	acyl amino acids	0
+ART8	arylpolyene	0
+ART8	betalactone	22
+ART8	butyrolactone	0
+ART8	cyclic lactone autoinducer	0
+ART8	ectoine	0
+ART8	furan	0
+ART8	hglE KS	0
+ART8	hserlactone	0
+ART8	ladderane	0
+ART8	lanthipeptide class i	0
+ART8	lanthipeptide class ii	0
+ART8	lanthipeptide class iii	0
+ART8	lanthipeptide class iv	0
+ART8	lanthipeptide class v	0
+ART8	lassopeptide	21
+ART8	microviridin	0
+ART8	other	0
+ART8	phenazine	0
+ART8	phosphonate	0
+ART8	proteusin	0
+ART8	ranthipeptide	0
+ART8	redox cofactor	0
+ART8	resorcinol	0
+ART8	siderophore	10
+ART8	terpene	19
+ART8	thioamitides	0
+ART8	thiopeptide	0
+ART8	transAT PKS	0
+ART9	CDPS	0
+ART9	LAP	0
+ART9	NAGGN	0
+ART9	NAPAA	0
+ART9	NRPS	0
+ART9	NRPS like	27
+ART9	PKS like	0
+ART9	RRE containing	0
+ART9	RiPP like	0
+ART9	T1PKS	0
+ART9	T3PKS	40
+ART9	acyl amino acids	0
+ART9	arylpolyene	0
+ART9	betalactone	22
+ART9	butyrolactone	10
+ART9	cyclic lactone autoinducer	0
+ART9	ectoine	0
+ART9	furan	0
+ART9	hglE KS	0
+ART9	hserlactone	0
+ART9	ladderane	0
+ART9	lanthipeptide class i	0
+ART9	lanthipeptide class ii	0
+ART9	lanthipeptide class iii	0
+ART9	lanthipeptide class iv	0
+ART9	lanthipeptide class v	0
+ART9	lassopeptide	0
+ART9	microviridin	0
+ART9	other	0
+ART9	phenazine	0
+ART9	phosphonate	0
+ART9	proteusin	0
+ART9	ranthipeptide	0
+ART9	redox cofactor	0
+ART9	resorcinol	0
+ART9	siderophore	10
+ART9	terpene	23
+ART9	thioamitides	0
+ART9	thiopeptide	0
+ART9	transAT PKS	0
+BAC1	CDPS	0
+BAC1	LAP	42
+BAC1	NAGGN	0
+BAC1	NAPAA	0
+BAC1	NRPS	199
+BAC1	NRPS like	0
+BAC1	PKS like	37
+BAC1	RRE containing	19
+BAC1	RiPP like	47
+BAC1	T1PKS	0
+BAC1	T3PKS	84
+BAC1	acyl amino acids	0
+BAC1	arylpolyene	0
+BAC1	betalactone	66
+BAC1	butyrolactone	0
+BAC1	cyclic lactone autoinducer	0
+BAC1	ectoine	0
+BAC1	furan	0
+BAC1	hglE KS	0
+BAC1	hserlactone	0
+BAC1	ladderane	0
+BAC1	lanthipeptide class i	0
+BAC1	lanthipeptide class ii	0
+BAC1	lanthipeptide class iii	0
+BAC1	lanthipeptide class iv	0
+BAC1	lanthipeptide class v	0
+BAC1	lassopeptide	0
+BAC1	microviridin	0
+BAC1	other	45
+BAC1	phenazine	0
+BAC1	phosphonate	0
+BAC1	proteusin	0
+BAC1	ranthipeptide	0
+BAC1	redox cofactor	0
+BAC1	resorcinol	0
+BAC1	siderophore	0
+BAC1	terpene	43
+BAC1	thioamitides	0
+BAC1	thiopeptide	23
+BAC1	transAT PKS	194
+BAC2	CDPS	0
+BAC2	LAP	0
+BAC2	NAGGN	0
+BAC2	NAPAA	0
+BAC2	NRPS	0
+BAC2	NRPS like	0
+BAC2	PKS like	0
+BAC2	RRE containing	0
+BAC2	RiPP like	0
+BAC2	T1PKS	0
+BAC2	T3PKS	39
+BAC2	acyl amino acids	0
+BAC2	arylpolyene	0
+BAC2	betalactone	0
+BAC2	butyrolactone	0
+BAC2	cyclic lactone autoinducer	0
+BAC2	ectoine	0
+BAC2	furan	0
+BAC2	hglE KS	0
+BAC2	hserlactone	0
+BAC2	ladderane	0
+BAC2	lanthipeptide class i	0
+BAC2	lanthipeptide class ii	0
+BAC2	lanthipeptide class iii	0
+BAC2	lanthipeptide class iv	0
+BAC2	lanthipeptide class v	0
+BAC2	lassopeptide	152
+BAC2	microviridin	0
+BAC2	other	0
+BAC2	phenazine	0
+BAC2	phosphonate	36
+BAC2	proteusin	0
+BAC2	ranthipeptide	0
+BAC2	redox cofactor	0
+BAC2	resorcinol	0
+BAC2	siderophore	14
+BAC2	terpene	59
+BAC2	thioamitides	0
+BAC2	thiopeptide	0
+BAC2	transAT PKS	0
+BAC3	CDPS	0
+BAC3	LAP	0
+BAC3	NAGGN	0
+BAC3	NAPAA	0
+BAC3	NRPS	42
+BAC3	NRPS like	0
+BAC3	PKS like	0
+BAC3	RRE containing	0
+BAC3	RiPP like	11
+BAC3	T1PKS	0
+BAC3	T3PKS	39
+BAC3	acyl amino acids	0
+BAC3	arylpolyene	0
+BAC3	betalactone	0
+BAC3	butyrolactone	0
+BAC3	cyclic lactone autoinducer	0
+BAC3	ectoine	0
+BAC3	furan	0
+BAC3	hglE KS	0
+BAC3	hserlactone	0
+BAC3	ladderane	0
+BAC3	lanthipeptide class i	0
+BAC3	lanthipeptide class ii	27
+BAC3	lanthipeptide class iii	0
+BAC3	lanthipeptide class iv	0
+BAC3	lanthipeptide class v	0
+BAC3	lassopeptide	69
+BAC3	microviridin	0
+BAC3	other	0
+BAC3	phenazine	0
+BAC3	phosphonate	0
+BAC3	proteusin	0
+BAC3	ranthipeptide	0
+BAC3	redox cofactor	0
+BAC3	resorcinol	0
+BAC3	siderophore	14
+BAC3	terpene	38
+BAC3	thioamitides	0
+BAC3	thiopeptide	0
+BAC3	transAT PKS	0
+BAC4	CDPS	0
+BAC4	LAP	23
+BAC4	NAGGN	0
+BAC4	NAPAA	0
+BAC4	NRPS	0
+BAC4	NRPS like	0
+BAC4	PKS like	0
+BAC4	RRE containing	22
+BAC4	RiPP like	28
+BAC4	T1PKS	0
+BAC4	T3PKS	0
+BAC4	acyl amino acids	0
+BAC4	arylpolyene	0
+BAC4	betalactone	26
+BAC4	butyrolactone	0
+BAC4	cyclic lactone autoinducer	0
+BAC4	ectoine	0
+BAC4	furan	0
+BAC4	hglE KS	0
+BAC4	hserlactone	0
+BAC4	ladderane	0
+BAC4	lanthipeptide class i	0
+BAC4	lanthipeptide class ii	0
+BAC4	lanthipeptide class iii	0
+BAC4	lanthipeptide class iv	0
+BAC4	lanthipeptide class v	0
+BAC4	lassopeptide	209
+BAC4	microviridin	0
+BAC4	other	0
+BAC4	phenazine	0
+BAC4	phosphonate	0
+BAC4	proteusin	0
+BAC4	ranthipeptide	0
+BAC4	redox cofactor	0
+BAC4	resorcinol	0
+BAC4	siderophore	12
+BAC4	terpene	17
+BAC4	thioamitides	0
+BAC4	thiopeptide	0
+BAC4	transAT PKS	0
+BAC5	CDPS	0
+BAC5	LAP	0
+BAC5	NAGGN	0
+BAC5	NAPAA	0
+BAC5	NRPS	0
+BAC5	NRPS like	0
+BAC5	PKS like	0
+BAC5	RRE containing	24
+BAC5	RiPP like	0
+BAC5	T1PKS	0
+BAC5	T3PKS	0
+BAC5	acyl amino acids	0
+BAC5	arylpolyene	0
+BAC5	betalactone	0
+BAC5	butyrolactone	0
+BAC5	cyclic lactone autoinducer	0
+BAC5	ectoine	0
+BAC5	furan	0
+BAC5	hglE KS	0
+BAC5	hserlactone	0
+BAC5	ladderane	0
+BAC5	lanthipeptide class i	0
+BAC5	lanthipeptide class ii	0
+BAC5	lanthipeptide class iii	0
+BAC5	lanthipeptide class iv	0
+BAC5	lanthipeptide class v	0
+BAC5	lassopeptide	42
+BAC5	microviridin	0
+BAC5	other	0
+BAC5	phenazine	0
+BAC5	phosphonate	0
+BAC5	proteusin	0
+BAC5	ranthipeptide	0
+BAC5	redox cofactor	0
+BAC5	resorcinol	0
+BAC5	siderophore	0
+BAC5	terpene	41
+BAC5	thioamitides	0
+BAC5	thiopeptide	0
+BAC5	transAT PKS	0
+BAC6	CDPS	0
+BAC6	LAP	0
+BAC6	NAGGN	0
+BAC6	NAPAA	0
+BAC6	NRPS	0
+BAC6	NRPS like	0
+BAC6	PKS like	0
+BAC6	RRE containing	0
+BAC6	RiPP like	0
+BAC6	T1PKS	0
+BAC6	T3PKS	40
+BAC6	acyl amino acids	0
+BAC6	arylpolyene	0
+BAC6	betalactone	0
+BAC6	butyrolactone	0
+BAC6	cyclic lactone autoinducer	0
+BAC6	ectoine	0
+BAC6	furan	0
+BAC6	hglE KS	0
+BAC6	hserlactone	0
+BAC6	ladderane	0
+BAC6	lanthipeptide class i	0
+BAC6	lanthipeptide class ii	0
+BAC6	lanthipeptide class iii	0
+BAC6	lanthipeptide class iv	0
+BAC6	lanthipeptide class v	0
+BAC6	lassopeptide	0
+BAC6	microviridin	0
+BAC6	other	0
+BAC6	phenazine	0
+BAC6	phosphonate	0
+BAC6	proteusin	0
+BAC6	ranthipeptide	0
+BAC6	redox cofactor	23
+BAC6	resorcinol	0
+BAC6	siderophore	0
+BAC6	terpene	39
+BAC6	thioamitides	0
+BAC6	thiopeptide	0
+BAC6	transAT PKS	0
+BAC7	CDPS	0
+BAC7	LAP	0
+BAC7	NAGGN	0
+BAC7	NAPAA	0
+BAC7	NRPS	199
+BAC7	NRPS like	0
+BAC7	PKS like	38
+BAC7	RRE containing	0
+BAC7	RiPP like	46
+BAC7	T1PKS	0
+BAC7	T3PKS	88
+BAC7	acyl amino acids	0
+BAC7	arylpolyene	0
+BAC7	betalactone	67
+BAC7	butyrolactone	0
+BAC7	cyclic lactone autoinducer	0
+BAC7	ectoine	0
+BAC7	furan	0
+BAC7	hglE KS	0
+BAC7	hserlactone	0
+BAC7	ladderane	0
+BAC7	lanthipeptide class i	0
+BAC7	lanthipeptide class ii	34
+BAC7	lanthipeptide class iii	0
+BAC7	lanthipeptide class iv	0
+BAC7	lanthipeptide class v	0
+BAC7	lassopeptide	0
+BAC7	microviridin	0
+BAC7	other	44
+BAC7	phenazine	0
+BAC7	phosphonate	0
+BAC7	proteusin	0
+BAC7	ranthipeptide	0
+BAC7	redox cofactor	0
+BAC7	resorcinol	0
+BAC7	siderophore	0
+BAC7	terpene	43
+BAC7	thioamitides	0
+BAC7	thiopeptide	0
+BAC7	transAT PKS	197
+BAC8	CDPS	0
+BAC8	LAP	23
+BAC8	NAGGN	0
+BAC8	NAPAA	0
+BAC8	NRPS	201
+BAC8	NRPS like	0
+BAC8	PKS like	37
+BAC8	RRE containing	0
+BAC8	RiPP like	48
+BAC8	T1PKS	0
+BAC8	T3PKS	90
+BAC8	acyl amino acids	0
+BAC8	arylpolyene	0
+BAC8	betalactone	65
+BAC8	butyrolactone	0
+BAC8	cyclic lactone autoinducer	0
+BAC8	ectoine	0
+BAC8	furan	0
+BAC8	hglE KS	0
+BAC8	hserlactone	0
+BAC8	ladderane	0
+BAC8	lanthipeptide class i	0
+BAC8	lanthipeptide class ii	33
+BAC8	lanthipeptide class iii	0
+BAC8	lanthipeptide class iv	0
+BAC8	lanthipeptide class v	0
+BAC8	lassopeptide	0
+BAC8	microviridin	0
+BAC8	other	43
+BAC8	phenazine	0
+BAC8	phosphonate	0
+BAC8	proteusin	0
+BAC8	ranthipeptide	0
+BAC8	redox cofactor	0
+BAC8	resorcinol	0
+BAC8	siderophore	0
+BAC8	terpene	44
+BAC8	thioamitides	0
+BAC8	thiopeptide	23
+BAC8	transAT PKS	191
+BOR1	CDPS	0
+BOR1	LAP	0
+BOR1	NAGGN	0
+BOR1	NAPAA	0
+BOR1	NRPS	0
+BOR1	NRPS like	0
+BOR1	PKS like	0
+BOR1	RRE containing	0
+BOR1	RiPP like	11
+BOR1	T1PKS	34
+BOR1	T3PKS	0
+BOR1	acyl amino acids	0
+BOR1	arylpolyene	0
+BOR1	betalactone	46
+BOR1	butyrolactone	0
+BOR1	cyclic lactone autoinducer	0
+BOR1	ectoine	9
+BOR1	furan	0
+BOR1	hglE KS	0
+BOR1	hserlactone	0
+BOR1	ladderane	0
+BOR1	lanthipeptide class i	0
+BOR1	lanthipeptide class ii	0
+BOR1	lanthipeptide class iii	0
+BOR1	lanthipeptide class iv	0
+BOR1	lanthipeptide class v	0
+BOR1	lassopeptide	0
+BOR1	microviridin	0
+BOR1	other	0
+BOR1	phenazine	0
+BOR1	phosphonate	0
+BOR1	proteusin	0
+BOR1	ranthipeptide	0
+BOR1	redox cofactor	0
+BOR1	resorcinol	0
+BOR1	siderophore	0
+BOR1	terpene	20
+BOR1	thioamitides	0
+BOR1	thiopeptide	0
+BOR1	transAT PKS	0
+BRE1	CDPS	0
+BRE1	LAP	22
+BRE1	NAGGN	0
+BRE1	NAPAA	0
+BRE1	NRPS	162
+BRE1	NRPS like	0
+BRE1	PKS like	0
+BRE1	RRE containing	18
+BRE1	RiPP like	32
+BRE1	T1PKS	77
+BRE1	T3PKS	44
+BRE1	acyl amino acids	0
+BRE1	arylpolyene	0
+BRE1	betalactone	0
+BRE1	butyrolactone	0
+BRE1	cyclic lactone autoinducer	18
+BRE1	ectoine	0
+BRE1	furan	0
+BRE1	hglE KS	0
+BRE1	hserlactone	0
+BRE1	ladderane	0
+BRE1	lanthipeptide class i	0
+BRE1	lanthipeptide class ii	0
+BRE1	lanthipeptide class iii	0
+BRE1	lanthipeptide class iv	0
+BRE1	lanthipeptide class v	0
+BRE1	lassopeptide	0
+BRE1	microviridin	0
+BRE1	other	0
+BRE1	phenazine	0
+BRE1	phosphonate	0
+BRE1	proteusin	0
+BRE1	ranthipeptide	0
+BRE1	redox cofactor	0
+BRE1	resorcinol	0
+BRE1	siderophore	0
+BRE1	terpene	24
+BRE1	thioamitides	0
+BRE1	thiopeptide	0
+BRE1	transAT PKS	77
+BRE2	CDPS	0
+BRE2	LAP	0
+BRE2	NAGGN	0
+BRE2	NAPAA	0
+BRE2	NRPS	41
+BRE2	NRPS like	0
+BRE2	PKS like	0
+BRE2	RRE containing	0
+BRE2	RiPP like	0
+BRE2	T1PKS	0
+BRE2	T3PKS	0
+BRE2	acyl amino acids	0
+BRE2	arylpolyene	0
+BRE2	betalactone	0
+BRE2	butyrolactone	0
+BRE2	cyclic lactone autoinducer	0
+BRE2	ectoine	0
+BRE2	furan	0
+BRE2	hglE KS	0
+BRE2	hserlactone	0
+BRE2	ladderane	0
+BRE2	lanthipeptide class i	0
+BRE2	lanthipeptide class ii	0
+BRE2	lanthipeptide class iii	0
+BRE2	lanthipeptide class iv	0
+BRE2	lanthipeptide class v	0
+BRE2	lassopeptide	0
+BRE2	microviridin	0
+BRE2	other	0
+BRE2	phenazine	0
+BRE2	phosphonate	0
+BRE2	proteusin	0
+BRE2	ranthipeptide	0
+BRE2	redox cofactor	0
+BRE2	resorcinol	40
+BRE2	siderophore	0
+BRE2	terpene	0
+BRE2	thioamitides	0
+BRE2	thiopeptide	0
+BRE2	transAT PKS	0
+BUR1	CDPS	12
+BUR1	LAP	0
+BUR1	NAGGN	0
+BUR1	NAPAA	0
+BUR1	NRPS	76
+BUR1	NRPS like	36
+BUR1	PKS like	37
+BUR1	RRE containing	0
+BUR1	RiPP like	9
+BUR1	T1PKS	38
+BUR1	T3PKS	0
+BUR1	acyl amino acids	0
+BUR1	arylpolyene	37
+BUR1	betalactone	0
+BUR1	butyrolactone	0
+BUR1	cyclic lactone autoinducer	0
+BUR1	ectoine	0
+BUR1	furan	0
+BUR1	hglE KS	0
+BUR1	hserlactone	20
+BUR1	ladderane	0
+BUR1	lanthipeptide class i	0
+BUR1	lanthipeptide class ii	0
+BUR1	lanthipeptide class iii	0
+BUR1	lanthipeptide class iv	0
+BUR1	lanthipeptide class v	0
+BUR1	lassopeptide	0
+BUR1	microviridin	0
+BUR1	other	32
+BUR1	phenazine	36
+BUR1	phosphonate	33
+BUR1	proteusin	0
+BUR1	ranthipeptide	0
+BUR1	redox cofactor	19
+BUR1	resorcinol	0
+BUR1	siderophore	0
+BUR1	terpene	90
+BUR1	thioamitides	0
+BUR1	thiopeptide	0
+BUR1	transAT PKS	0
+CHR1	CDPS	0
+CHR1	LAP	0
+CHR1	NAGGN	0
+CHR1	NAPAA	0
+CHR1	NRPS	0
+CHR1	NRPS like	35
+CHR1	PKS like	0
+CHR1	RRE containing	0
+CHR1	RiPP like	12
+CHR1	T1PKS	27
+CHR1	T3PKS	0
+CHR1	acyl amino acids	0
+CHR1	arylpolyene	58
+CHR1	betalactone	0
+CHR1	butyrolactone	0
+CHR1	cyclic lactone autoinducer	0
+CHR1	ectoine	0
+CHR1	furan	0
+CHR1	hglE KS	27
+CHR1	hserlactone	0
+CHR1	ladderane	0
+CHR1	lanthipeptide class i	0
+CHR1	lanthipeptide class ii	0
+CHR1	lanthipeptide class iii	0
+CHR1	lanthipeptide class iv	0
+CHR1	lanthipeptide class v	0
+CHR1	lassopeptide	0
+CHR1	microviridin	22
+CHR1	other	0
+CHR1	phenazine	0
+CHR1	phosphonate	0
+CHR1	proteusin	20
+CHR1	ranthipeptide	0
+CHR1	redox cofactor	0
+CHR1	resorcinol	58
+CHR1	siderophore	7
+CHR1	terpene	18
+CHR1	thioamitides	0
+CHR1	thiopeptide	0
+CHR1	transAT PKS	0
+CHR2	CDPS	0
+CHR2	LAP	0
+CHR2	NAGGN	0
+CHR2	NAPAA	0
+CHR2	NRPS	0
+CHR2	NRPS like	36
+CHR2	PKS like	0
+CHR2	RRE containing	0
+CHR2	RiPP like	11
+CHR2	T1PKS	30
+CHR2	T3PKS	0
+CHR2	acyl amino acids	0
+CHR2	arylpolyene	57
+CHR2	betalactone	0
+CHR2	butyrolactone	0
+CHR2	cyclic lactone autoinducer	0
+CHR2	ectoine	0
+CHR2	furan	0
+CHR2	hglE KS	30
+CHR2	hserlactone	0
+CHR2	ladderane	0
+CHR2	lanthipeptide class i	0
+CHR2	lanthipeptide class ii	0
+CHR2	lanthipeptide class iii	0
+CHR2	lanthipeptide class iv	0
+CHR2	lanthipeptide class v	0
+CHR2	lassopeptide	0
+CHR2	microviridin	22
+CHR2	other	0
+CHR2	phenazine	0
+CHR2	phosphonate	0
+CHR2	proteusin	27
+CHR2	ranthipeptide	0
+CHR2	redox cofactor	0
+CHR2	resorcinol	57
+CHR2	siderophore	9
+CHR2	terpene	20
+CHR2	thioamitides	0
+CHR2	thiopeptide	0
+CHR2	transAT PKS	0
+CHR3	CDPS	0
+CHR3	LAP	0
+CHR3	NAGGN	0
+CHR3	NAPAA	0
+CHR3	NRPS	0
+CHR3	NRPS like	34
+CHR3	PKS like	0
+CHR3	RRE containing	0
+CHR3	RiPP like	0
+CHR3	T1PKS	0
+CHR3	T3PKS	0
+CHR3	acyl amino acids	0
+CHR3	arylpolyene	57
+CHR3	betalactone	0
+CHR3	butyrolactone	0
+CHR3	cyclic lactone autoinducer	0
+CHR3	ectoine	0
+CHR3	furan	0
+CHR3	hglE KS	0
+CHR3	hserlactone	0
+CHR3	ladderane	0
+CHR3	lanthipeptide class i	0
+CHR3	lanthipeptide class ii	0
+CHR3	lanthipeptide class iii	0
+CHR3	lanthipeptide class iv	0
+CHR3	lanthipeptide class v	0
+CHR3	lassopeptide	0
+CHR3	microviridin	21
+CHR3	other	0
+CHR3	phenazine	0
+CHR3	phosphonate	0
+CHR3	proteusin	0
+CHR3	ranthipeptide	0
+CHR3	redox cofactor	0
+CHR3	resorcinol	57
+CHR3	siderophore	10
+CHR3	terpene	42
+CHR3	thioamitides	0
+CHR3	thiopeptide	0
+CHR3	transAT PKS	0
+CHR4	CDPS	0
+CHR4	LAP	0
+CHR4	NAGGN	0
+CHR4	NAPAA	0
+CHR4	NRPS	0
+CHR4	NRPS like	0
+CHR4	PKS like	0
+CHR4	RRE containing	0
+CHR4	RiPP like	12
+CHR4	T1PKS	0
+CHR4	T3PKS	0
+CHR4	acyl amino acids	0
+CHR4	arylpolyene	58
+CHR4	betalactone	0
+CHR4	butyrolactone	0
+CHR4	cyclic lactone autoinducer	0
+CHR4	ectoine	0
+CHR4	furan	0
+CHR4	hglE KS	0
+CHR4	hserlactone	0
+CHR4	ladderane	0
+CHR4	lanthipeptide class i	21
+CHR4	lanthipeptide class ii	0
+CHR4	lanthipeptide class iii	0
+CHR4	lanthipeptide class iv	0
+CHR4	lanthipeptide class v	0
+CHR4	lassopeptide	0
+CHR4	microviridin	21
+CHR4	other	0
+CHR4	phenazine	0
+CHR4	phosphonate	0
+CHR4	proteusin	0
+CHR4	ranthipeptide	0
+CHR4	redox cofactor	0
+CHR4	resorcinol	58
+CHR4	siderophore	0
+CHR4	terpene	19
+CHR4	thioamitides	0
+CHR4	thiopeptide	0
+CHR4	transAT PKS	0
+CHR5	CDPS	0
+CHR5	LAP	0
+CHR5	NAGGN	0
+CHR5	NAPAA	0
+CHR5	NRPS	0
+CHR5	NRPS like	35
+CHR5	PKS like	0
+CHR5	RRE containing	0
+CHR5	RiPP like	11
+CHR5	T1PKS	27
+CHR5	T3PKS	0
+CHR5	acyl amino acids	0
+CHR5	arylpolyene	57
+CHR5	betalactone	0
+CHR5	butyrolactone	0
+CHR5	cyclic lactone autoinducer	0
+CHR5	ectoine	0
+CHR5	furan	0
+CHR5	hglE KS	27
+CHR5	hserlactone	0
+CHR5	ladderane	0
+CHR5	lanthipeptide class i	0
+CHR5	lanthipeptide class ii	0
+CHR5	lanthipeptide class iii	0
+CHR5	lanthipeptide class iv	0
+CHR5	lanthipeptide class v	0
+CHR5	lassopeptide	0
+CHR5	microviridin	21
+CHR5	other	0
+CHR5	phenazine	0
+CHR5	phosphonate	0
+CHR5	proteusin	29
+CHR5	ranthipeptide	0
+CHR5	redox cofactor	0
+CHR5	resorcinol	57
+CHR5	siderophore	9
+CHR5	terpene	20
+CHR5	thioamitides	0
+CHR5	thiopeptide	0
+CHR5	transAT PKS	0
+CHR6	CDPS	0
+CHR6	LAP	0
+CHR6	NAGGN	0
+CHR6	NAPAA	0
+CHR6	NRPS	39
+CHR6	NRPS like	35
+CHR6	PKS like	0
+CHR6	RRE containing	0
+CHR6	RiPP like	12
+CHR6	T1PKS	28
+CHR6	T3PKS	0
+CHR6	acyl amino acids	0
+CHR6	arylpolyene	58
+CHR6	betalactone	0
+CHR6	butyrolactone	0
+CHR6	cyclic lactone autoinducer	0
+CHR6	ectoine	0
+CHR6	furan	0
+CHR6	hglE KS	28
+CHR6	hserlactone	0
+CHR6	ladderane	0
+CHR6	lanthipeptide class i	0
+CHR6	lanthipeptide class ii	0
+CHR6	lanthipeptide class iii	0
+CHR6	lanthipeptide class iv	0
+CHR6	lanthipeptide class v	0
+CHR6	lassopeptide	0
+CHR6	microviridin	21
+CHR6	other	0
+CHR6	phenazine	0
+CHR6	phosphonate	0
+CHR6	proteusin	0
+CHR6	ranthipeptide	0
+CHR6	redox cofactor	0
+CHR6	resorcinol	58
+CHR6	siderophore	10
+CHR6	terpene	64
+CHR6	thioamitides	0
+CHR6	thiopeptide	0
+CHR6	transAT PKS	0
+CUP1	CDPS	0
+CUP1	LAP	0
+CUP1	NAGGN	0
+CUP1	NAPAA	0
+CUP1	NRPS	0
+CUP1	NRPS like	32
+CUP1	PKS like	0
+CUP1	RRE containing	0
+CUP1	RiPP like	0
+CUP1	T1PKS	0
+CUP1	T3PKS	0
+CUP1	acyl amino acids	0
+CUP1	arylpolyene	38
+CUP1	betalactone	0
+CUP1	butyrolactone	0
+CUP1	cyclic lactone autoinducer	0
+CUP1	ectoine	0
+CUP1	furan	0
+CUP1	hglE KS	0
+CUP1	hserlactone	0
+CUP1	ladderane	0
+CUP1	lanthipeptide class i	0
+CUP1	lanthipeptide class ii	0
+CUP1	lanthipeptide class iii	0
+CUP1	lanthipeptide class iv	0
+CUP1	lanthipeptide class v	0
+CUP1	lassopeptide	0
+CUP1	microviridin	0
+CUP1	other	0
+CUP1	phenazine	0
+CUP1	phosphonate	0
+CUP1	proteusin	0
+CUP1	ranthipeptide	0
+CUP1	redox cofactor	20
+CUP1	resorcinol	0
+CUP1	siderophore	11
+CUP1	terpene	50
+CUP1	thioamitides	0
+CUP1	thiopeptide	0
+CUP1	transAT PKS	0
+CUP2	CDPS	0
+CUP2	LAP	0
+CUP2	NAGGN	0
+CUP2	NAPAA	0
+CUP2	NRPS	0
+CUP2	NRPS like	34
+CUP2	PKS like	0
+CUP2	RRE containing	0
+CUP2	RiPP like	22
+CUP2	T1PKS	0
+CUP2	T3PKS	0
+CUP2	acyl amino acids	0
+CUP2	arylpolyene	39
+CUP2	betalactone	26
+CUP2	butyrolactone	0
+CUP2	cyclic lactone autoinducer	0
+CUP2	ectoine	0
+CUP2	furan	0
+CUP2	hglE KS	0
+CUP2	hserlactone	0
+CUP2	ladderane	0
+CUP2	lanthipeptide class i	0
+CUP2	lanthipeptide class ii	0
+CUP2	lanthipeptide class iii	0
+CUP2	lanthipeptide class iv	0
+CUP2	lanthipeptide class v	0
+CUP2	lassopeptide	0
+CUP2	microviridin	0
+CUP2	other	0
+CUP2	phenazine	0
+CUP2	phosphonate	0
+CUP2	proteusin	0
+CUP2	ranthipeptide	0
+CUP2	redox cofactor	21
+CUP2	resorcinol	0
+CUP2	siderophore	20
+CUP2	terpene	52
+CUP2	thioamitides	0
+CUP2	thiopeptide	0
+CUP2	transAT PKS	0
+CUP3	CDPS	0
+CUP3	LAP	0
+CUP3	NAGGN	0
+CUP3	NAPAA	0
+CUP3	NRPS	0
+CUP3	NRPS like	0
+CUP3	PKS like	0
+CUP3	RRE containing	0
+CUP3	RiPP like	14
+CUP3	T1PKS	0
+CUP3	T3PKS	0
+CUP3	acyl amino acids	0
+CUP3	arylpolyene	39
+CUP3	betalactone	46
+CUP3	butyrolactone	0
+CUP3	cyclic lactone autoinducer	0
+CUP3	ectoine	0
+CUP3	furan	0
+CUP3	hglE KS	0
+CUP3	hserlactone	0
+CUP3	ladderane	0
+CUP3	lanthipeptide class i	0
+CUP3	lanthipeptide class ii	0
+CUP3	lanthipeptide class iii	0
+CUP3	lanthipeptide class iv	0
+CUP3	lanthipeptide class v	0
+CUP3	lassopeptide	0
+CUP3	microviridin	0
+CUP3	other	0
+CUP3	phenazine	18
+CUP3	phosphonate	0
+CUP3	proteusin	0
+CUP3	ranthipeptide	0
+CUP3	redox cofactor	17
+CUP3	resorcinol	0
+CUP3	siderophore	0
+CUP3	terpene	52
+CUP3	thioamitides	0
+CUP3	thiopeptide	0
+CUP3	transAT PKS	0
+CUR1	CDPS	0
+CUR1	LAP	0
+CUR1	NAGGN	0
+CUR1	NAPAA	28
+CUR1	NRPS	0
+CUR1	NRPS like	36
+CUR1	PKS like	0
+CUR1	RRE containing	0
+CUR1	RiPP like	7
+CUR1	T1PKS	0
+CUR1	T3PKS	65
+CUR1	acyl amino acids	0
+CUR1	arylpolyene	0
+CUR1	betalactone	19
+CUR1	butyrolactone	0
+CUR1	cyclic lactone autoinducer	0
+CUR1	ectoine	0
+CUR1	furan	0
+CUR1	hglE KS	0
+CUR1	hserlactone	0
+CUR1	ladderane	0
+CUR1	lanthipeptide class i	0
+CUR1	lanthipeptide class ii	0
+CUR1	lanthipeptide class iii	0
+CUR1	lanthipeptide class iv	0
+CUR1	lanthipeptide class v	0
+CUR1	lassopeptide	0
+CUR1	microviridin	0
+CUR1	other	0
+CUR1	phenazine	0
+CUR1	phosphonate	0
+CUR1	proteusin	0
+CUR1	ranthipeptide	0
+CUR1	redox cofactor	0
+CUR1	resorcinol	0
+CUR1	siderophore	10
+CUR1	terpene	38
+CUR1	thioamitides	0
+CUR1	thiopeptide	0
+CUR1	transAT PKS	0
+DEL1	CDPS	0
+DEL1	LAP	0
+DEL1	NAGGN	0
+DEL1	NAPAA	0
+DEL1	NRPS	36
+DEL1	NRPS like	0
+DEL1	PKS like	0
+DEL1	RRE containing	20
+DEL1	RiPP like	20
+DEL1	T1PKS	36
+DEL1	T3PKS	0
+DEL1	acyl amino acids	0
+DEL1	arylpolyene	0
+DEL1	betalactone	0
+DEL1	butyrolactone	0
+DEL1	cyclic lactone autoinducer	0
+DEL1	ectoine	0
+DEL1	furan	0
+DEL1	hglE KS	0
+DEL1	hserlactone	0
+DEL1	ladderane	0
+DEL1	lanthipeptide class i	0
+DEL1	lanthipeptide class ii	0
+DEL1	lanthipeptide class iii	0
+DEL1	lanthipeptide class iv	0
+DEL1	lanthipeptide class v	0
+DEL1	lassopeptide	0
+DEL1	microviridin	0
+DEL1	other	0
+DEL1	phenazine	0
+DEL1	phosphonate	0
+DEL1	proteusin	0
+DEL1	ranthipeptide	0
+DEL1	redox cofactor	0
+DEL1	resorcinol	40
+DEL1	siderophore	0
+DEL1	terpene	19
+DEL1	thioamitides	0
+DEL1	thiopeptide	0
+DEL1	transAT PKS	0
+DEL2	CDPS	0
+DEL2	LAP	0
+DEL2	NAGGN	0
+DEL2	NAPAA	0
+DEL2	NRPS	36
+DEL2	NRPS like	0
+DEL2	PKS like	0
+DEL2	RRE containing	15
+DEL2	RiPP like	15
+DEL2	T1PKS	36
+DEL2	T3PKS	0
+DEL2	acyl amino acids	0
+DEL2	arylpolyene	40
+DEL2	betalactone	0
+DEL2	butyrolactone	0
+DEL2	cyclic lactone autoinducer	0
+DEL2	ectoine	0
+DEL2	furan	0
+DEL2	hglE KS	0
+DEL2	hserlactone	0
+DEL2	ladderane	0
+DEL2	lanthipeptide class i	0
+DEL2	lanthipeptide class ii	0
+DEL2	lanthipeptide class iii	0
+DEL2	lanthipeptide class iv	0
+DEL2	lanthipeptide class v	0
+DEL2	lassopeptide	0
+DEL2	microviridin	0
+DEL2	other	0
+DEL2	phenazine	0
+DEL2	phosphonate	0
+DEL2	proteusin	0
+DEL2	ranthipeptide	0
+DEL2	redox cofactor	0
+DEL2	resorcinol	38
+DEL2	siderophore	0
+DEL2	terpene	20
+DEL2	thioamitides	0
+DEL2	thiopeptide	0
+DEL2	transAT PKS	0
+DYE1	CDPS	0
+DYE1	LAP	0
+DYE1	NAGGN	0
+DYE1	NAPAA	0
+DYE1	NRPS	198
+DYE1	NRPS like	0
+DYE1	PKS like	38
+DYE1	RRE containing	0
+DYE1	RiPP like	46
+DYE1	T1PKS	0
+DYE1	T3PKS	88
+DYE1	acyl amino acids	0
+DYE1	arylpolyene	0
+DYE1	betalactone	66
+DYE1	butyrolactone	0
+DYE1	cyclic lactone autoinducer	0
+DYE1	ectoine	0
+DYE1	furan	0
+DYE1	hglE KS	0
+DYE1	hserlactone	0
+DYE1	ladderane	0
+DYE1	lanthipeptide class i	0
+DYE1	lanthipeptide class ii	34
+DYE1	lanthipeptide class iii	0
+DYE1	lanthipeptide class iv	0
+DYE1	lanthipeptide class v	0
+DYE1	lassopeptide	0
+DYE1	microviridin	0
+DYE1	other	44
+DYE1	phenazine	0
+DYE1	phosphonate	0
+DYE1	proteusin	0
+DYE1	ranthipeptide	0
+DYE1	redox cofactor	0
+DYE1	resorcinol	0
+DYE1	siderophore	0
+DYE1	terpene	43
+DYE1	thioamitides	0
+DYE1	thiopeptide	0
+DYE1	transAT PKS	202
+EMP1	CDPS	0
+EMP1	LAP	0
+EMP1	NAGGN	0
+EMP1	NAPAA	0
+EMP1	NRPS	0
+EMP1	NRPS like	0
+EMP1	PKS like	0
+EMP1	RRE containing	0
+EMP1	RiPP like	0
+EMP1	T1PKS	0
+EMP1	T3PKS	0
+EMP1	acyl amino acids	0
+EMP1	arylpolyene	53
+EMP1	betalactone	0
+EMP1	butyrolactone	0
+EMP1	cyclic lactone autoinducer	0
+EMP1	ectoine	0
+EMP1	furan	0
+EMP1	hglE KS	0
+EMP1	hserlactone	0
+EMP1	ladderane	0
+EMP1	lanthipeptide class i	0
+EMP1	lanthipeptide class ii	0
+EMP1	lanthipeptide class iii	0
+EMP1	lanthipeptide class iv	0
+EMP1	lanthipeptide class v	0
+EMP1	lassopeptide	0
+EMP1	microviridin	0
+EMP1	other	0
+EMP1	phenazine	0
+EMP1	phosphonate	0
+EMP1	proteusin	0
+EMP1	ranthipeptide	0
+EMP1	redox cofactor	0
+EMP1	resorcinol	53
+EMP1	siderophore	0
+EMP1	terpene	24
+EMP1	thioamitides	0
+EMP1	thiopeptide	0
+EMP1	transAT PKS	0
+EMP2	CDPS	0
+EMP2	LAP	0
+EMP2	NAGGN	0
+EMP2	NAPAA	0
+EMP2	NRPS	0
+EMP2	NRPS like	0
+EMP2	PKS like	0
+EMP2	RRE containing	0
+EMP2	RiPP like	22
+EMP2	T1PKS	0
+EMP2	T3PKS	0
+EMP2	acyl amino acids	0
+EMP2	arylpolyene	46
+EMP2	betalactone	0
+EMP2	butyrolactone	0
+EMP2	cyclic lactone autoinducer	0
+EMP2	ectoine	0
+EMP2	furan	0
+EMP2	hglE KS	0
+EMP2	hserlactone	0
+EMP2	ladderane	0
+EMP2	lanthipeptide class i	0
+EMP2	lanthipeptide class ii	0
+EMP2	lanthipeptide class iii	0
+EMP2	lanthipeptide class iv	0
+EMP2	lanthipeptide class v	0
+EMP2	lassopeptide	0
+EMP2	microviridin	0
+EMP2	other	0
+EMP2	phenazine	0
+EMP2	phosphonate	0
+EMP2	proteusin	0
+EMP2	ranthipeptide	0
+EMP2	redox cofactor	0
+EMP2	resorcinol	46
+EMP2	siderophore	0
+EMP2	terpene	22
+EMP2	thioamitides	0
+EMP2	thiopeptide	0
+EMP2	transAT PKS	0
+ENS1	CDPS	0
+ENS1	LAP	0
+ENS1	NAGGN	16
+ENS1	NAPAA	0
+ENS1	NRPS	0
+ENS1	NRPS like	0
+ENS1	PKS like	0
+ENS1	RRE containing	0
+ENS1	RiPP like	10
+ENS1	T1PKS	35
+ENS1	T3PKS	0
+ENS1	acyl amino acids	54
+ENS1	arylpolyene	0
+ENS1	betalactone	0
+ENS1	butyrolactone	0
+ENS1	cyclic lactone autoinducer	0
+ENS1	ectoine	8
+ENS1	furan	0
+ENS1	hglE KS	0
+ENS1	hserlactone	25
+ENS1	ladderane	0
+ENS1	lanthipeptide class i	0
+ENS1	lanthipeptide class ii	0
+ENS1	lanthipeptide class iii	0
+ENS1	lanthipeptide class iv	0
+ENS1	lanthipeptide class v	0
+ENS1	lassopeptide	0
+ENS1	microviridin	0
+ENS1	other	0
+ENS1	phenazine	0
+ENS1	phosphonate	0
+ENS1	proteusin	0
+ENS1	ranthipeptide	0
+ENS1	redox cofactor	0
+ENS1	resorcinol	0
+ENS1	siderophore	10
+ENS1	terpene	17
+ENS1	thioamitides	40
+ENS1	thiopeptide	0
+ENS1	transAT PKS	0
+ENT1	CDPS	0
+ENT1	LAP	0
+ENT1	NAGGN	0
+ENT1	NAPAA	0
+ENT1	NRPS	38
+ENT1	NRPS like	0
+ENT1	PKS like	0
+ENT1	RRE containing	0
+ENT1	RiPP like	0
+ENT1	T1PKS	0
+ENT1	T3PKS	0
+ENT1	acyl amino acids	0
+ENT1	arylpolyene	34
+ENT1	betalactone	0
+ENT1	butyrolactone	0
+ENT1	cyclic lactone autoinducer	0
+ENT1	ectoine	0
+ENT1	furan	0
+ENT1	hglE KS	0
+ENT1	hserlactone	0
+ENT1	ladderane	0
+ENT1	lanthipeptide class i	0
+ENT1	lanthipeptide class ii	0
+ENT1	lanthipeptide class iii	0
+ENT1	lanthipeptide class iv	0
+ENT1	lanthipeptide class v	0
+ENT1	lassopeptide	0
+ENT1	microviridin	0
+ENT1	other	0
+ENT1	phenazine	0
+ENT1	phosphonate	0
+ENT1	proteusin	0
+ENT1	ranthipeptide	0
+ENT1	redox cofactor	0
+ENT1	resorcinol	0
+ENT1	siderophore	34
+ENT1	terpene	0
+ENT1	thioamitides	0
+ENT1	thiopeptide	19
+ENT1	transAT PKS	0
+ENT2	CDPS	0
+ENT2	LAP	0
+ENT2	NAGGN	0
+ENT2	NAPAA	0
+ENT2	NRPS	37
+ENT2	NRPS like	0
+ENT2	PKS like	0
+ENT2	RRE containing	0
+ENT2	RiPP like	0
+ENT2	T1PKS	0
+ENT2	T3PKS	0
+ENT2	acyl amino acids	0
+ENT2	arylpolyene	47
+ENT2	betalactone	0
+ENT2	butyrolactone	0
+ENT2	cyclic lactone autoinducer	0
+ENT2	ectoine	0
+ENT2	furan	0
+ENT2	hglE KS	0
+ENT2	hserlactone	0
+ENT2	ladderane	0
+ENT2	lanthipeptide class i	0
+ENT2	lanthipeptide class ii	0
+ENT2	lanthipeptide class iii	0
+ENT2	lanthipeptide class iv	0
+ENT2	lanthipeptide class v	0
+ENT2	lassopeptide	0
+ENT2	microviridin	0
+ENT2	other	0
+ENT2	phenazine	0
+ENT2	phosphonate	0
+ENT2	proteusin	0
+ENT2	ranthipeptide	0
+ENT2	redox cofactor	0
+ENT2	resorcinol	0
+ENT2	siderophore	10
+ENT2	terpene	0
+ENT2	thioamitides	0
+ENT2	thiopeptide	20
+ENT2	transAT PKS	0
+ENT3	CDPS	0
+ENT3	LAP	0
+ENT3	NAGGN	0
+ENT3	NAPAA	0
+ENT3	NRPS	39
+ENT3	NRPS like	0
+ENT3	PKS like	0
+ENT3	RRE containing	0
+ENT3	RiPP like	0
+ENT3	T1PKS	0
+ENT3	T3PKS	0
+ENT3	acyl amino acids	0
+ENT3	arylpolyene	0
+ENT3	betalactone	0
+ENT3	butyrolactone	0
+ENT3	cyclic lactone autoinducer	0
+ENT3	ectoine	0
+ENT3	furan	0
+ENT3	hglE KS	0
+ENT3	hserlactone	0
+ENT3	ladderane	0
+ENT3	lanthipeptide class i	0
+ENT3	lanthipeptide class ii	0
+ENT3	lanthipeptide class iii	0
+ENT3	lanthipeptide class iv	0
+ENT3	lanthipeptide class v	0
+ENT3	lassopeptide	0
+ENT3	microviridin	0
+ENT3	other	0
+ENT3	phenazine	0
+ENT3	phosphonate	0
+ENT3	proteusin	0
+ENT3	ranthipeptide	0
+ENT3	redox cofactor	0
+ENT3	resorcinol	0
+ENT3	siderophore	10
+ENT3	terpene	0
+ENT3	thioamitides	0
+ENT3	thiopeptide	22
+ENT3	transAT PKS	0
+ESC1	CDPS	0
+ESC1	LAP	0
+ESC1	NAGGN	0
+ESC1	NAPAA	26
+ESC1	NRPS	0
+ESC1	NRPS like	0
+ESC1	PKS like	0
+ESC1	RRE containing	0
+ESC1	RiPP like	22
+ESC1	T1PKS	0
+ESC1	T3PKS	0
+ESC1	acyl amino acids	0
+ESC1	arylpolyene	80
+ESC1	betalactone	21
+ESC1	butyrolactone	0
+ESC1	cyclic lactone autoinducer	0
+ESC1	ectoine	0
+ESC1	furan	0
+ESC1	hglE KS	0
+ESC1	hserlactone	0
+ESC1	ladderane	0
+ESC1	lanthipeptide class i	0
+ESC1	lanthipeptide class ii	0
+ESC1	lanthipeptide class iii	0
+ESC1	lanthipeptide class iv	0
+ESC1	lanthipeptide class v	34
+ESC1	lassopeptide	0
+ESC1	microviridin	0
+ESC1	other	0
+ESC1	phenazine	0
+ESC1	phosphonate	0
+ESC1	proteusin	0
+ESC1	ranthipeptide	0
+ESC1	redox cofactor	0
+ESC1	resorcinol	0
+ESC1	siderophore	11
+ESC1	terpene	0
+ESC1	thioamitides	0
+ESC1	thiopeptide	0
+ESC1	transAT PKS	0
+FAL1	CDPS	0
+FAL1	LAP	0
+FAL1	NAGGN	0
+FAL1	NAPAA	0
+FAL1	NRPS	0
+FAL1	NRPS like	0
+FAL1	PKS like	0
+FAL1	RRE containing	23
+FAL1	RiPP like	0
+FAL1	T1PKS	0
+FAL1	T3PKS	42
+FAL1	acyl amino acids	0
+FAL1	arylpolyene	0
+FAL1	betalactone	0
+FAL1	butyrolactone	0
+FAL1	cyclic lactone autoinducer	0
+FAL1	ectoine	0
+FAL1	furan	0
+FAL1	hglE KS	0
+FAL1	hserlactone	0
+FAL1	ladderane	0
+FAL1	lanthipeptide class i	0
+FAL1	lanthipeptide class ii	0
+FAL1	lanthipeptide class iii	0
+FAL1	lanthipeptide class iv	0
+FAL1	lanthipeptide class v	0
+FAL1	lassopeptide	0
+FAL1	microviridin	0
+FAL1	other	0
+FAL1	phenazine	0
+FAL1	phosphonate	0
+FAL1	proteusin	0
+FAL1	ranthipeptide	0
+FAL1	redox cofactor	0
+FAL1	resorcinol	0
+FAL1	siderophore	0
+FAL1	terpene	37
+FAL1	thioamitides	0
+FAL1	thiopeptide	0
+FAL1	transAT PKS	0
+FIC1	CDPS	0
+FIC1	LAP	0
+FIC1	NAGGN	0
+FIC1	NAPAA	0
+FIC1	NRPS	34
+FIC1	NRPS like	0
+FIC1	PKS like	0
+FIC1	RRE containing	0
+FIC1	RiPP like	7
+FIC1	T1PKS	0
+FIC1	T3PKS	0
+FIC1	acyl amino acids	0
+FIC1	arylpolyene	42
+FIC1	betalactone	0
+FIC1	butyrolactone	0
+FIC1	cyclic lactone autoinducer	0
+FIC1	ectoine	0
+FIC1	furan	0
+FIC1	hglE KS	0
+FIC1	hserlactone	0
+FIC1	ladderane	0
+FIC1	lanthipeptide class i	0
+FIC1	lanthipeptide class ii	0
+FIC1	lanthipeptide class iii	0
+FIC1	lanthipeptide class iv	0
+FIC1	lanthipeptide class v	0
+FIC1	lassopeptide	0
+FIC1	microviridin	0
+FIC1	other	0
+FIC1	phenazine	0
+FIC1	phosphonate	0
+FIC1	proteusin	0
+FIC1	ranthipeptide	0
+FIC1	redox cofactor	0
+FIC1	resorcinol	0
+FIC1	siderophore	0
+FIC1	terpene	0
+FIC1	thioamitides	0
+FIC1	thiopeptide	21
+FIC1	transAT PKS	0
+FLA1	CDPS	0
+FLA1	LAP	0
+FLA1	NAGGN	0
+FLA1	NAPAA	0
+FLA1	NRPS	0
+FLA1	NRPS like	0
+FLA1	PKS like	0
+FLA1	RRE containing	0
+FLA1	RiPP like	0
+FLA1	T1PKS	0
+FLA1	T3PKS	42
+FLA1	acyl amino acids	0
+FLA1	arylpolyene	54
+FLA1	betalactone	24
+FLA1	butyrolactone	0
+FLA1	cyclic lactone autoinducer	0
+FLA1	ectoine	0
+FLA1	furan	0
+FLA1	hglE KS	0
+FLA1	hserlactone	0
+FLA1	ladderane	0
+FLA1	lanthipeptide class i	0
+FLA1	lanthipeptide class ii	0
+FLA1	lanthipeptide class iii	0
+FLA1	lanthipeptide class iv	0
+FLA1	lanthipeptide class v	0
+FLA1	lassopeptide	0
+FLA1	microviridin	0
+FLA1	other	0
+FLA1	phenazine	0
+FLA1	phosphonate	0
+FLA1	proteusin	0
+FLA1	ranthipeptide	0
+FLA1	redox cofactor	0
+FLA1	resorcinol	54
+FLA1	siderophore	0
+FLA1	terpene	37
+FLA1	thioamitides	0
+FLA1	thiopeptide	0
+FLA1	transAT PKS	0
+FLA2	CDPS	0
+FLA2	LAP	0
+FLA2	NAGGN	0
+FLA2	NAPAA	0
+FLA2	NRPS	37
+FLA2	NRPS like	37
+FLA2	PKS like	0
+FLA2	RRE containing	24
+FLA2	RiPP like	0
+FLA2	T1PKS	37
+FLA2	T3PKS	34
+FLA2	acyl amino acids	0
+FLA2	arylpolyene	54
+FLA2	betalactone	28
+FLA2	butyrolactone	0
+FLA2	cyclic lactone autoinducer	0
+FLA2	ectoine	0
+FLA2	furan	0
+FLA2	hglE KS	0
+FLA2	hserlactone	0
+FLA2	ladderane	0
+FLA2	lanthipeptide class i	0
+FLA2	lanthipeptide class ii	0
+FLA2	lanthipeptide class iii	0
+FLA2	lanthipeptide class iv	0
+FLA2	lanthipeptide class v	0
+FLA2	lassopeptide	0
+FLA2	microviridin	0
+FLA2	other	0
+FLA2	phenazine	0
+FLA2	phosphonate	0
+FLA2	proteusin	0
+FLA2	ranthipeptide	0
+FLA2	redox cofactor	0
+FLA2	resorcinol	54
+FLA2	siderophore	0
+FLA2	terpene	65
+FLA2	thioamitides	0
+FLA2	thiopeptide	0
+FLA2	transAT PKS	0
+FLA3	CDPS	0
+FLA3	LAP	0
+FLA3	NAGGN	0
+FLA3	NAPAA	0
+FLA3	NRPS	0
+FLA3	NRPS like	0
+FLA3	PKS like	0
+FLA3	RRE containing	0
+FLA3	RiPP like	0
+FLA3	T1PKS	0
+FLA3	T3PKS	0
+FLA3	acyl amino acids	0
+FLA3	arylpolyene	50
+FLA3	betalactone	24
+FLA3	butyrolactone	0
+FLA3	cyclic lactone autoinducer	0
+FLA3	ectoine	0
+FLA3	furan	0
+FLA3	hglE KS	0
+FLA3	hserlactone	0
+FLA3	ladderane	0
+FLA3	lanthipeptide class i	0
+FLA3	lanthipeptide class ii	0
+FLA3	lanthipeptide class iii	0
+FLA3	lanthipeptide class iv	0
+FLA3	lanthipeptide class v	0
+FLA3	lassopeptide	0
+FLA3	microviridin	0
+FLA3	other	0
+FLA3	phenazine	0
+FLA3	phosphonate	0
+FLA3	proteusin	0
+FLA3	ranthipeptide	0
+FLA3	redox cofactor	0
+FLA3	resorcinol	50
+FLA3	siderophore	11
+FLA3	terpene	40
+FLA3	thioamitides	0
+FLA3	thiopeptide	0
+FLA3	transAT PKS	0
+FLA4	CDPS	0
+FLA4	LAP	0
+FLA4	NAGGN	0
+FLA4	NAPAA	0
+FLA4	NRPS	0
+FLA4	NRPS like	0
+FLA4	PKS like	0
+FLA4	RRE containing	0
+FLA4	RiPP like	0
+FLA4	T1PKS	0
+FLA4	T3PKS	31
+FLA4	acyl amino acids	0
+FLA4	arylpolyene	52
+FLA4	betalactone	23
+FLA4	butyrolactone	0
+FLA4	cyclic lactone autoinducer	0
+FLA4	ectoine	0
+FLA4	furan	0
+FLA4	hglE KS	0
+FLA4	hserlactone	0
+FLA4	ladderane	0
+FLA4	lanthipeptide class i	0
+FLA4	lanthipeptide class ii	0
+FLA4	lanthipeptide class iii	0
+FLA4	lanthipeptide class iv	0
+FLA4	lanthipeptide class v	0
+FLA4	lassopeptide	0
+FLA4	microviridin	0
+FLA4	other	0
+FLA4	phenazine	0
+FLA4	phosphonate	0
+FLA4	proteusin	0
+FLA4	ranthipeptide	0
+FLA4	redox cofactor	0
+FLA4	resorcinol	52
+FLA4	siderophore	0
+FLA4	terpene	38
+FLA4	thioamitides	0
+FLA4	thiopeptide	0
+FLA4	transAT PKS	0
+FLA5	CDPS	0
+FLA5	LAP	0
+FLA5	NAGGN	0
+FLA5	NAPAA	0
+FLA5	NRPS	0
+FLA5	NRPS like	0
+FLA5	PKS like	0
+FLA5	RRE containing	0
+FLA5	RiPP like	0
+FLA5	T1PKS	0
+FLA5	T3PKS	0
+FLA5	acyl amino acids	0
+FLA5	arylpolyene	55
+FLA5	betalactone	0
+FLA5	butyrolactone	0
+FLA5	cyclic lactone autoinducer	0
+FLA5	ectoine	0
+FLA5	furan	0
+FLA5	hglE KS	0
+FLA5	hserlactone	0
+FLA5	ladderane	0
+FLA5	lanthipeptide class i	0
+FLA5	lanthipeptide class ii	0
+FLA5	lanthipeptide class iii	0
+FLA5	lanthipeptide class iv	0
+FLA5	lanthipeptide class v	0
+FLA5	lassopeptide	0
+FLA5	microviridin	0
+FLA5	other	0
+FLA5	phenazine	0
+FLA5	phosphonate	0
+FLA5	proteusin	0
+FLA5	ranthipeptide	0
+FLA5	redox cofactor	0
+FLA5	resorcinol	55
+FLA5	siderophore	0
+FLA5	terpene	0
+FLA5	thioamitides	0
+FLA5	thiopeptide	0
+FLA5	transAT PKS	0
+FLA6	CDPS	0
+FLA6	LAP	0
+FLA6	NAGGN	0
+FLA6	NAPAA	0
+FLA6	NRPS	0
+FLA6	NRPS like	0
+FLA6	PKS like	0
+FLA6	RRE containing	0
+FLA6	RiPP like	0
+FLA6	T1PKS	0
+FLA6	T3PKS	0
+FLA6	acyl amino acids	0
+FLA6	arylpolyene	56
+FLA6	betalactone	0
+FLA6	butyrolactone	0
+FLA6	cyclic lactone autoinducer	0
+FLA6	ectoine	0
+FLA6	furan	0
+FLA6	hglE KS	0
+FLA6	hserlactone	0
+FLA6	ladderane	0
+FLA6	lanthipeptide class i	0
+FLA6	lanthipeptide class ii	0
+FLA6	lanthipeptide class iii	0
+FLA6	lanthipeptide class iv	0
+FLA6	lanthipeptide class v	0
+FLA6	lassopeptide	0
+FLA6	microviridin	0
+FLA6	other	0
+FLA6	phenazine	0
+FLA6	phosphonate	0
+FLA6	proteusin	0
+FLA6	ranthipeptide	0
+FLA6	redox cofactor	0
+FLA6	resorcinol	56
+FLA6	siderophore	0
+FLA6	terpene	0
+FLA6	thioamitides	0
+FLA6	thiopeptide	0
+FLA6	transAT PKS	0
+HER1	CDPS	0
+HER1	LAP	0
+HER1	NAGGN	0
+HER1	NAPAA	0
+HER1	NRPS	32
+HER1	NRPS like	0
+HER1	PKS like	0
+HER1	RRE containing	0
+HER1	RiPP like	11
+HER1	T1PKS	0
+HER1	T3PKS	0
+HER1	acyl amino acids	0
+HER1	arylpolyene	38
+HER1	betalactone	0
+HER1	butyrolactone	0
+HER1	cyclic lactone autoinducer	0
+HER1	ectoine	0
+HER1	furan	0
+HER1	hglE KS	0
+HER1	hserlactone	0
+HER1	ladderane	0
+HER1	lanthipeptide class i	0
+HER1	lanthipeptide class ii	0
+HER1	lanthipeptide class iii	0
+HER1	lanthipeptide class iv	0
+HER1	lanthipeptide class v	0
+HER1	lassopeptide	0
+HER1	microviridin	0
+HER1	other	0
+HER1	phenazine	0
+HER1	phosphonate	0
+HER1	proteusin	0
+HER1	ranthipeptide	0
+HER1	redox cofactor	0
+HER1	resorcinol	0
+HER1	siderophore	0
+HER1	terpene	17
+HER1	thioamitides	0
+HER1	thiopeptide	0
+HER1	transAT PKS	0
+KLE1	CDPS	0
+KLE1	LAP	0
+KLE1	NAGGN	0
+KLE1	NAPAA	0
+KLE1	NRPS	35
+KLE1	NRPS like	0
+KLE1	PKS like	0
+KLE1	RRE containing	0
+KLE1	RiPP like	19
+KLE1	T1PKS	0
+KLE1	T3PKS	0
+KLE1	acyl amino acids	0
+KLE1	arylpolyene	0
+KLE1	betalactone	0
+KLE1	butyrolactone	0
+KLE1	cyclic lactone autoinducer	0
+KLE1	ectoine	0
+KLE1	furan	0
+KLE1	hglE KS	0
+KLE1	hserlactone	0
+KLE1	ladderane	0
+KLE1	lanthipeptide class i	0
+KLE1	lanthipeptide class ii	0
+KLE1	lanthipeptide class iii	0
+KLE1	lanthipeptide class iv	0
+KLE1	lanthipeptide class v	0
+KLE1	lassopeptide	0
+KLE1	microviridin	0
+KLE1	other	0
+KLE1	phenazine	0
+KLE1	phosphonate	0
+KLE1	proteusin	0
+KLE1	ranthipeptide	0
+KLE1	redox cofactor	0
+KLE1	resorcinol	0
+KLE1	siderophore	0
+KLE1	terpene	0
+KLE1	thioamitides	0
+KLE1	thiopeptide	20
+KLE1	transAT PKS	0
+KLE2	CDPS	0
+KLE2	LAP	0
+KLE2	NAGGN	0
+KLE2	NAPAA	0
+KLE2	NRPS	38
+KLE2	NRPS like	0
+KLE2	PKS like	0
+KLE2	RRE containing	0
+KLE2	RiPP like	7
+KLE2	T1PKS	0
+KLE2	T3PKS	0
+KLE2	acyl amino acids	0
+KLE2	arylpolyene	0
+KLE2	betalactone	0
+KLE2	butyrolactone	9
+KLE2	cyclic lactone autoinducer	0
+KLE2	ectoine	0
+KLE2	furan	0
+KLE2	hglE KS	0
+KLE2	hserlactone	0
+KLE2	ladderane	0
+KLE2	lanthipeptide class i	0
+KLE2	lanthipeptide class ii	0
+KLE2	lanthipeptide class iii	0
+KLE2	lanthipeptide class iv	0
+KLE2	lanthipeptide class v	0
+KLE2	lassopeptide	0
+KLE2	microviridin	0
+KLE2	other	0
+KLE2	phenazine	0
+KLE2	phosphonate	0
+KLE2	proteusin	0
+KLE2	ranthipeptide	0
+KLE2	redox cofactor	18
+KLE2	resorcinol	0
+KLE2	siderophore	0
+KLE2	terpene	0
+KLE2	thioamitides	0
+KLE2	thiopeptide	18
+KLE2	transAT PKS	0
+KLE3	CDPS	0
+KLE3	LAP	0
+KLE3	NAGGN	0
+KLE3	NAPAA	0
+KLE3	NRPS	37
+KLE3	NRPS like	0
+KLE3	PKS like	0
+KLE3	RRE containing	0
+KLE3	RiPP like	7
+KLE3	T1PKS	0
+KLE3	T3PKS	0
+KLE3	acyl amino acids	0
+KLE3	arylpolyene	0
+KLE3	betalactone	0
+KLE3	butyrolactone	9
+KLE3	cyclic lactone autoinducer	0
+KLE3	ectoine	0
+KLE3	furan	0
+KLE3	hglE KS	0
+KLE3	hserlactone	0
+KLE3	ladderane	0
+KLE3	lanthipeptide class i	0
+KLE3	lanthipeptide class ii	0
+KLE3	lanthipeptide class iii	0
+KLE3	lanthipeptide class iv	0
+KLE3	lanthipeptide class v	0
+KLE3	lassopeptide	0
+KLE3	microviridin	0
+KLE3	other	0
+KLE3	phenazine	0
+KLE3	phosphonate	0
+KLE3	proteusin	0
+KLE3	ranthipeptide	0
+KLE3	redox cofactor	18
+KLE3	resorcinol	0
+KLE3	siderophore	0
+KLE3	terpene	0
+KLE3	thioamitides	0
+KLE3	thiopeptide	18
+KLE3	transAT PKS	0
+KOS1	CDPS	0
+KOS1	LAP	0
+KOS1	NAGGN	0
+KOS1	NAPAA	0
+KOS1	NRPS	76
+KOS1	NRPS like	0
+KOS1	PKS like	0
+KOS1	RRE containing	0
+KOS1	RiPP like	8
+KOS1	T1PKS	0
+KOS1	T3PKS	0
+KOS1	acyl amino acids	0
+KOS1	arylpolyene	0
+KOS1	betalactone	0
+KOS1	butyrolactone	0
+KOS1	cyclic lactone autoinducer	0
+KOS1	ectoine	0
+KOS1	furan	0
+KOS1	hglE KS	0
+KOS1	hserlactone	0
+KOS1	ladderane	35
+KOS1	lanthipeptide class i	0
+KOS1	lanthipeptide class ii	0
+KOS1	lanthipeptide class iii	0
+KOS1	lanthipeptide class iv	0
+KOS1	lanthipeptide class v	0
+KOS1	lassopeptide	0
+KOS1	microviridin	0
+KOS1	other	0
+KOS1	phenazine	0
+KOS1	phosphonate	0
+KOS1	proteusin	0
+KOS1	ranthipeptide	0
+KOS1	redox cofactor	17
+KOS1	resorcinol	0
+KOS1	siderophore	0
+KOS1	terpene	22
+KOS1	thioamitides	0
+KOS1	thiopeptide	18
+KOS1	transAT PKS	0
+KOS2	CDPS	0
+KOS2	LAP	0
+KOS2	NAGGN	0
+KOS2	NAPAA	0
+KOS2	NRPS	71
+KOS2	NRPS like	0
+KOS2	PKS like	0
+KOS2	RRE containing	0
+KOS2	RiPP like	7
+KOS2	T1PKS	0
+KOS2	T3PKS	0
+KOS2	acyl amino acids	0
+KOS2	arylpolyene	42
+KOS2	betalactone	0
+KOS2	butyrolactone	0
+KOS2	cyclic lactone autoinducer	0
+KOS2	ectoine	0
+KOS2	furan	0
+KOS2	hglE KS	0
+KOS2	hserlactone	0
+KOS2	ladderane	42
+KOS2	lanthipeptide class i	0
+KOS2	lanthipeptide class ii	0
+KOS2	lanthipeptide class iii	0
+KOS2	lanthipeptide class iv	0
+KOS2	lanthipeptide class v	0
+KOS2	lassopeptide	0
+KOS2	microviridin	0
+KOS2	other	0
+KOS2	phenazine	0
+KOS2	phosphonate	0
+KOS2	proteusin	0
+KOS2	ranthipeptide	0
+KOS2	redox cofactor	0
+KOS2	resorcinol	0
+KOS2	siderophore	0
+KOS2	terpene	0
+KOS2	thioamitides	0
+KOS2	thiopeptide	16
+KOS2	transAT PKS	0
+LYS1	CDPS	0
+LYS1	LAP	0
+LYS1	NAGGN	0
+LYS1	NAPAA	0
+LYS1	NRPS	0
+LYS1	NRPS like	0
+LYS1	PKS like	0
+LYS1	RRE containing	0
+LYS1	RiPP like	59
+LYS1	T1PKS	0
+LYS1	T3PKS	50
+LYS1	acyl amino acids	0
+LYS1	arylpolyene	0
+LYS1	betalactone	51
+LYS1	butyrolactone	0
+LYS1	cyclic lactone autoinducer	51
+LYS1	ectoine	0
+LYS1	furan	0
+LYS1	hglE KS	0
+LYS1	hserlactone	0
+LYS1	ladderane	0
+LYS1	lanthipeptide class i	0
+LYS1	lanthipeptide class ii	51
+LYS1	lanthipeptide class iii	0
+LYS1	lanthipeptide class iv	0
+LYS1	lanthipeptide class v	0
+LYS1	lassopeptide	179
+LYS1	microviridin	0
+LYS1	other	0
+LYS1	phenazine	0
+LYS1	phosphonate	0
+LYS1	proteusin	0
+LYS1	ranthipeptide	0
+LYS1	redox cofactor	0
+LYS1	resorcinol	0
+LYS1	siderophore	12
+LYS1	terpene	34
+LYS1	thioamitides	0
+LYS1	thiopeptide	0
+LYS1	transAT PKS	0
+LYS2	CDPS	0
+LYS2	LAP	26
+LYS2	NAGGN	0
+LYS2	NAPAA	0
+LYS2	NRPS	45
+LYS2	NRPS like	34
+LYS2	PKS like	0
+LYS2	RRE containing	0
+LYS2	RiPP like	11
+LYS2	T1PKS	0
+LYS2	T3PKS	44
+LYS2	acyl amino acids	0
+LYS2	arylpolyene	0
+LYS2	betalactone	21
+LYS2	butyrolactone	0
+LYS2	cyclic lactone autoinducer	26
+LYS2	ectoine	0
+LYS2	furan	0
+LYS2	hglE KS	0
+LYS2	hserlactone	0
+LYS2	ladderane	0
+LYS2	lanthipeptide class i	0
+LYS2	lanthipeptide class ii	0
+LYS2	lanthipeptide class iii	0
+LYS2	lanthipeptide class iv	0
+LYS2	lanthipeptide class v	0
+LYS2	lassopeptide	92
+LYS2	microviridin	0
+LYS2	other	0
+LYS2	phenazine	0
+LYS2	phosphonate	0
+LYS2	proteusin	0
+LYS2	ranthipeptide	0
+LYS2	redox cofactor	0
+LYS2	resorcinol	0
+LYS2	siderophore	11
+LYS2	terpene	22
+LYS2	thioamitides	0
+LYS2	thiopeptide	26
+LYS2	transAT PKS	0
+MIC1	CDPS	0
+MIC1	LAP	0
+MIC1	NAGGN	0
+MIC1	NAPAA	36
+MIC1	NRPS	0
+MIC1	NRPS like	0
+MIC1	PKS like	0
+MIC1	RRE containing	0
+MIC1	RiPP like	17
+MIC1	T1PKS	0
+MIC1	T3PKS	43
+MIC1	acyl amino acids	0
+MIC1	arylpolyene	0
+MIC1	betalactone	43
+MIC1	butyrolactone	0
+MIC1	cyclic lactone autoinducer	0
+MIC1	ectoine	0
+MIC1	furan	0
+MIC1	hglE KS	0
+MIC1	hserlactone	0
+MIC1	ladderane	0
+MIC1	lanthipeptide class i	0
+MIC1	lanthipeptide class ii	0
+MIC1	lanthipeptide class iii	0
+MIC1	lanthipeptide class iv	0
+MIC1	lanthipeptide class v	0
+MIC1	lassopeptide	0
+MIC1	microviridin	0
+MIC1	other	0
+MIC1	phenazine	0
+MIC1	phosphonate	0
+MIC1	proteusin	0
+MIC1	ranthipeptide	0
+MIC1	redox cofactor	0
+MIC1	resorcinol	0
+MIC1	siderophore	9
+MIC1	terpene	17
+MIC1	thioamitides	0
+MIC1	thiopeptide	0
+MIC1	transAT PKS	0
+MIC2	CDPS	0
+MIC2	LAP	0
+MIC2	NAGGN	0
+MIC2	NAPAA	32
+MIC2	NRPS	0
+MIC2	NRPS like	0
+MIC2	PKS like	0
+MIC2	RRE containing	0
+MIC2	RiPP like	0
+MIC2	T1PKS	0
+MIC2	T3PKS	0
+MIC2	acyl amino acids	0
+MIC2	arylpolyene	0
+MIC2	betalactone	25
+MIC2	butyrolactone	0
+MIC2	cyclic lactone autoinducer	0
+MIC2	ectoine	0
+MIC2	furan	0
+MIC2	hglE KS	0
+MIC2	hserlactone	0
+MIC2	ladderane	0
+MIC2	lanthipeptide class i	0
+MIC2	lanthipeptide class ii	0
+MIC2	lanthipeptide class iii	0
+MIC2	lanthipeptide class iv	0
+MIC2	lanthipeptide class v	0
+MIC2	lassopeptide	0
+MIC2	microviridin	0
+MIC2	other	0
+MIC2	phenazine	0
+MIC2	phosphonate	0
+MIC2	proteusin	0
+MIC2	ranthipeptide	0
+MIC2	redox cofactor	0
+MIC2	resorcinol	0
+MIC2	siderophore	0
+MIC2	terpene	18
+MIC2	thioamitides	0
+MIC2	thiopeptide	0
+MIC2	transAT PKS	0
+MIC3	CDPS	0
+MIC3	LAP	0
+MIC3	NAGGN	0
+MIC3	NAPAA	31
+MIC3	NRPS	0
+MIC3	NRPS like	0
+MIC3	PKS like	0
+MIC3	RRE containing	18
+MIC3	RiPP like	0
+MIC3	T1PKS	0
+MIC3	T3PKS	40
+MIC3	acyl amino acids	0
+MIC3	arylpolyene	0
+MIC3	betalactone	25
+MIC3	butyrolactone	0
+MIC3	cyclic lactone autoinducer	0
+MIC3	ectoine	0
+MIC3	furan	0
+MIC3	hglE KS	0
+MIC3	hserlactone	0
+MIC3	ladderane	0
+MIC3	lanthipeptide class i	0
+MIC3	lanthipeptide class ii	22
+MIC3	lanthipeptide class iii	0
+MIC3	lanthipeptide class iv	0
+MIC3	lanthipeptide class v	0
+MIC3	lassopeptide	0
+MIC3	microviridin	0
+MIC3	other	0
+MIC3	phenazine	0
+MIC3	phosphonate	0
+MIC3	proteusin	0
+MIC3	ranthipeptide	0
+MIC3	redox cofactor	0
+MIC3	resorcinol	0
+MIC3	siderophore	0
+MIC3	terpene	19
+MIC3	thioamitides	0
+MIC3	thiopeptide	0
+MIC3	transAT PKS	0
+MIC4	CDPS	0
+MIC4	LAP	0
+MIC4	NAGGN	0
+MIC4	NAPAA	30
+MIC4	NRPS	0
+MIC4	NRPS like	0
+MIC4	PKS like	0
+MIC4	RRE containing	0
+MIC4	RiPP like	0
+MIC4	T1PKS	0
+MIC4	T3PKS	0
+MIC4	acyl amino acids	0
+MIC4	arylpolyene	0
+MIC4	betalactone	26
+MIC4	butyrolactone	0
+MIC4	cyclic lactone autoinducer	0
+MIC4	ectoine	0
+MIC4	furan	0
+MIC4	hglE KS	0
+MIC4	hserlactone	0
+MIC4	ladderane	0
+MIC4	lanthipeptide class i	0
+MIC4	lanthipeptide class ii	0
+MIC4	lanthipeptide class iii	0
+MIC4	lanthipeptide class iv	0
+MIC4	lanthipeptide class v	0
+MIC4	lassopeptide	0
+MIC4	microviridin	0
+MIC4	other	0
+MIC4	phenazine	0
+MIC4	phosphonate	0
+MIC4	proteusin	0
+MIC4	ranthipeptide	0
+MIC4	redox cofactor	0
+MIC4	resorcinol	0
+MIC4	siderophore	0
+MIC4	terpene	20
+MIC4	thioamitides	0
+MIC4	thiopeptide	0
+MIC4	transAT PKS	0
+OCH1	CDPS	0
+OCH1	LAP	0
+OCH1	NAGGN	15
+OCH1	NAPAA	0
+OCH1	NRPS	0
+OCH1	NRPS like	0
+OCH1	PKS like	0
+OCH1	RRE containing	0
+OCH1	RiPP like	0
+OCH1	T1PKS	0
+OCH1	T3PKS	0
+OCH1	acyl amino acids	62
+OCH1	arylpolyene	42
+OCH1	betalactone	25
+OCH1	butyrolactone	0
+OCH1	cyclic lactone autoinducer	0
+OCH1	ectoine	0
+OCH1	furan	0
+OCH1	hglE KS	0
+OCH1	hserlactone	0
+OCH1	ladderane	0
+OCH1	lanthipeptide class i	0
+OCH1	lanthipeptide class ii	0
+OCH1	lanthipeptide class iii	0
+OCH1	lanthipeptide class iv	0
+OCH1	lanthipeptide class v	0
+OCH1	lassopeptide	0
+OCH1	microviridin	0
+OCH1	other	0
+OCH1	phenazine	0
+OCH1	phosphonate	0
+OCH1	proteusin	0
+OCH1	ranthipeptide	0
+OCH1	redox cofactor	0
+OCH1	resorcinol	0
+OCH1	siderophore	0
+OCH1	terpene	19
+OCH1	thioamitides	0
+OCH1	thiopeptide	0
+OCH1	transAT PKS	0
+OCH2	CDPS	0
+OCH2	LAP	0
+OCH2	NAGGN	16
+OCH2	NAPAA	0
+OCH2	NRPS	0
+OCH2	NRPS like	0
+OCH2	PKS like	0
+OCH2	RRE containing	0
+OCH2	RiPP like	0
+OCH2	T1PKS	0
+OCH2	T3PKS	0
+OCH2	acyl amino acids	60
+OCH2	arylpolyene	48
+OCH2	betalactone	22
+OCH2	butyrolactone	0
+OCH2	cyclic lactone autoinducer	0
+OCH2	ectoine	9
+OCH2	furan	0
+OCH2	hglE KS	0
+OCH2	hserlactone	0
+OCH2	ladderane	0
+OCH2	lanthipeptide class i	0
+OCH2	lanthipeptide class ii	0
+OCH2	lanthipeptide class iii	0
+OCH2	lanthipeptide class iv	0
+OCH2	lanthipeptide class v	0
+OCH2	lassopeptide	0
+OCH2	microviridin	0
+OCH2	other	0
+OCH2	phenazine	0
+OCH2	phosphonate	0
+OCH2	proteusin	0
+OCH2	ranthipeptide	0
+OCH2	redox cofactor	0
+OCH2	resorcinol	0
+OCH2	siderophore	6
+OCH2	terpene	20
+OCH2	thioamitides	0
+OCH2	thiopeptide	0
+OCH2	transAT PKS	0
+PAE1	CDPS	0
+PAE1	LAP	0
+PAE1	NAGGN	0
+PAE1	NAPAA	0
+PAE1	NRPS	0
+PAE1	NRPS like	43
+PAE1	PKS like	0
+PAE1	RRE containing	17
+PAE1	RiPP like	0
+PAE1	T1PKS	0
+PAE1	T3PKS	37
+PAE1	acyl amino acids	0
+PAE1	arylpolyene	0
+PAE1	betalactone	0
+PAE1	butyrolactone	0
+PAE1	cyclic lactone autoinducer	21
+PAE1	ectoine	0
+PAE1	furan	0
+PAE1	hglE KS	0
+PAE1	hserlactone	0
+PAE1	ladderane	0
+PAE1	lanthipeptide class i	0
+PAE1	lanthipeptide class ii	0
+PAE1	lanthipeptide class iii	0
+PAE1	lanthipeptide class iv	0
+PAE1	lanthipeptide class v	0
+PAE1	lassopeptide	0
+PAE1	microviridin	0
+PAE1	other	0
+PAE1	phenazine	0
+PAE1	phosphonate	0
+PAE1	proteusin	17
+PAE1	ranthipeptide	0
+PAE1	redox cofactor	20
+PAE1	resorcinol	41
+PAE1	siderophore	0
+PAE1	terpene	19
+PAE1	thioamitides	0
+PAE1	thiopeptide	0
+PAE1	transAT PKS	0
+PAE2	CDPS	0
+PAE2	LAP	0
+PAE2	NAGGN	0
+PAE2	NAPAA	0
+PAE2	NRPS	66
+PAE2	NRPS like	32
+PAE2	PKS like	0
+PAE2	RRE containing	0
+PAE2	RiPP like	0
+PAE2	T1PKS	0
+PAE2	T3PKS	36
+PAE2	acyl amino acids	0
+PAE2	arylpolyene	0
+PAE2	betalactone	0
+PAE2	butyrolactone	0
+PAE2	cyclic lactone autoinducer	0
+PAE2	ectoine	0
+PAE2	furan	0
+PAE2	hglE KS	0
+PAE2	hserlactone	0
+PAE2	ladderane	0
+PAE2	lanthipeptide class i	0
+PAE2	lanthipeptide class ii	0
+PAE2	lanthipeptide class iii	0
+PAE2	lanthipeptide class iv	0
+PAE2	lanthipeptide class v	0
+PAE2	lassopeptide	21
+PAE2	microviridin	0
+PAE2	other	0
+PAE2	phenazine	0
+PAE2	phosphonate	0
+PAE2	proteusin	21
+PAE2	ranthipeptide	0
+PAE2	redox cofactor	0
+PAE2	resorcinol	0
+PAE2	siderophore	0
+PAE2	terpene	18
+PAE2	thioamitides	0
+PAE2	thiopeptide	0
+PAE2	transAT PKS	0
+PAE3	CDPS	0
+PAE3	LAP	0
+PAE3	NAGGN	0
+PAE3	NAPAA	0
+PAE3	NRPS	0
+PAE3	NRPS like	43
+PAE3	PKS like	0
+PAE3	RRE containing	17
+PAE3	RiPP like	0
+PAE3	T1PKS	0
+PAE3	T3PKS	37
+PAE3	acyl amino acids	0
+PAE3	arylpolyene	0
+PAE3	betalactone	0
+PAE3	butyrolactone	0
+PAE3	cyclic lactone autoinducer	21
+PAE3	ectoine	0
+PAE3	furan	0
+PAE3	hglE KS	0
+PAE3	hserlactone	0
+PAE3	ladderane	0
+PAE3	lanthipeptide class i	0
+PAE3	lanthipeptide class ii	0
+PAE3	lanthipeptide class iii	0
+PAE3	lanthipeptide class iv	0
+PAE3	lanthipeptide class v	0
+PAE3	lassopeptide	0
+PAE3	microviridin	0
+PAE3	other	0
+PAE3	phenazine	0
+PAE3	phosphonate	0
+PAE3	proteusin	17
+PAE3	ranthipeptide	0
+PAE3	redox cofactor	20
+PAE3	resorcinol	41
+PAE3	siderophore	0
+PAE3	terpene	19
+PAE3	thioamitides	0
+PAE3	thiopeptide	0
+PAE3	transAT PKS	0
+PAE4	CDPS	0
+PAE4	LAP	0
+PAE4	NAGGN	0
+PAE4	NAPAA	0
+PAE4	NRPS	0
+PAE4	NRPS like	35
+PAE4	PKS like	0
+PAE4	RRE containing	0
+PAE4	RiPP like	11
+PAE4	T1PKS	27
+PAE4	T3PKS	0
+PAE4	acyl amino acids	0
+PAE4	arylpolyene	57
+PAE4	betalactone	0
+PAE4	butyrolactone	0
+PAE4	cyclic lactone autoinducer	0
+PAE4	ectoine	0
+PAE4	furan	0
+PAE4	hglE KS	27
+PAE4	hserlactone	0
+PAE4	ladderane	0
+PAE4	lanthipeptide class i	0
+PAE4	lanthipeptide class ii	0
+PAE4	lanthipeptide class iii	0
+PAE4	lanthipeptide class iv	0
+PAE4	lanthipeptide class v	0
+PAE4	lassopeptide	0
+PAE4	microviridin	21
+PAE4	other	0
+PAE4	phenazine	0
+PAE4	phosphonate	0
+PAE4	proteusin	29
+PAE4	ranthipeptide	0
+PAE4	redox cofactor	0
+PAE4	resorcinol	57
+PAE4	siderophore	9
+PAE4	terpene	20
+PAE4	thioamitides	0
+PAE4	thiopeptide	0
+PAE4	transAT PKS	0
+PAE5	CDPS	0
+PAE5	LAP	0
+PAE5	NAGGN	0
+PAE5	NAPAA	0
+PAE5	NRPS	128
+PAE5	NRPS like	32
+PAE5	PKS like	0
+PAE5	RRE containing	0
+PAE5	RiPP like	0
+PAE5	T1PKS	48
+PAE5	T3PKS	70
+PAE5	acyl amino acids	0
+PAE5	arylpolyene	0
+PAE5	betalactone	0
+PAE5	butyrolactone	0
+PAE5	cyclic lactone autoinducer	0
+PAE5	ectoine	0
+PAE5	furan	0
+PAE5	hglE KS	0
+PAE5	hserlactone	0
+PAE5	ladderane	0
+PAE5	lanthipeptide class i	22
+PAE5	lanthipeptide class ii	22
+PAE5	lanthipeptide class iii	0
+PAE5	lanthipeptide class iv	15
+PAE5	lanthipeptide class v	0
+PAE5	lassopeptide	20
+PAE5	microviridin	0
+PAE5	other	0
+PAE5	phenazine	0
+PAE5	phosphonate	0
+PAE5	proteusin	19
+PAE5	ranthipeptide	0
+PAE5	redox cofactor	0
+PAE5	resorcinol	0
+PAE5	siderophore	10
+PAE5	terpene	20
+PAE5	thioamitides	0
+PAE5	thiopeptide	0
+PAE5	transAT PKS	93
+PAE6	CDPS	0
+PAE6	LAP	0
+PAE6	NAGGN	0
+PAE6	NAPAA	0
+PAE6	NRPS	193
+PAE6	NRPS like	34
+PAE6	PKS like	0
+PAE6	RRE containing	0
+PAE6	RiPP like	0
+PAE6	T1PKS	46
+PAE6	T3PKS	74
+PAE6	acyl amino acids	0
+PAE6	arylpolyene	0
+PAE6	betalactone	0
+PAE6	butyrolactone	0
+PAE6	cyclic lactone autoinducer	0
+PAE6	ectoine	0
+PAE6	furan	0
+PAE6	hglE KS	0
+PAE6	hserlactone	0
+PAE6	ladderane	0
+PAE6	lanthipeptide class i	0
+PAE6	lanthipeptide class ii	23
+PAE6	lanthipeptide class iii	0
+PAE6	lanthipeptide class iv	15
+PAE6	lanthipeptide class v	0
+PAE6	lassopeptide	40
+PAE6	microviridin	0
+PAE6	other	0
+PAE6	phenazine	0
+PAE6	phosphonate	0
+PAE6	proteusin	20
+PAE6	ranthipeptide	0
+PAE6	redox cofactor	0
+PAE6	resorcinol	0
+PAE6	siderophore	11
+PAE6	terpene	20
+PAE6	thioamitides	0
+PAE6	thiopeptide	0
+PAE6	transAT PKS	130
+PAR1	CDPS	0
+PAR1	LAP	0
+PAR1	NAGGN	0
+PAR1	NAPAA	0
+PAR1	NRPS	31
+PAR1	NRPS like	34
+PAR1	PKS like	0
+PAR1	RRE containing	0
+PAR1	RiPP like	26
+PAR1	T1PKS	31
+PAR1	T3PKS	0
+PAR1	acyl amino acids	0
+PAR1	arylpolyene	31
+PAR1	betalactone	27
+PAR1	butyrolactone	0
+PAR1	cyclic lactone autoinducer	0
+PAR1	ectoine	0
+PAR1	furan	0
+PAR1	hglE KS	0
+PAR1	hserlactone	21
+PAR1	ladderane	35
+PAR1	lanthipeptide class i	0
+PAR1	lanthipeptide class ii	0
+PAR1	lanthipeptide class iii	0
+PAR1	lanthipeptide class iv	0
+PAR1	lanthipeptide class v	0
+PAR1	lassopeptide	0
+PAR1	microviridin	0
+PAR1	other	0
+PAR1	phenazine	0
+PAR1	phosphonate	31
+PAR1	proteusin	0
+PAR1	ranthipeptide	0
+PAR1	redox cofactor	17
+PAR1	resorcinol	0
+PAR1	siderophore	0
+PAR1	terpene	86
+PAR1	thioamitides	0
+PAR1	thiopeptide	0
+PAR1	transAT PKS	0
+PAR2	CDPS	0
+PAR2	LAP	0
+PAR2	NAGGN	0
+PAR2	NAPAA	0
+PAR2	NRPS	29
+PAR2	NRPS like	37
+PAR2	PKS like	0
+PAR2	RRE containing	19
+PAR2	RiPP like	0
+PAR2	T1PKS	0
+PAR2	T3PKS	0
+PAR2	acyl amino acids	0
+PAR2	arylpolyene	40
+PAR2	betalactone	0
+PAR2	butyrolactone	0
+PAR2	cyclic lactone autoinducer	0
+PAR2	ectoine	0
+PAR2	furan	0
+PAR2	hglE KS	0
+PAR2	hserlactone	20
+PAR2	ladderane	0
+PAR2	lanthipeptide class i	0
+PAR2	lanthipeptide class ii	0
+PAR2	lanthipeptide class iii	0
+PAR2	lanthipeptide class iv	0
+PAR2	lanthipeptide class v	0
+PAR2	lassopeptide	0
+PAR2	microviridin	0
+PAR2	other	0
+PAR2	phenazine	0
+PAR2	phosphonate	38
+PAR2	proteusin	0
+PAR2	ranthipeptide	0
+PAR2	redox cofactor	22
+PAR2	resorcinol	0
+PAR2	siderophore	0
+PAR2	terpene	56
+PAR2	thioamitides	0
+PAR2	thiopeptide	0
+PAR2	transAT PKS	0
+PRO1	CDPS	0
+PRO1	LAP	0
+PRO1	NAGGN	0
+PRO1	NAPAA	0
+PRO1	NRPS	0
+PRO1	NRPS like	0
+PRO1	PKS like	0
+PRO1	RRE containing	0
+PRO1	RiPP like	0
+PRO1	T1PKS	0
+PRO1	T3PKS	0
+PRO1	acyl amino acids	0
+PRO1	arylpolyene	0
+PRO1	betalactone	20
+PRO1	butyrolactone	0
+PRO1	cyclic lactone autoinducer	0
+PRO1	ectoine	0
+PRO1	furan	0
+PRO1	hglE KS	0
+PRO1	hserlactone	0
+PRO1	ladderane	0
+PRO1	lanthipeptide class i	0
+PRO1	lanthipeptide class ii	0
+PRO1	lanthipeptide class iii	0
+PRO1	lanthipeptide class iv	0
+PRO1	lanthipeptide class v	0
+PRO1	lassopeptide	0
+PRO1	microviridin	0
+PRO1	other	0
+PRO1	phenazine	0
+PRO1	phosphonate	0
+PRO1	proteusin	0
+PRO1	ranthipeptide	0
+PRO1	redox cofactor	0
+PRO1	resorcinol	0
+PRO1	siderophore	8
+PRO1	terpene	0
+PRO1	thioamitides	0
+PRO1	thiopeptide	29
+PRO1	transAT PKS	0
+PRO2	CDPS	0
+PRO2	LAP	0
+PRO2	NAGGN	0
+PRO2	NAPAA	0
+PRO2	NRPS	0
+PRO2	NRPS like	0
+PRO2	PKS like	0
+PRO2	RRE containing	0
+PRO2	RiPP like	11
+PRO2	T1PKS	0
+PRO2	T3PKS	0
+PRO2	acyl amino acids	0
+PRO2	arylpolyene	0
+PRO2	betalactone	20
+PRO2	butyrolactone	0
+PRO2	cyclic lactone autoinducer	0
+PRO2	ectoine	0
+PRO2	furan	0
+PRO2	hglE KS	0
+PRO2	hserlactone	0
+PRO2	ladderane	0
+PRO2	lanthipeptide class i	0
+PRO2	lanthipeptide class ii	0
+PRO2	lanthipeptide class iii	0
+PRO2	lanthipeptide class iv	0
+PRO2	lanthipeptide class v	0
+PRO2	lassopeptide	0
+PRO2	microviridin	0
+PRO2	other	0
+PRO2	phenazine	0
+PRO2	phosphonate	0
+PRO2	proteusin	0
+PRO2	ranthipeptide	0
+PRO2	redox cofactor	0
+PRO2	resorcinol	0
+PRO2	siderophore	0
+PRO2	terpene	0
+PRO2	thioamitides	0
+PRO2	thiopeptide	24
+PRO2	transAT PKS	0
+PSE1	CDPS	NA
+PSE1	LAP	NA
+PSE1	NAGGN	NA
+PSE1	NAPAA	NA
+PSE1	NRPS	NA
+PSE1	NRPS like	NA
+PSE1	PKS like	NA
+PSE1	RRE containing	NA
+PSE1	RiPP like	NA
+PSE1	T1PKS	NA
+PSE1	T3PKS	NA
+PSE1	acyl amino acids	NA
+PSE1	arylpolyene	NA
+PSE1	betalactone	NA
+PSE1	butyrolactone	NA
+PSE1	cyclic lactone autoinducer	NA
+PSE1	ectoine	NA
+PSE1	furan	NA
+PSE1	hglE KS	NA
+PSE1	hserlactone	NA
+PSE1	ladderane	NA
+PSE1	lanthipeptide class i	NA
+PSE1	lanthipeptide class ii	NA
+PSE1	lanthipeptide class iii	NA
+PSE1	lanthipeptide class iv	NA
+PSE1	lanthipeptide class v	NA
+PSE1	lassopeptide	NA
+PSE1	microviridin	NA
+PSE1	other	NA
+PSE1	phenazine	NA
+PSE1	phosphonate	NA
+PSE1	proteusin	NA
+PSE1	ranthipeptide	NA
+PSE1	redox cofactor	NA
+PSE1	resorcinol	NA
+PSE1	siderophore	NA
+PSE1	terpene	NA
+PSE1	thioamitides	NA
+PSE1	thiopeptide	NA
+PSE1	transAT PKS	NA
+PSE10	CDPS	18
+PSE10	LAP	0
+PSE10	NAGGN	11
+PSE10	NAPAA	0
+PSE10	NRPS	203
+PSE10	NRPS like	45
+PSE10	PKS like	0
+PSE10	RRE containing	0
+PSE10	RiPP like	20
+PSE10	T1PKS	39
+PSE10	T3PKS	38
+PSE10	acyl amino acids	0
+PSE10	arylpolyene	41
+PSE10	betalactone	18
+PSE10	butyrolactone	0
+PSE10	cyclic lactone autoinducer	0
+PSE10	ectoine	0
+PSE10	furan	0
+PSE10	hglE KS	0
+PSE10	hserlactone	0
+PSE10	ladderane	0
+PSE10	lanthipeptide class i	0
+PSE10	lanthipeptide class ii	0
+PSE10	lanthipeptide class iii	0
+PSE10	lanthipeptide class iv	0
+PSE10	lanthipeptide class v	0
+PSE10	lassopeptide	0
+PSE10	microviridin	0
+PSE10	other	34
+PSE10	phenazine	0
+PSE10	phosphonate	0
+PSE10	proteusin	0
+PSE10	ranthipeptide	47
+PSE10	redox cofactor	16
+PSE10	resorcinol	0
+PSE10	siderophore	0
+PSE10	terpene	0
+PSE10	thioamitides	0
+PSE10	thiopeptide	0
+PSE10	transAT PKS	0
+PSE11	CDPS	0
+PSE11	LAP	0
+PSE11	NAGGN	13
+PSE11	NAPAA	0
+PSE11	NRPS	48
+PSE11	NRPS like	0
+PSE11	PKS like	0
+PSE11	RRE containing	0
+PSE11	RiPP like	9
+PSE11	T1PKS	0
+PSE11	T3PKS	0
+PSE11	acyl amino acids	47
+PSE11	arylpolyene	0
+PSE11	betalactone	0
+PSE11	butyrolactone	0
+PSE11	cyclic lactone autoinducer	0
+PSE11	ectoine	0
+PSE11	furan	0
+PSE11	hglE KS	0
+PSE11	hserlactone	0
+PSE11	ladderane	0
+PSE11	lanthipeptide class i	0
+PSE11	lanthipeptide class ii	0
+PSE11	lanthipeptide class iii	0
+PSE11	lanthipeptide class iv	0
+PSE11	lanthipeptide class v	0
+PSE11	lassopeptide	0
+PSE11	microviridin	0
+PSE11	other	0
+PSE11	phenazine	0
+PSE11	phosphonate	0
+PSE11	proteusin	0
+PSE11	ranthipeptide	17
+PSE11	redox cofactor	18
+PSE11	resorcinol	0
+PSE11	siderophore	0
+PSE11	terpene	0
+PSE11	thioamitides	0
+PSE11	thiopeptide	19
+PSE11	transAT PKS	0
+PSE12	CDPS	0
+PSE12	LAP	0
+PSE12	NAGGN	11
+PSE12	NAPAA	0
+PSE12	NRPS	139
+PSE12	NRPS like	26
+PSE12	PKS like	0
+PSE12	RRE containing	0
+PSE12	RiPP like	20
+PSE12	T1PKS	0
+PSE12	T3PKS	31
+PSE12	acyl amino acids	0
+PSE12	arylpolyene	45
+PSE12	betalactone	20
+PSE12	butyrolactone	9
+PSE12	cyclic lactone autoinducer	0
+PSE12	ectoine	0
+PSE12	furan	0
+PSE12	hglE KS	0
+PSE12	hserlactone	0
+PSE12	ladderane	0
+PSE12	lanthipeptide class i	0
+PSE12	lanthipeptide class ii	21
+PSE12	lanthipeptide class iii	0
+PSE12	lanthipeptide class iv	0
+PSE12	lanthipeptide class v	0
+PSE12	lassopeptide	0
+PSE12	microviridin	0
+PSE12	other	0
+PSE12	phenazine	0
+PSE12	phosphonate	0
+PSE12	proteusin	0
+PSE12	ranthipeptide	16
+PSE12	redox cofactor	15
+PSE12	resorcinol	0
+PSE12	siderophore	0
+PSE12	terpene	0
+PSE12	thioamitides	0
+PSE12	thiopeptide	0
+PSE12	transAT PKS	0
+PSE13	CDPS	0
+PSE13	LAP	0
+PSE13	NAGGN	0
+PSE13	NAPAA	0
+PSE13	NRPS	41
+PSE13	NRPS like	0
+PSE13	PKS like	0
+PSE13	RRE containing	0
+PSE13	RiPP like	7
+PSE13	T1PKS	0
+PSE13	T3PKS	0
+PSE13	acyl amino acids	0
+PSE13	arylpolyene	0
+PSE13	betalactone	0
+PSE13	butyrolactone	10
+PSE13	cyclic lactone autoinducer	0
+PSE13	ectoine	0
+PSE13	furan	0
+PSE13	hglE KS	0
+PSE13	hserlactone	0
+PSE13	ladderane	0
+PSE13	lanthipeptide class i	0
+PSE13	lanthipeptide class ii	0
+PSE13	lanthipeptide class iii	0
+PSE13	lanthipeptide class iv	0
+PSE13	lanthipeptide class v	0
+PSE13	lassopeptide	0
+PSE13	microviridin	0
+PSE13	other	0
+PSE13	phenazine	0
+PSE13	phosphonate	0
+PSE13	proteusin	0
+PSE13	ranthipeptide	0
+PSE13	redox cofactor	19
+PSE13	resorcinol	0
+PSE13	siderophore	0
+PSE13	terpene	0
+PSE13	thioamitides	0
+PSE13	thiopeptide	19
+PSE13	transAT PKS	0
+PSE14	CDPS	0
+PSE14	LAP	30
+PSE14	NAGGN	12
+PSE14	NAPAA	0
+PSE14	NRPS	148
+PSE14	NRPS like	51
+PSE14	PKS like	0
+PSE14	RRE containing	0
+PSE14	RiPP like	0
+PSE14	T1PKS	0
+PSE14	T3PKS	0
+PSE14	acyl amino acids	0
+PSE14	arylpolyene	38
+PSE14	betalactone	32
+PSE14	butyrolactone	0
+PSE14	cyclic lactone autoinducer	0
+PSE14	ectoine	0
+PSE14	furan	0
+PSE14	hglE KS	0
+PSE14	hserlactone	0
+PSE14	ladderane	0
+PSE14	lanthipeptide class i	0
+PSE14	lanthipeptide class ii	0
+PSE14	lanthipeptide class iii	0
+PSE14	lanthipeptide class iv	0
+PSE14	lanthipeptide class v	0
+PSE14	lassopeptide	0
+PSE14	microviridin	0
+PSE14	other	0
+PSE14	phenazine	0
+PSE14	phosphonate	0
+PSE14	proteusin	0
+PSE14	ranthipeptide	0
+PSE14	redox cofactor	19
+PSE14	resorcinol	0
+PSE14	siderophore	0
+PSE14	terpene	0
+PSE14	thioamitides	0
+PSE14	thiopeptide	0
+PSE14	transAT PKS	0
+PSE15	CDPS	0
+PSE15	LAP	0
+PSE15	NAGGN	0
+PSE15	NAPAA	25
+PSE15	NRPS	276
+PSE15	NRPS like	0
+PSE15	PKS like	0
+PSE15	RRE containing	0
+PSE15	RiPP like	12
+PSE15	T1PKS	29
+PSE15	T3PKS	0
+PSE15	acyl amino acids	0
+PSE15	arylpolyene	0
+PSE15	betalactone	25
+PSE15	butyrolactone	10
+PSE15	cyclic lactone autoinducer	0
+PSE15	ectoine	9
+PSE15	furan	0
+PSE15	hglE KS	0
+PSE15	hserlactone	0
+PSE15	ladderane	0
+PSE15	lanthipeptide class i	0
+PSE15	lanthipeptide class ii	0
+PSE15	lanthipeptide class iii	0
+PSE15	lanthipeptide class iv	0
+PSE15	lanthipeptide class v	0
+PSE15	lassopeptide	0
+PSE15	microviridin	0
+PSE15	other	0
+PSE15	phenazine	0
+PSE15	phosphonate	0
+PSE15	proteusin	0
+PSE15	ranthipeptide	0
+PSE15	redox cofactor	24
+PSE15	resorcinol	0
+PSE15	siderophore	0
+PSE15	terpene	61
+PSE15	thioamitides	0
+PSE15	thiopeptide	0
+PSE15	transAT PKS	0
+PSE2	CDPS	0
+PSE2	LAP	0
+PSE2	NAGGN	11
+PSE2	NAPAA	0
+PSE2	NRPS	113
+PSE2	NRPS like	26
+PSE2	PKS like	0
+PSE2	RRE containing	0
+PSE2	RiPP like	11
+PSE2	T1PKS	0
+PSE2	T3PKS	34
+PSE2	acyl amino acids	0
+PSE2	arylpolyene	40
+PSE2	betalactone	20
+PSE2	butyrolactone	9
+PSE2	cyclic lactone autoinducer	0
+PSE2	ectoine	0
+PSE2	furan	0
+PSE2	hglE KS	0
+PSE2	hserlactone	0
+PSE2	ladderane	0
+PSE2	lanthipeptide class i	0
+PSE2	lanthipeptide class ii	0
+PSE2	lanthipeptide class iii	0
+PSE2	lanthipeptide class iv	0
+PSE2	lanthipeptide class v	0
+PSE2	lassopeptide	0
+PSE2	microviridin	0
+PSE2	other	0
+PSE2	phenazine	0
+PSE2	phosphonate	0
+PSE2	proteusin	0
+PSE2	ranthipeptide	0
+PSE2	redox cofactor	15
+PSE2	resorcinol	0
+PSE2	siderophore	0
+PSE2	terpene	0
+PSE2	thioamitides	0
+PSE2	thiopeptide	0
+PSE2	transAT PKS	0
+PSE3	CDPS	0
+PSE3	LAP	0
+PSE3	NAGGN	11
+PSE3	NAPAA	0
+PSE3	NRPS	77
+PSE3	NRPS like	21
+PSE3	PKS like	0
+PSE3	RRE containing	0
+PSE3	RiPP like	25
+PSE3	T1PKS	0
+PSE3	T3PKS	0
+PSE3	acyl amino acids	0
+PSE3	arylpolyene	39
+PSE3	betalactone	18
+PSE3	butyrolactone	8
+PSE3	cyclic lactone autoinducer	0
+PSE3	ectoine	0
+PSE3	furan	0
+PSE3	hglE KS	0
+PSE3	hserlactone	0
+PSE3	ladderane	0
+PSE3	lanthipeptide class i	0
+PSE3	lanthipeptide class ii	21
+PSE3	lanthipeptide class iii	0
+PSE3	lanthipeptide class iv	0
+PSE3	lanthipeptide class v	0
+PSE3	lassopeptide	0
+PSE3	microviridin	0
+PSE3	other	0
+PSE3	phenazine	0
+PSE3	phosphonate	0
+PSE3	proteusin	0
+PSE3	ranthipeptide	0
+PSE3	redox cofactor	17
+PSE3	resorcinol	0
+PSE3	siderophore	10
+PSE3	terpene	36
+PSE3	thioamitides	0
+PSE3	thiopeptide	0
+PSE3	transAT PKS	0
+PSE4	CDPS	0
+PSE4	LAP	30
+PSE4	NAGGN	12
+PSE4	NAPAA	0
+PSE4	NRPS	148
+PSE4	NRPS like	51
+PSE4	PKS like	0
+PSE4	RRE containing	0
+PSE4	RiPP like	0
+PSE4	T1PKS	0
+PSE4	T3PKS	0
+PSE4	acyl amino acids	0
+PSE4	arylpolyene	38
+PSE4	betalactone	32
+PSE4	butyrolactone	0
+PSE4	cyclic lactone autoinducer	0
+PSE4	ectoine	0
+PSE4	furan	0
+PSE4	hglE KS	0
+PSE4	hserlactone	0
+PSE4	ladderane	0
+PSE4	lanthipeptide class i	0
+PSE4	lanthipeptide class ii	0
+PSE4	lanthipeptide class iii	0
+PSE4	lanthipeptide class iv	0
+PSE4	lanthipeptide class v	0
+PSE4	lassopeptide	0
+PSE4	microviridin	0
+PSE4	other	0
+PSE4	phenazine	0
+PSE4	phosphonate	0
+PSE4	proteusin	0
+PSE4	ranthipeptide	0
+PSE4	redox cofactor	19
+PSE4	resorcinol	0
+PSE4	siderophore	0
+PSE4	terpene	0
+PSE4	thioamitides	0
+PSE4	thiopeptide	0
+PSE4	transAT PKS	0
+PSE5	CDPS	0
+PSE5	LAP	0
+PSE5	NAGGN	11
+PSE5	NAPAA	0
+PSE5	NRPS	79
+PSE5	NRPS like	61
+PSE5	PKS like	0
+PSE5	RRE containing	0
+PSE5	RiPP like	11
+PSE5	T1PKS	0
+PSE5	T3PKS	26
+PSE5	acyl amino acids	0
+PSE5	arylpolyene	45
+PSE5	betalactone	20
+PSE5	butyrolactone	10
+PSE5	cyclic lactone autoinducer	0
+PSE5	ectoine	0
+PSE5	furan	0
+PSE5	hglE KS	0
+PSE5	hserlactone	0
+PSE5	ladderane	0
+PSE5	lanthipeptide class i	0
+PSE5	lanthipeptide class ii	16
+PSE5	lanthipeptide class iii	0
+PSE5	lanthipeptide class iv	0
+PSE5	lanthipeptide class v	0
+PSE5	lassopeptide	0
+PSE5	microviridin	0
+PSE5	other	0
+PSE5	phenazine	0
+PSE5	phosphonate	0
+PSE5	proteusin	0
+PSE5	ranthipeptide	0
+PSE5	redox cofactor	16
+PSE5	resorcinol	0
+PSE5	siderophore	0
+PSE5	terpene	0
+PSE5	thioamitides	0
+PSE5	thiopeptide	0
+PSE5	transAT PKS	35
+PSE6	CDPS	0
+PSE6	LAP	0
+PSE6	NAGGN	11
+PSE6	NAPAA	0
+PSE6	NRPS	108
+PSE6	NRPS like	21
+PSE6	PKS like	0
+PSE6	RRE containing	18
+PSE6	RiPP like	20
+PSE6	T1PKS	0
+PSE6	T3PKS	0
+PSE6	acyl amino acids	0
+PSE6	arylpolyene	39
+PSE6	betalactone	19
+PSE6	butyrolactone	0
+PSE6	cyclic lactone autoinducer	0
+PSE6	ectoine	0
+PSE6	furan	0
+PSE6	hglE KS	0
+PSE6	hserlactone	0
+PSE6	ladderane	0
+PSE6	lanthipeptide class i	0
+PSE6	lanthipeptide class ii	0
+PSE6	lanthipeptide class iii	0
+PSE6	lanthipeptide class iv	0
+PSE6	lanthipeptide class v	0
+PSE6	lassopeptide	0
+PSE6	microviridin	0
+PSE6	other	0
+PSE6	phenazine	0
+PSE6	phosphonate	0
+PSE6	proteusin	0
+PSE6	ranthipeptide	0
+PSE6	redox cofactor	15
+PSE6	resorcinol	0
+PSE6	siderophore	0
+PSE6	terpene	0
+PSE6	thioamitides	0
+PSE6	thiopeptide	0
+PSE6	transAT PKS	0
+PSE7	CDPS	0
+PSE7	LAP	0
+PSE7	NAGGN	9
+PSE7	NAPAA	0
+PSE7	NRPS	80
+PSE7	NRPS like	22
+PSE7	PKS like	0
+PSE7	RRE containing	0
+PSE7	RiPP like	9
+PSE7	T1PKS	0
+PSE7	T3PKS	0
+PSE7	acyl amino acids	0
+PSE7	arylpolyene	43
+PSE7	betalactone	39
+PSE7	butyrolactone	0
+PSE7	cyclic lactone autoinducer	0
+PSE7	ectoine	0
+PSE7	furan	0
+PSE7	hglE KS	0
+PSE7	hserlactone	0
+PSE7	ladderane	0
+PSE7	lanthipeptide class i	0
+PSE7	lanthipeptide class ii	0
+PSE7	lanthipeptide class iii	0
+PSE7	lanthipeptide class iv	0
+PSE7	lanthipeptide class v	0
+PSE7	lassopeptide	0
+PSE7	microviridin	0
+PSE7	other	0
+PSE7	phenazine	0
+PSE7	phosphonate	0
+PSE7	proteusin	0
+PSE7	ranthipeptide	39
+PSE7	redox cofactor	36
+PSE7	resorcinol	0
+PSE7	siderophore	0
+PSE7	terpene	39
+PSE7	thioamitides	0
+PSE7	thiopeptide	0
+PSE7	transAT PKS	0
+PSE8	CDPS	0
+PSE8	LAP	0
+PSE8	NAGGN	13
+PSE8	NAPAA	0
+PSE8	NRPS	48
+PSE8	NRPS like	0
+PSE8	PKS like	0
+PSE8	RRE containing	0
+PSE8	RiPP like	9
+PSE8	T1PKS	0
+PSE8	T3PKS	0
+PSE8	acyl amino acids	47
+PSE8	arylpolyene	0
+PSE8	betalactone	0
+PSE8	butyrolactone	0
+PSE8	cyclic lactone autoinducer	0
+PSE8	ectoine	0
+PSE8	furan	0
+PSE8	hglE KS	0
+PSE8	hserlactone	0
+PSE8	ladderane	0
+PSE8	lanthipeptide class i	0
+PSE8	lanthipeptide class ii	0
+PSE8	lanthipeptide class iii	0
+PSE8	lanthipeptide class iv	0
+PSE8	lanthipeptide class v	0
+PSE8	lassopeptide	0
+PSE8	microviridin	0
+PSE8	other	0
+PSE8	phenazine	0
+PSE8	phosphonate	0
+PSE8	proteusin	0
+PSE8	ranthipeptide	17
+PSE8	redox cofactor	18
+PSE8	resorcinol	0
+PSE8	siderophore	0
+PSE8	terpene	0
+PSE8	thioamitides	0
+PSE8	thiopeptide	19
+PSE8	transAT PKS	0
+PSE9	CDPS	0
+PSE9	LAP	0
+PSE9	NAGGN	10
+PSE9	NAPAA	0
+PSE9	NRPS	134
+PSE9	NRPS like	31
+PSE9	PKS like	0
+PSE9	RRE containing	0
+PSE9	RiPP like	8
+PSE9	T1PKS	0
+PSE9	T3PKS	0
+PSE9	acyl amino acids	0
+PSE9	arylpolyene	45
+PSE9	betalactone	17
+PSE9	butyrolactone	0
+PSE9	cyclic lactone autoinducer	0
+PSE9	ectoine	0
+PSE9	furan	0
+PSE9	hglE KS	0
+PSE9	hserlactone	0
+PSE9	ladderane	0
+PSE9	lanthipeptide class i	0
+PSE9	lanthipeptide class ii	0
+PSE9	lanthipeptide class iii	0
+PSE9	lanthipeptide class iv	0
+PSE9	lanthipeptide class v	0
+PSE9	lassopeptide	0
+PSE9	microviridin	0
+PSE9	other	0
+PSE9	phenazine	0
+PSE9	phosphonate	0
+PSE9	proteusin	0
+PSE9	ranthipeptide	31
+PSE9	redox cofactor	54
+PSE9	resorcinol	0
+PSE9	siderophore	0
+PSE9	terpene	0
+PSE9	thioamitides	0
+PSE9	thiopeptide	0
+PSE9	transAT PKS	0
+RAL1	CDPS	0
+RAL1	LAP	20
+RAL1	NAGGN	0
+RAL1	NAPAA	0
+RAL1	NRPS	0
+RAL1	NRPS like	0
+RAL1	PKS like	0
+RAL1	RRE containing	0
+RAL1	RiPP like	14
+RAL1	T1PKS	0
+RAL1	T3PKS	0
+RAL1	acyl amino acids	0
+RAL1	arylpolyene	40
+RAL1	betalactone	41
+RAL1	butyrolactone	0
+RAL1	cyclic lactone autoinducer	0
+RAL1	ectoine	0
+RAL1	furan	0
+RAL1	hglE KS	0
+RAL1	hserlactone	0
+RAL1	ladderane	0
+RAL1	lanthipeptide class i	0
+RAL1	lanthipeptide class ii	0
+RAL1	lanthipeptide class iii	0
+RAL1	lanthipeptide class iv	0
+RAL1	lanthipeptide class v	0
+RAL1	lassopeptide	0
+RAL1	microviridin	0
+RAL1	other	0
+RAL1	phenazine	0
+RAL1	phosphonate	0
+RAL1	proteusin	0
+RAL1	ranthipeptide	0
+RAL1	redox cofactor	21
+RAL1	resorcinol	0
+RAL1	siderophore	8
+RAL1	terpene	19
+RAL1	thioamitides	0
+RAL1	thiopeptide	0
+RAL1	transAT PKS	0
+RAL2	CDPS	0
+RAL2	LAP	0
+RAL2	NAGGN	0
+RAL2	NAPAA	0
+RAL2	NRPS	0
+RAL2	NRPS like	35
+RAL2	PKS like	0
+RAL2	RRE containing	0
+RAL2	RiPP like	11
+RAL2	T1PKS	27
+RAL2	T3PKS	0
+RAL2	acyl amino acids	0
+RAL2	arylpolyene	57
+RAL2	betalactone	0
+RAL2	butyrolactone	0
+RAL2	cyclic lactone autoinducer	0
+RAL2	ectoine	0
+RAL2	furan	0
+RAL2	hglE KS	27
+RAL2	hserlactone	0
+RAL2	ladderane	0
+RAL2	lanthipeptide class i	0
+RAL2	lanthipeptide class ii	0
+RAL2	lanthipeptide class iii	0
+RAL2	lanthipeptide class iv	0
+RAL2	lanthipeptide class v	0
+RAL2	lassopeptide	0
+RAL2	microviridin	21
+RAL2	other	0
+RAL2	phenazine	0
+RAL2	phosphonate	0
+RAL2	proteusin	29
+RAL2	ranthipeptide	0
+RAL2	redox cofactor	0
+RAL2	resorcinol	57
+RAL2	siderophore	9
+RAL2	terpene	20
+RAL2	thioamitides	0
+RAL2	thiopeptide	0
+RAL2	transAT PKS	0
+RAL3	CDPS	0
+RAL3	LAP	0
+RAL3	NAGGN	0
+RAL3	NAPAA	0
+RAL3	NRPS	58
+RAL3	NRPS like	57
+RAL3	PKS like	0
+RAL3	RRE containing	57
+RAL3	RiPP like	10
+RAL3	T1PKS	0
+RAL3	T3PKS	0
+RAL3	acyl amino acids	0
+RAL3	arylpolyene	82
+RAL3	betalactone	23
+RAL3	butyrolactone	0
+RAL3	cyclic lactone autoinducer	0
+RAL3	ectoine	0
+RAL3	furan	0
+RAL3	hglE KS	0
+RAL3	hserlactone	0
+RAL3	ladderane	0
+RAL3	lanthipeptide class i	0
+RAL3	lanthipeptide class ii	0
+RAL3	lanthipeptide class iii	0
+RAL3	lanthipeptide class iv	21
+RAL3	lanthipeptide class v	0
+RAL3	lassopeptide	0
+RAL3	microviridin	0
+RAL3	other	0
+RAL3	phenazine	0
+RAL3	phosphonate	39
+RAL3	proteusin	0
+RAL3	ranthipeptide	0
+RAL3	redox cofactor	19
+RAL3	resorcinol	0
+RAL3	siderophore	0
+RAL3	terpene	53
+RAL3	thioamitides	0
+RAL3	thiopeptide	0
+RAL3	transAT PKS	0
+RAL4	CDPS	0
+RAL4	LAP	0
+RAL4	NAGGN	0
+RAL4	NAPAA	58
+RAL4	NRPS	317
+RAL4	NRPS like	0
+RAL4	PKS like	0
+RAL4	RRE containing	0
+RAL4	RiPP like	9
+RAL4	T1PKS	93
+RAL4	T3PKS	0
+RAL4	acyl amino acids	0
+RAL4	arylpolyene	0
+RAL4	betalactone	63
+RAL4	butyrolactone	44
+RAL4	cyclic lactone autoinducer	0
+RAL4	ectoine	9
+RAL4	furan	0
+RAL4	hglE KS	0
+RAL4	hserlactone	0
+RAL4	ladderane	0
+RAL4	lanthipeptide class i	0
+RAL4	lanthipeptide class ii	0
+RAL4	lanthipeptide class iii	0
+RAL4	lanthipeptide class iv	0
+RAL4	lanthipeptide class v	0
+RAL4	lassopeptide	0
+RAL4	microviridin	0
+RAL4	other	0
+RAL4	phenazine	0
+RAL4	phosphonate	0
+RAL4	proteusin	0
+RAL4	ranthipeptide	0
+RAL4	redox cofactor	25
+RAL4	resorcinol	0
+RAL4	siderophore	0
+RAL4	terpene	39
+RAL4	thioamitides	0
+RAL4	thiopeptide	0
+RAL4	transAT PKS	0
+RAL5	CDPS	0
+RAL5	LAP	0
+RAL5	NAGGN	0
+RAL5	NAPAA	0
+RAL5	NRPS	0
+RAL5	NRPS like	0
+RAL5	PKS like	0
+RAL5	RRE containing	0
+RAL5	RiPP like	14
+RAL5	T1PKS	0
+RAL5	T3PKS	0
+RAL5	acyl amino acids	0
+RAL5	arylpolyene	86
+RAL5	betalactone	21
+RAL5	butyrolactone	0
+RAL5	cyclic lactone autoinducer	0
+RAL5	ectoine	0
+RAL5	furan	0
+RAL5	hglE KS	0
+RAL5	hserlactone	0
+RAL5	ladderane	0
+RAL5	lanthipeptide class i	0
+RAL5	lanthipeptide class ii	0
+RAL5	lanthipeptide class iii	0
+RAL5	lanthipeptide class iv	0
+RAL5	lanthipeptide class v	0
+RAL5	lassopeptide	0
+RAL5	microviridin	0
+RAL5	other	0
+RAL5	phenazine	0
+RAL5	phosphonate	0
+RAL5	proteusin	0
+RAL5	ranthipeptide	0
+RAL5	redox cofactor	21
+RAL5	resorcinol	0
+RAL5	siderophore	8
+RAL5	terpene	16
+RAL5	thioamitides	0
+RAL5	thiopeptide	0
+RAL5	transAT PKS	0
+RAO1	CDPS	0
+RAO1	LAP	0
+RAO1	NAGGN	0
+RAO1	NAPAA	0
+RAO1	NRPS	68
+RAO1	NRPS like	0
+RAO1	PKS like	0
+RAO1	RRE containing	0
+RAO1	RiPP like	8
+RAO1	T1PKS	33
+RAO1	T3PKS	0
+RAO1	acyl amino acids	0
+RAO1	arylpolyene	45
+RAO1	betalactone	0
+RAO1	butyrolactone	0
+RAO1	cyclic lactone autoinducer	0
+RAO1	ectoine	0
+RAO1	furan	0
+RAO1	hglE KS	0
+RAO1	hserlactone	0
+RAO1	ladderane	0
+RAO1	lanthipeptide class i	0
+RAO1	lanthipeptide class ii	0
+RAO1	lanthipeptide class iii	0
+RAO1	lanthipeptide class iv	0
+RAO1	lanthipeptide class v	0
+RAO1	lassopeptide	0
+RAO1	microviridin	0
+RAO1	other	0
+RAO1	phenazine	0
+RAO1	phosphonate	0
+RAO1	proteusin	0
+RAO1	ranthipeptide	0
+RAO1	redox cofactor	0
+RAO1	resorcinol	0
+RAO1	siderophore	0
+RAO1	terpene	0
+RAO1	thioamitides	0
+RAO1	thiopeptide	20
+RAO1	transAT PKS	0
+RHO1	CDPS	0
+RHO1	LAP	0
+RHO1	NAGGN	0
+RHO1	NAPAA	58
+RHO1	NRPS	317
+RHO1	NRPS like	0
+RHO1	PKS like	0
+RHO1	RRE containing	0
+RHO1	RiPP like	9
+RHO1	T1PKS	93
+RHO1	T3PKS	0
+RHO1	acyl amino acids	0
+RHO1	arylpolyene	0
+RHO1	betalactone	63
+RHO1	butyrolactone	44
+RHO1	cyclic lactone autoinducer	0
+RHO1	ectoine	9
+RHO1	furan	0
+RHO1	hglE KS	0
+RHO1	hserlactone	0
+RHO1	ladderane	0
+RHO1	lanthipeptide class i	0
+RHO1	lanthipeptide class ii	0
+RHO1	lanthipeptide class iii	0
+RHO1	lanthipeptide class iv	0
+RHO1	lanthipeptide class v	0
+RHO1	lassopeptide	0
+RHO1	microviridin	0
+RHO1	other	0
+RHO1	phenazine	0
+RHO1	phosphonate	0
+RHO1	proteusin	0
+RHO1	ranthipeptide	0
+RHO1	redox cofactor	25
+RHO1	resorcinol	0
+RHO1	siderophore	0
+RHO1	terpene	39
+RHO1	thioamitides	0
+RHO1	thiopeptide	0
+RHO1	transAT PKS	0
+SIN1	CDPS	0
+SIN1	LAP	0
+SIN1	NAGGN	0
+SIN1	NAPAA	29
+SIN1	NRPS	0
+SIN1	NRPS like	45
+SIN1	PKS like	0
+SIN1	RRE containing	0
+SIN1	RiPP like	0
+SIN1	T1PKS	0
+SIN1	T3PKS	34
+SIN1	acyl amino acids	0
+SIN1	arylpolyene	0
+SIN1	betalactone	49
+SIN1	butyrolactone	0
+SIN1	cyclic lactone autoinducer	0
+SIN1	ectoine	0
+SIN1	furan	0
+SIN1	hglE KS	0
+SIN1	hserlactone	0
+SIN1	ladderane	0
+SIN1	lanthipeptide class i	0
+SIN1	lanthipeptide class ii	0
+SIN1	lanthipeptide class iii	0
+SIN1	lanthipeptide class iv	0
+SIN1	lanthipeptide class v	0
+SIN1	lassopeptide	0
+SIN1	microviridin	0
+SIN1	other	0
+SIN1	phenazine	0
+SIN1	phosphonate	0
+SIN1	proteusin	0
+SIN1	ranthipeptide	0
+SIN1	redox cofactor	0
+SIN1	resorcinol	0
+SIN1	siderophore	0
+SIN1	terpene	20
+SIN1	thioamitides	0
+SIN1	thiopeptide	0
+SIN1	transAT PKS	0
+SPH1	CDPS	0
+SPH1	LAP	0
+SPH1	NAGGN	0
+SPH1	NAPAA	0
+SPH1	NRPS	38
+SPH1	NRPS like	27
+SPH1	PKS like	0
+SPH1	RRE containing	37
+SPH1	RiPP like	0
+SPH1	T1PKS	30
+SPH1	T3PKS	0
+SPH1	acyl amino acids	0
+SPH1	arylpolyene	0
+SPH1	betalactone	23
+SPH1	butyrolactone	0
+SPH1	cyclic lactone autoinducer	0
+SPH1	ectoine	0
+SPH1	furan	0
+SPH1	hglE KS	30
+SPH1	hserlactone	0
+SPH1	ladderane	0
+SPH1	lanthipeptide class i	0
+SPH1	lanthipeptide class ii	0
+SPH1	lanthipeptide class iii	0
+SPH1	lanthipeptide class iv	0
+SPH1	lanthipeptide class v	0
+SPH1	lassopeptide	0
+SPH1	microviridin	0
+SPH1	other	0
+SPH1	phenazine	0
+SPH1	phosphonate	0
+SPH1	proteusin	0
+SPH1	ranthipeptide	0
+SPH1	redox cofactor	0
+SPH1	resorcinol	0
+SPH1	siderophore	0
+SPH1	terpene	34
+SPH1	thioamitides	0
+SPH1	thiopeptide	0
+SPH1	transAT PKS	0
+SPH2	CDPS	0
+SPH2	LAP	0
+SPH2	NAGGN	0
+SPH2	NAPAA	0
+SPH2	NRPS	0
+SPH2	NRPS like	0
+SPH2	PKS like	0
+SPH2	RRE containing	33
+SPH2	RiPP like	0
+SPH2	T1PKS	0
+SPH2	T3PKS	0
+SPH2	acyl amino acids	0
+SPH2	arylpolyene	0
+SPH2	betalactone	0
+SPH2	butyrolactone	0
+SPH2	cyclic lactone autoinducer	0
+SPH2	ectoine	0
+SPH2	furan	0
+SPH2	hglE KS	0
+SPH2	hserlactone	0
+SPH2	ladderane	0
+SPH2	lanthipeptide class i	0
+SPH2	lanthipeptide class ii	0
+SPH2	lanthipeptide class iii	0
+SPH2	lanthipeptide class iv	0
+SPH2	lanthipeptide class v	0
+SPH2	lassopeptide	0
+SPH2	microviridin	0
+SPH2	other	0
+SPH2	phenazine	0
+SPH2	phosphonate	0
+SPH2	proteusin	0
+SPH2	ranthipeptide	0
+SPH2	redox cofactor	0
+SPH2	resorcinol	41
+SPH2	siderophore	0
+SPH2	terpene	42
+SPH2	thioamitides	0
+SPH2	thiopeptide	0
+SPH2	transAT PKS	0
+SPH3	CDPS	0
+SPH3	LAP	0
+SPH3	NAGGN	0
+SPH3	NAPAA	0
+SPH3	NRPS	0
+SPH3	NRPS like	0
+SPH3	PKS like	0
+SPH3	RRE containing	39
+SPH3	RiPP like	14
+SPH3	T1PKS	44
+SPH3	T3PKS	31
+SPH3	acyl amino acids	0
+SPH3	arylpolyene	0
+SPH3	betalactone	23
+SPH3	butyrolactone	0
+SPH3	cyclic lactone autoinducer	0
+SPH3	ectoine	0
+SPH3	furan	0
+SPH3	hglE KS	44
+SPH3	hserlactone	0
+SPH3	ladderane	0
+SPH3	lanthipeptide class i	0
+SPH3	lanthipeptide class ii	0
+SPH3	lanthipeptide class iii	0
+SPH3	lanthipeptide class iv	0
+SPH3	lanthipeptide class v	0
+SPH3	lassopeptide	0
+SPH3	microviridin	0
+SPH3	other	0
+SPH3	phenazine	0
+SPH3	phosphonate	0
+SPH3	proteusin	0
+SPH3	ranthipeptide	0
+SPH3	redox cofactor	0
+SPH3	resorcinol	0
+SPH3	siderophore	0
+SPH3	terpene	16
+SPH3	thioamitides	0
+SPH3	thiopeptide	0
+SPH3	transAT PKS	0
+SPH4	CDPS	0
+SPH4	LAP	0
+SPH4	NAGGN	0
+SPH4	NAPAA	27
+SPH4	NRPS	0
+SPH4	NRPS like	0
+SPH4	PKS like	0
+SPH4	RRE containing	0
+SPH4	RiPP like	11
+SPH4	T1PKS	0
+SPH4	T3PKS	36
+SPH4	acyl amino acids	0
+SPH4	arylpolyene	0
+SPH4	betalactone	0
+SPH4	butyrolactone	0
+SPH4	cyclic lactone autoinducer	0
+SPH4	ectoine	0
+SPH4	furan	0
+SPH4	hglE KS	0
+SPH4	hserlactone	0
+SPH4	ladderane	0
+SPH4	lanthipeptide class i	0
+SPH4	lanthipeptide class ii	0
+SPH4	lanthipeptide class iii	0
+SPH4	lanthipeptide class iv	0
+SPH4	lanthipeptide class v	0
+SPH4	lassopeptide	0
+SPH4	microviridin	0
+SPH4	other	0
+SPH4	phenazine	0
+SPH4	phosphonate	0
+SPH4	proteusin	0
+SPH4	ranthipeptide	0
+SPH4	redox cofactor	0
+SPH4	resorcinol	0
+SPH4	siderophore	0
+SPH4	terpene	37
+SPH4	thioamitides	0
+SPH4	thiopeptide	0
+SPH4	transAT PKS	0
+STA1	CDPS	0
+STA1	LAP	0
+STA1	NAGGN	0
+STA1	NAPAA	0
+STA1	NRPS	0
+STA1	NRPS like	0
+STA1	PKS like	0
+STA1	RRE containing	0
+STA1	RiPP like	0
+STA1	T1PKS	0
+STA1	T3PKS	37
+STA1	acyl amino acids	0
+STA1	arylpolyene	0
+STA1	betalactone	0
+STA1	butyrolactone	0
+STA1	cyclic lactone autoinducer	20
+STA1	ectoine	0
+STA1	furan	0
+STA1	hglE KS	0
+STA1	hserlactone	0
+STA1	ladderane	0
+STA1	lanthipeptide class i	0
+STA1	lanthipeptide class ii	0
+STA1	lanthipeptide class iii	0
+STA1	lanthipeptide class iv	0
+STA1	lanthipeptide class v	0
+STA1	lassopeptide	0
+STA1	microviridin	0
+STA1	other	0
+STA1	phenazine	0
+STA1	phosphonate	0
+STA1	proteusin	0
+STA1	ranthipeptide	0
+STA1	redox cofactor	0
+STA1	resorcinol	0
+STA1	siderophore	11
+STA1	terpene	0
+STA1	thioamitides	0
+STA1	thiopeptide	0
+STA1	transAT PKS	0
+STE1	CDPS	0
+STE1	LAP	0
+STE1	NAGGN	0
+STE1	NAPAA	0
+STE1	NRPS	0
+STE1	NRPS like	0
+STE1	PKS like	0
+STE1	RRE containing	0
+STE1	RiPP like	0
+STE1	T1PKS	0
+STE1	T3PKS	0
+STE1	acyl amino acids	0
+STE1	arylpolyene	64
+STE1	betalactone	0
+STE1	butyrolactone	0
+STE1	cyclic lactone autoinducer	0
+STE1	ectoine	0
+STE1	furan	0
+STE1	hglE KS	0
+STE1	hserlactone	15
+STE1	ladderane	0
+STE1	lanthipeptide class i	0
+STE1	lanthipeptide class ii	0
+STE1	lanthipeptide class iii	0
+STE1	lanthipeptide class iv	0
+STE1	lanthipeptide class v	0
+STE1	lassopeptide	23
+STE1	microviridin	0
+STE1	other	0
+STE1	phenazine	0
+STE1	phosphonate	0
+STE1	proteusin	0
+STE1	ranthipeptide	0
+STE1	redox cofactor	0
+STE1	resorcinol	0
+STE1	siderophore	0
+STE1	terpene	0
+STE1	thioamitides	0
+STE1	thiopeptide	0
+STE1	transAT PKS	0
+STE2	CDPS	0
+STE2	LAP	0
+STE2	NAGGN	0
+STE2	NAPAA	0
+STE2	NRPS	47
+STE2	NRPS like	0
+STE2	PKS like	0
+STE2	RRE containing	0
+STE2	RiPP like	10
+STE2	T1PKS	0
+STE2	T3PKS	0
+STE2	acyl amino acids	0
+STE2	arylpolyene	35
+STE2	betalactone	0
+STE2	butyrolactone	0
+STE2	cyclic lactone autoinducer	0
+STE2	ectoine	0
+STE2	furan	0
+STE2	hglE KS	0
+STE2	hserlactone	0
+STE2	ladderane	0
+STE2	lanthipeptide class i	0
+STE2	lanthipeptide class ii	47
+STE2	lanthipeptide class iii	0
+STE2	lanthipeptide class iv	0
+STE2	lanthipeptide class v	0
+STE2	lassopeptide	0
+STE2	microviridin	0
+STE2	other	0
+STE2	phenazine	0
+STE2	phosphonate	0
+STE2	proteusin	0
+STE2	ranthipeptide	0
+STE2	redox cofactor	0
+STE2	resorcinol	0
+STE2	siderophore	0
+STE2	terpene	0
+STE2	thioamitides	0
+STE2	thiopeptide	0
+STE2	transAT PKS	0
+STE3	CDPS	0
+STE3	LAP	0
+STE3	NAGGN	0
+STE3	NAPAA	0
+STE3	NRPS	42
+STE3	NRPS like	0
+STE3	PKS like	0
+STE3	RRE containing	0
+STE3	RiPP like	20
+STE3	T1PKS	0
+STE3	T3PKS	0
+STE3	acyl amino acids	0
+STE3	arylpolyene	42
+STE3	betalactone	0
+STE3	butyrolactone	0
+STE3	cyclic lactone autoinducer	0
+STE3	ectoine	0
+STE3	furan	0
+STE3	hglE KS	0
+STE3	hserlactone	0
+STE3	ladderane	0
+STE3	lanthipeptide class i	0
+STE3	lanthipeptide class ii	23
+STE3	lanthipeptide class iii	0
+STE3	lanthipeptide class iv	0
+STE3	lanthipeptide class v	0
+STE3	lassopeptide	14
+STE3	microviridin	0
+STE3	other	0
+STE3	phenazine	0
+STE3	phosphonate	0
+STE3	proteusin	0
+STE3	ranthipeptide	0
+STE3	redox cofactor	0
+STE3	resorcinol	0
+STE3	siderophore	0
+STE3	terpene	0
+STE3	thioamitides	0
+STE3	thiopeptide	0
+STE3	transAT PKS	0
+VAR1	CDPS	0
+VAR1	LAP	0
+VAR1	NAGGN	16
+VAR1	NAPAA	0
+VAR1	NRPS	0
+VAR1	NRPS like	0
+VAR1	PKS like	0
+VAR1	RRE containing	0
+VAR1	RiPP like	0
+VAR1	T1PKS	0
+VAR1	T3PKS	0
+VAR1	acyl amino acids	60
+VAR1	arylpolyene	48
+VAR1	betalactone	22
+VAR1	butyrolactone	0
+VAR1	cyclic lactone autoinducer	0
+VAR1	ectoine	9
+VAR1	furan	0
+VAR1	hglE KS	0
+VAR1	hserlactone	0
+VAR1	ladderane	0
+VAR1	lanthipeptide class i	0
+VAR1	lanthipeptide class ii	0
+VAR1	lanthipeptide class iii	0
+VAR1	lanthipeptide class iv	0
+VAR1	lanthipeptide class v	0
+VAR1	lassopeptide	0
+VAR1	microviridin	0
+VAR1	other	0
+VAR1	phenazine	0
+VAR1	phosphonate	0
+VAR1	proteusin	0
+VAR1	ranthipeptide	0
+VAR1	redox cofactor	0
+VAR1	resorcinol	0
+VAR1	siderophore	6
+VAR1	terpene	20
+VAR1	thioamitides	0
+VAR1	thiopeptide	0
+VAR1	transAT PKS	0
+aci1	CDPS	0
+aci1	LAP	0
+aci1	NAGGN	0
+aci1	NAPAA	0
+aci1	NRPS	0
+aci1	NRPS like	0
+aci1	PKS like	0
+aci1	RRE containing	0
+aci1	RiPP like	0
+aci1	T1PKS	0
+aci1	T3PKS	0
+aci1	acyl amino acids	0
+aci1	arylpolyene	0
+aci1	betalactone	21
+aci1	butyrolactone	0
+aci1	cyclic lactone autoinducer	0
+aci1	ectoine	0
+aci1	furan	0
+aci1	hglE KS	0
+aci1	hserlactone	0
+aci1	ladderane	0
+aci1	lanthipeptide class i	0
+aci1	lanthipeptide class ii	0
+aci1	lanthipeptide class iii	0
+aci1	lanthipeptide class iv	0
+aci1	lanthipeptide class v	0
+aci1	lassopeptide	0
+aci1	microviridin	0
+aci1	other	0
+aci1	phenazine	0
+aci1	phosphonate	0
+aci1	proteusin	0
+aci1	ranthipeptide	0
+aci1	redox cofactor	0
+aci1	resorcinol	0
+aci1	siderophore	0
+aci1	terpene	17
+aci1	thioamitides	0
+aci1	thiopeptide	0
+aci1	transAT PKS	0
+aci2	CDPS	0
+aci2	LAP	0
+aci2	NAGGN	0
+aci2	NAPAA	0
+aci2	NRPS	0
+aci2	NRPS like	0
+aci2	PKS like	0
+aci2	RRE containing	0
+aci2	RiPP like	0
+aci2	T1PKS	0
+aci2	T3PKS	0
+aci2	acyl amino acids	0
+aci2	arylpolyene	0
+aci2	betalactone	21
+aci2	butyrolactone	0
+aci2	cyclic lactone autoinducer	0
+aci2	ectoine	0
+aci2	furan	0
+aci2	hglE KS	0
+aci2	hserlactone	0
+aci2	ladderane	0
+aci2	lanthipeptide class i	0
+aci2	lanthipeptide class ii	0
+aci2	lanthipeptide class iii	0
+aci2	lanthipeptide class iv	0
+aci2	lanthipeptide class v	0
+aci2	lassopeptide	0
+aci2	microviridin	0
+aci2	other	0
+aci2	phenazine	0
+aci2	phosphonate	0
+aci2	proteusin	0
+aci2	ranthipeptide	0
+aci2	redox cofactor	0
+aci2	resorcinol	0
+aci2	siderophore	0
+aci2	terpene	17
+aci2	thioamitides	0
+aci2	thiopeptide	0
+aci2	transAT PKS	0
+par1	CDPS	0
+par1	LAP	0
+par1	NAGGN	0
+par1	NAPAA	58
+par1	NRPS	363
+par1	NRPS like	44
+par1	PKS like	35
+par1	RRE containing	0
+par1	RiPP like	0
+par1	T1PKS	91
+par1	T3PKS	0
+par1	acyl amino acids	0
+par1	arylpolyene	0
+par1	betalactone	62
+par1	butyrolactone	66
+par1	cyclic lactone autoinducer	0
+par1	ectoine	9
+par1	furan	0
+par1	hglE KS	0
+par1	hserlactone	0
+par1	ladderane	0
+par1	lanthipeptide class i	0
+par1	lanthipeptide class ii	0
+par1	lanthipeptide class iii	19
+par1	lanthipeptide class iv	0
+par1	lanthipeptide class v	0
+par1	lassopeptide	0
+par1	microviridin	0
+par1	other	0
+par1	phenazine	0
+par1	phosphonate	0
+par1	proteusin	0
+par1	ranthipeptide	0
+par1	redox cofactor	25
+par1	resorcinol	0
+par1	siderophore	0
+par1	terpene	39
+par1	thioamitides	0
+par1	thiopeptide	0
+par1	transAT PKS	0
